@@ -1,16 +1,11 @@
 ---
-title: "Data & Computing Fundamentals"
+title: "A Separate Page"
 author: "Daniel Kaplan"
 date: "August 25, 2014"
 output: html_document
 ---
 
-This is the front page for the Data & Computing Fundamentals course at Macalester College, Fall 2014.
-
-discus: mosaicweb. datacomputingfund
-dcf2014, https://dcf2014.disqus.com
-account dtkaplan [usual Ss]
-
+Just to see if different pages have different discussion threads.
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
