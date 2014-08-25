@@ -1,0 +1,9 @@
+---
+title: "Data & Computing Fundamentals"
+author: "Daniel Kaplan"
+date: "August 25, 2014"
+output: html_document
+---
+
+This is the front page for the Data & Computing Fundamentals course at Macalester College, Fall 2014.
+
