@@ -1,0 +1,37 @@
+/**
+*  H1 - H4                                                                                                         
+**/
+h1, h2, h3, h4{font-family:"Droid Serif",Arial; line-height:1.5em; margin-bottom:15px; font-weight:bold; font-style:italic;}
+h1{font-size:2.8em; font-family:"Pacifico",Arial; font-weight:normal; color:333; margin:0; position:relative; top:20px; text-shadow:1px 1px 1px #01121b; padding-top:5px; padding-bottom:5px; background-color:LightGreen; }
+h2{font-size:2.4em; background-color:#CCEBEB; margin-bottom:15px;}
+h3{font-size:1.5em;}
+h4{font-size:1.0em; font-family:Helvetica,Arial,Tahoma,Verdana; margin-bottom:5px; font-weight:normal; font-style:normal; background-color:ghostwhite; padding-bottom:5px; padding-top:5px;}
+
+topheading{font-size:2.8em; font-family:"Pacifico",Arial; font-weight:normal; color:333; margin:0; text-shadow:1px 1px 1px #01121b; padding-top:5px; padding-bottom:5px; background-color:#CCEBEB; }
+
+.subtitle{font-size:1.0em; font-family:Helvetica,Arial,Tahoma,Verdana; margin-bottom:10px; font-weight:normal; font-style:normal; background-color:white; text-align:right; padding-top:10px;}
+
+#content .separate{padding-bottom:30px; margin-bottom:30px; border-bottom:1px solid #e7e8ea;}
+
+.this-week {background-color:gray;}
+.col1-3{width:300px; margin-left:40px; float:left;}
+#footer .col1-3{margin-bottom:40px;}
+.col1-3 p:last-child, .col2-3 p:last-child{margin-bottom:0;}
+.col1-3:first-child{margin-left:0;}
+.col2-3{width:640px; margin-left:40px; float:left;}
+
+.wrap{margin:0 auto; position:relative; width:980px;}
+
+body {
+        font-family: 'Lato', 'sans serif';
+      }
+      .figure {
+        background-color:ghostwhite;
+        padding:12pt;
+      }
+      .caption{
+        font-style:italic;
+        width:40%;
+        margin:12pt;
+        float: left;
+      }

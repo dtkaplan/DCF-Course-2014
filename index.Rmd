@@ -1,17 +1,139 @@
 ---
-title: "Data & Computing Fundamentals"
-author: "Daniel Kaplan"
-date: "August 25, 2014"
-output: html_document
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: no
 ---
 
-This is the front page for the Data & Computing Fundamentals course at Macalester College, Fall 2014.
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-[Link to another page.](anotherPage.html)
+```{r include=FALSE}
+Notes <- function(topic,name="DraftNarrative.html") {
+  prename <- "http://dtkaplan.github.io/DCF-2014/CourseNotes"
+  return(I(paste( prename, topic, name, sep="/")))
+} 
+Assignment <- function(name="Assignment-One.html") {
+  prename <- "http://dtkaplan.github.io/DCF-2014/Assignments/"
+  return(I(paste(prename, name, sep="/")))
+}
+````
 
-discus: mosaicweb. datacomputingfund
-dcf2014, https://dcf2014.disqus.com
-account dtkaplan [usual Ss]
+<h2>Data & Computing Fundamentals: COMP 110</h2> 
+
+<div class="subtitle">Fall 2014, Macalester College, Prof. Daniel Kaplan</div>
+
+This is the course's **home page**.  
+
+<div class="container">
+ <div class="row">
+  <div class="col-sm-6 col-md-4 col-lg-3">
+  <h4>Resources</h4>
+  
+  Things like links to servers, packages
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+<h4 title="Wed. 11 Sept." class="this-week">Week 1</h4> 
+
+**Before Class**   
+
+* Notes:    
+    [tidy data](`r Notes("DataOrganization")`),
+    [R basics](`r Notes("Rbasics")`),
+    [graphics](`r Notes("GraphicsConstructDeconstruct")`),
+    [glyphs](`r Notes("GraphicsConstructDeconstruct","glyphs.html")`)
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 1](`r Assignment("Assignment-One")`)
+  </div>
+  <div class="clearfix visible-sm-block"></div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4 title="Wed. 18 Sept.">Week 2</h4>
+   
+**Before Class**   
+
+* Notes:    
+    [tidy data](`r Notes("DataOrganization")`),
+    [R basics](`r Notes("Rbasics")`),
+    [graphics](`r Notes("GraphicsConstructDeconstruct")`),
+    [glyphs](`r Notes("GraphicsConstructDeconstruct","glyphs.html")`)
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 2](`r Assignment("Assignment-Two")`)
+   </div>
+   <div class="clearfix visible-md-block"></div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Week 3</h4>
+**Readings**:    
+A    
+B    
+C    
+   
+   </div>
+   <div class="clearfix visible-sm-block"></div>
+   <div class="clearfix visible-lg-block"></div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Week 4</h4>
+##### Writings
+* A    
+    * One
+    * Two
+* B    
+* C 
+
+##### Assignment
+And some things describing the assignment 
+   </div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Week 5</h4>
+   
+A long, long time ago in a distant galaxy.   
+   </div>
+   <div class="clearfix visible-sm-block"></div>
+   <div class="clearfix visible-md-block"></div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Week 6</h4>
+   
+Now is the time for all good men to come to the aid of their party.
+   </div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Week 7</h4>
+A stitch in time saves nine.   
+   
+   </div>
+   <div class="clearfix visible-sm-block"></div>
+   <div class="clearfix visible-lg-block"></div>
+   <div class="col-sm-6 col-md-4 col-lg-3">
+   <h4>Wrap-up</h4>
+##### Before Class
+
+*Readings*: [R resources](http://www.macalester.edu), [Writing](http://www.macalester.edu)
+
+
+*Assignment Due*:
+
+*New Assignment*:
+
+##### Assignment 
+   </div>
+   <div class="clearfix visible-md-block"></div>
+  </div>
+ </div>
+
+
+
+
+
+Just to see if different pages have different discussion threads.
+
+
 
 
 <div id="disqus_thread"></div>

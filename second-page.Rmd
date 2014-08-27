@@ -1,11 +1,28 @@
 ---
-title: "A Separate Page"
-author: "Daniel Kaplan"
-date: "August 25, 2014"
-output: html_document
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: yes
 ---
 
-Just to see if different pages have different discussion threads.
+```{r child="/Users/kaplan/KaplanFiles/DCF-Course-2014/CSS/DCF-common.Rmd"}
+```
+
+# Data & Computing Fundamentals
+
+<div> </div>
+This is the front page for the Data & Computing Fundamentals course at Macalester College, Fall 2014.
+
+
+
+
+[Link to another page.](anotherPage.html)
+
+discus: mosaicweb. datacomputingfund
+dcf2014, https://dcf2014.disqus.com
+account dtkaplan [usual Ss]
+
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

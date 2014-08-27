@@ -1,0 +1,34 @@
+<!--
+% Common elements of a DCF document
+-->
+
+<!-- UNCOMMENT THE NEXT LINE FOR PRODUCTION -->
+<!-- used for course web site -->
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<!-- used for notes
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora">
+-->
+
+
+```{r include=FALSE}
+require(mosaic)
+require(knitr)
+require(dplyr)
+require(tidyr)
+
+# For typesetting
+library(xtable)
+library(ggthemes)
+baseTheme <- theme_tufte( ticks=TRUE )
+library(xkcd)
+funTheme <- theme_xkcd()
+library(ScoreR)
+opts_chunk$set( tidy=FALSE, out.width="50%", comment=NA,
+                warning=FALSE)
+options( width=60, 
+         na.rm=TRUE,
+         # Printing tables
+         xtable.type="html",
+         xtable.include.rownames=FALSE)
+require(DCFdevel)
+```
