@@ -26,7 +26,9 @@ Assignment <- function(name="Assignment-One.html") {
 
 <div class="subtitle">Fall 2014, Macalester College, Prof. Daniel Kaplan</div>
 
-This is the course's **home page**.  
+DCF is a seven-week, one-credit hour course.  It's intended to provide an introduction to the technology of data appropriate for natural and social science in the 21st century. 
+
+<hr class="syllabus">
 
 <div class="container">
  <div class="row">
@@ -38,116 +40,154 @@ This is the course's **home page**.
   <div class="col-sm-6 col-md-4 col-lg-3">
 <h4 title="Wed. 11 Sept." class="this-week">Week 1</h4> 
 
+Infrastructure for computing with data.
+
 **Before Class**   
 
 * Notes:    
-    [tidy data](`r Notes("DataOrganization")`),
-    [R basics](`r Notes("Rbasics")`),
-    [graphics](`r Notes("GraphicsConstructDeconstruct")`),
-    [glyphs](`r Notes("GraphicsConstructDeconstruct","glyphs.html")`)
+    [Structure of Data](`r Notes("DataOrganization")`),
+    [A Quick Start with R](`r Notes("Rbasics","Rbasics.html")`),
+    [Paths and File Types](`r Notes("DataOrganization", "FileTypes.html")`)
+
 * [Weekly Drill]()
   
 **In Class and After**    
   
-[Assignment 1](`r Assignment("Assignment-One")`)
+[Assignment 1](`r Assignment("Assignment-One")`) due Fri. Sept. 20
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4 title="Wed. 18 Sept.">Week 2</h4>
+Data summaries and graphics.
    
 **Before Class**   
 
-* Notes:    
-    [tidy data](`r Notes("DataOrganization")`),
-    [R basics](`r Notes("Rbasics")`),
-    [graphics](`r Notes("GraphicsConstructDeconstruct")`),
-    [glyphs](`r Notes("GraphicsConstructDeconstruct","glyphs.html")`)
+* Notes: 
+    [R Commands](`r Notes("Rbasics")`), 
+    [Data Verbs](`r Notes("BasicDataCommands")`),
+    [BasicGraphics](`r Notes("GraphicsConstructDeconstruct")`),
+    [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
+
 * [Weekly Drill]()
   
 **In Class and After**    
   
-[Assignment 2](`r Assignment("Assignment-Two")`)
+[Assignment 2](`r Assignment("Assignment-Two")`) 
+
    </div>
    <div class="clearfix visible-md-block"></div>
+
+<hr class="syllabus">
+
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 3</h4>
-**Readings**:    
-A    
-B    
-C    
-   
+
+Data Verbs  
+
+**Before Class**   
+
+* Notes: 
+    [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`),
+    [Tidying Data](TBA),
+    [Graphics: Facets and Layers](TBA)  
+
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 3](`r Assignment("Assignment-Three")`) 
+
    </div>
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 4</h4>
-##### Writings
-* A    
-    * One
-    * Two
-* B    
-* C 
+Data BackStory
 
-##### Assignment
-And some things describing the assignment 
+**Before Class**   
+
+* Notes:  
+
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 4](`r Assignment("Assignment-Four")`) 
+
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 5</h4>
    
-A long, long time ago in a distant galaxy.   
+Stats
+
+   
+**Before Class**   
+
+* Notes: 
+ 
+
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 5](`r Assignment("Assignment-Five")`) 
+
+ 
    </div>
+<hr class="syllabus">
+
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-md-block"></div>
+
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 6</h4>
+
+Working with many variables
    
-Now is the time for all good men to come to the aid of their party.
+**Before Class**   
+
+* Notes: 
+ 
+
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 6](`r Assignment("Assignment-Six")`) 
+
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 7</h4>
-A stitch in time saves nine.   
+Cleaning and Scraping
+
+**Before Class**   
+
+* Notes: 
+ 
+
+* [Weekly Drill]()
+  
+**In Class and After**    
+  
+[Assignment 7](`r Assignment("Assignment-Seven")`)  
    
    </div>
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Wrap-up</h4>
-##### Before Class
+   <h4>Wrapping-up</h4>
 
-*Readings*: [R resources](http://www.macalester.edu), [Writing](http://www.macalester.edu)
+* Exam
+* Handing in the final assignment.
 
-
-*Assignment Due*:
-
-*New Assignment*:
-
-##### Assignment 
    </div>
    <div class="clearfix visible-md-block"></div>
   </div>
  </div>
 
+<hr class="syllabus">
+
+Development of the course is supported by a grant to Macalester College from the Howard Hughes Medical Institute.  The Mosaic Project is supported by the US National Science Foundation (DUE-0920350).
 
 
 
-
-Just to see if different pages have different discussion threads.
-
-
-
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'dcf2014'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
