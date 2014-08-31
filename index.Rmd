@@ -21,7 +21,7 @@ Assignment <- function(name="Assignment-One.html") {
   return(I(paste(prename, name, sep="/")))
 }
 Drill <- function(name="Week-1.html") {
-  prename <- "http:://dtkaplan.github.io/DCF-2014/Drill"
+  prename <- "http://dtkaplan.github.io/DCF-2014/Drill"
   return(I(paste(prename, name, sep="/")))
 }
 ````
