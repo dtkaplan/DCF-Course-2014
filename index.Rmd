@@ -17,7 +17,11 @@ Notes <- function(topic,name="DraftNarrative.html") {
   return(I(paste( prename, topic, name, sep="/")))
 } 
 Assignment <- function(name="Assignment-One.html") {
-  prename <- "http://dtkaplan.github.io/DCF-2014/Assignments/"
+  prename <- "http://dtkaplan.github.io/DCF-2014/Assignments"
+  return(I(paste(prename, name, sep="/")))
+}
+Drill <- function(name="Week-1.html") {
+  prename <- "http:://dtkaplan.github.io/DCF-2014/Drill"
   return(I(paste(prename, name, sep="/")))
 }
 ````
@@ -49,7 +53,7 @@ Infrastructure for computing with data.
     [A Quick Start with R](`r Notes("Rbasics","Rbasics.html")`),
     [Paths and File Types](`r Notes("DataOrganization", "FileTypes.html")`)
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-1.html")`)
   
 **In Class and After**    
   
@@ -68,7 +72,7 @@ Data summaries and graphics.
     [BasicGraphics](`r Notes("GraphicsConstructDeconstruct")`),
     [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-2.html")`)
   
 **In Class and After**    
   
@@ -91,7 +95,7 @@ Data Verbs
     [Tidying Data](TBA),
     [Graphics: Facets and Layers](TBA)  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-3.html")`)
   
 **In Class and After**    
   
@@ -108,7 +112,7 @@ Data BackStory
 
 * Notes:  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-4.html")`)
   
 **In Class and After**    
   
@@ -126,7 +130,7 @@ Stats
 * Notes: 
  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-5.html")`)
   
 **In Class and After**    
   
@@ -149,7 +153,7 @@ Working with many variables
 * Notes: 
  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-6.html")`)
   
 **In Class and After**    
   
@@ -165,7 +169,7 @@ Cleaning and Scraping
 * Notes: 
  
 
-* [Weekly Drill]()
+* [Weekly Drill](`r Drill("Week-7.html")`)
   
 **In Class and After**    
   
