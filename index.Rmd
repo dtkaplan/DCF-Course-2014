@@ -44,6 +44,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   <h4>Resources</h4>
   
 * [Weekly Goals](Background/WeeklyGoals.html)
+* **HELP!** Available each evening with the HHMI Stats Fellows, location TBA. Sunday through Thursday 7:00-9:30pm.
   
 * Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
@@ -67,7 +68,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   
 **In Class and After**    
   
-[Assignment 1](`r Assignment("Assignment-One")`) due Fri. Sept. 20
+[Assignment 1](`r Assignment("Assignment-One")`) due Fri. Sept. 20. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19069)
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
@@ -87,7 +88,7 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
   
 **In Class and After**    
   
-[Assignment 2](`r Assignment("Assignment-Two")`) 
+[Assignment 2](`r Assignment("Assignment-Two")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19070)
 
    </div>
    <div class="clearfix visible-md-block"></div>
@@ -111,7 +112,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
   
 **In Class and After**    
   
-[Assignment 3](`r Assignment("Assignment-Three")`) 
+[Assignment 3](`r Assignment("Assignment-Three")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19072)
 
    </div>
    <div class="clearfix visible-sm-block"></div>
@@ -129,7 +130,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
   
 **In Class and After**    
   
-[Assignment 4](`r Assignment("Assignment-Four")`) 
+[Assignment 4](`r Assignment("Assignment-Four")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19073)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
@@ -148,7 +149,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
   
 **In Class and After**    
   
-[Assignment 5](`r Assignment("Assignment-Five")`) 
+[Assignment 5](`r Assignment("Assignment-Five")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
 
  
    </div>
@@ -172,7 +173,7 @@ Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#we
   
 **In Class and After**    
   
-[Assignment 6](`r Assignment("Assignment-Six")`) 
+[Assignment 6](`r Assignment("Assignment-Six")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
@@ -189,7 +190,7 @@ Cleaning and Scraping. [Goals for the Week](Background/WeeklyGoals.html#week-7)
   
 **In Class and After**    
   
-[Assignment 7](`r Assignment("Assignment-Seven")`)  
+[Assignment 7](`r Assignment("Assignment-Seven")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19076)
    
    </div>
    <div class="clearfix visible-sm-block"></div>
