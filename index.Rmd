@@ -56,6 +56,7 @@ Infrastructure for computing with data.
 * Videos: Logging in to the RStudio server [I](https://www.youtube.com/watch?v=3Y_i3PxIKfg&feature=youtu.be) & [II](https://www.youtube.com/watch?v=cr5KR4wmb2U&feature=youtu.be).  R/Markdown [I](http://youtu.be/w4hLT7WyjnM) & [II](http://youtu.be/MdxNFiXm1qE).
 
 * [Weekly Drill](`r Drill("Week-1.html")`)
+* [Weekly discussion posts](Week-1-Discussion.html)
   
 **In Class and After**    
   
@@ -75,6 +76,7 @@ Data summaries and graphics.
     [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
 
 * [Weekly Drill](`r Drill("Week-2.html")`)
+* [Weekly discussion posts](Week-2-Discussion.html)
   
 **In Class and After**    
   
@@ -98,6 +100,7 @@ Data Verbs
     [Graphics: Facets and Layers](TBA)  
 
 * [Weekly Drill](`r Drill("Week-3.html")`)
+* [Weekly discussion posts](Week-3-Discussion.html)
   
 **In Class and After**    
   
@@ -115,6 +118,7 @@ Data BackStory
 * Notes:  
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
+* [Weekly discussion posts](Week-4-Discussion.html)
   
 **In Class and After**    
   
@@ -133,6 +137,7 @@ Stats
  
 
 * [Weekly Drill](`r Drill("Week-5.html")`)
+* [Weekly discussion posts](Week-5-Discussion.html)
   
 **In Class and After**    
   
@@ -156,6 +161,7 @@ Working with many variables
  
 
 * [Weekly Drill](`r Drill("Week-6.html")`)
+* [Weekly discussion posts](Week-6-Discussion.html)
   
 **In Class and After**    
   
@@ -172,6 +178,7 @@ Cleaning and Scraping
  
 
 * [Weekly Drill](`r Drill("Week-7.html")`)
+* [Weekly discussion posts](Week-7-Discussion.html)
   
 **In Class and After**    
   
