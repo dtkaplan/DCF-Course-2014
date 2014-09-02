@@ -1,0 +1,62 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: no
+---
+
+# COMP 110 - Course Policies and Structure
+
+&nbsp; <!-- to make room for the title.  Fix this in CSS or with a <div>
+
+&nbsp;
+
+### Daniel Kaplan, Fall 2014, Macalester College
+
+
+When you have finished reading this document, post "done" under your name on the discussion forum at the bottom of this page.  Feel free also to ask questions or comment on these policies.
+
+## Basic Facts
+
+* This is a one-credit course, that is, a quarter of the credit given for the typical Macalester course.
+* The class will meet for seven sessions, each 90 minutes long, on Wednesday nights.
+* The meetings won't necessarily be on consecutive Wednesdays.  The last meeting will be no less than three weeks before the end of the semester, so that you can be all done before the end-of-semester craziness erupts.
+
+## Policies
+
+### The Instructor's Obligations
+
+* There are no pre-requisites for this course.  You do not need to have any experience in technical computing.  The only mathematics strictly required is at the level of simple ratios, e.g. to get *per capita* GDP, divide a country's GDP by its population.      
+    If, as the semester unfolds, you come to conclude that this principle is not being honored, please talk to the instructor about this.  It really is our goal to avoid pre-requisites and to design the course accordingly.  But it can be hard to know what to expect for general knowledge.
+    Keep in mind that a few of the students in the course may have extensive technical computing backgrounds, e.g. Computer Science majors and minors, Internet entrepreneurs, etc.  You **will not be competing** with these students, so don't be intimidated if you have no such experience.  Instead, think of the experienced students as a resource you can make use of.
+* Examples are drawn from a range of disciplines.  There will be plenty of examples that require only the sort of broad, general knowledge expected of a college student.  You don't need to be experienced in any particular discipline.  Nonetheless, the examples will attempt to use correct nomenclature, so you may incidentally be learning some new words. Don't be shy about asking, for instance, what a "Direct Recover Group" is. (It's an official classification of medical treatments used for health-insurance reimbursement.) 
+* This being a 1-credit course, it's important that the work for the course be commensurate. You are expected to spend about 5 hours per week (including the 90-minutes of in-class time) on the course.  If you find yourself spending much more than this, something is wrong and we need to fix it.  So come talk to the instructor. (Where does the 5 hours come from?  A reasonable expectation is that a full-time student --- 16 credit hours --- will work at least the standard 40-hour workweek.  That means that each credit hour corresponds to $40/16 = 2.5 hours per week.  This course meets for only half the semester.  You'll work 5 hours when the course is on, and 0 hours when the course is off, for an average of 2.5 per week.)
+* Working in small groups is encouraged.  This is not meant to save labor, but to let you help each other to learn.  If you spend more than 30 minutes working closely with another participant on an assignment, list honestly to total amount of time you spent working in the group and the names of the people involved.  There's no penalty for working together, but rote copying of other's work is not acceptable: be a [scholar](http://en.wikipedia.org/wiki/Scholarly_method), not a [scribe](http://en.wikipedia.org/wiki/Scribe).
+* There will be a 30-minute final exam at the last class meeting.  This will account for about one-third of your grade.  The other two-thirds will be based on participation and fulling the weekly requirements, including making discussion posts. 
+
+
+### Your Obligations
+
+* You are *required* to come to each class session.  You can leave whenever you want, or show up late.  (You'll understand why this when you read the next section.) 
+* Readings are to be done **before** the corresponding class meeting. You must also do the associated drill questions (which are about the readings) and make your weekly [two required discussion posts](../Week-1-Discussion.html) **before** class.  You are welcome to review and revise the discussion posts or drill questions whenever you want.
+* At each weekly class meeting you will be given an assignment to write and hand in.  This must be handed in **before the following** class meeting.
+* The course is designed to help you master the language and concepts of handling and presenting data.  Most of you will find it sensible to express these in terms of computer commands, and everyone should reach a basic level of proficiency in using the computer.  Given a choice between a student who can write computer instructions efficiently, and a student who has mastered the terminology and concepts of data, I'd prefer the latter.  Ideally, the large majority of students will accomplish both. 
+
+
+## Structure of the Course
+
+* We will meet for 90-minutes for each of seven sessions.
+* The class meeting time is intended for small-group work, helping individuals, answering questions, and so on.  There will be **little or no lecture**; a "flipped" style course.
+* To help the flipped style work, you should do the short readings and drill problems **before** the corresponding class session.  That way you will know what questions you want to ask and you'll be prepared to do the in-class work.
+* I have attempted to arrange the work for the class in an "inverted pyramid" style.  You'll get the essentials with relatively little work (I hope!).  You can use the balance, if any, of your weekly time budget to go into more depth, explore some supplemental topics, etc.  **Do not obsess about completing every single item.** Stick to the time budget.
+
+
+## Expecting the Unexpected
+
+There may well be times during the semester when illness or emergency or scheduling conflict prevents you from meeting one of the attendance requirements or hand-in deadlines.  Sensible exceptions will be made to accomodate such situations. And, of course, we will follow all relevant College policies regarding accommodation of qualified disabilities and other situations.
+
+
+```{r child="../CSS/DisqusTemplate.Rmd"}
+```
+

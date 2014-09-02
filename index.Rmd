@@ -37,14 +37,22 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 <div class="container">
  <div class="row">
   <div class="col-sm-6 col-md-4 col-lg-3">
+  <h4>READ THESE PLEASE</h4>
+
+* [Course Policies and Structure](Background/Structure.html)
+  
   <h4>Resources</h4>
   
-Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
+* [Week Goals](Background/WeeklyGoals.html#week-2)
+  
+* Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
+  
+  
 <h4 title="Wed. 11 Sept." class="this-week">Week 1</h4> 
 
-Infrastructure for computing with data.
+Infrastructure for computing with data. [Goals for the week.](Background/WeeklyGoals.html#week-1)
 
 **Before Class**   
 
@@ -56,7 +64,7 @@ Infrastructure for computing with data.
 * Videos: Logging in to the RStudio server [I](https://www.youtube.com/watch?v=3Y_i3PxIKfg&feature=youtu.be) & [II](https://www.youtube.com/watch?v=cr5KR4wmb2U&feature=youtu.be).  R/Markdown [I](http://youtu.be/w4hLT7WyjnM) & [II](http://youtu.be/MdxNFiXm1qE).
 
 * [Weekly Drill](`r Drill("Week-1.html")`)
-* [Weekly discussion posts](Week-1-Discussion.html)
+* [Weekly Discussion Posts](Week-1-Discussion.html)
   
 **In Class and After**    
   
@@ -65,7 +73,7 @@ Infrastructure for computing with data.
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4 title="Wed. 18 Sept.">Week 2</h4>
-Data summaries and graphics.
+Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#week-2)
    
 **Before Class**   
 
@@ -76,7 +84,7 @@ Data summaries and graphics.
     [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
 
 * [Weekly Drill](`r Drill("Week-2.html")`)
-* [Weekly discussion posts](Week-2-Discussion.html)
+* [Weekly Discussion Posts](Week-2-Discussion.html)
   
 **In Class and After**    
   
@@ -90,7 +98,7 @@ Data summaries and graphics.
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 3</h4>
 
-Data Verbs  
+Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 
 **Before Class**   
 
@@ -100,7 +108,7 @@ Data Verbs
     [Graphics: Facets and Layers](TBA)  
 
 * [Weekly Drill](`r Drill("Week-3.html")`)
-* [Weekly discussion posts](Week-3-Discussion.html)
+* [Weekly Discussion Posts](Week-3-Discussion.html)
   
 **In Class and After**    
   
@@ -111,14 +119,14 @@ Data Verbs
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 4</h4>
-Data BackStory
+Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
 * Notes:  
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
-* [Weekly discussion posts](Week-4-Discussion.html)
+* [Weekly Discussion Posts](Week-4-Discussion.html)
   
 **In Class and After**    
   
@@ -128,7 +136,7 @@ Data BackStory
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 5</h4>
    
-Stats
+Stats and Properties of Cases Collectively. [Goals for the Week](Background/WeeklyGoals.html#week-5)
 
    
 **Before Class**   
@@ -137,7 +145,7 @@ Stats
  
 
 * [Weekly Drill](`r Drill("Week-5.html")`)
-* [Weekly discussion posts](Week-5-Discussion.html)
+* [Weekly Discussion Posts](Week-5-Discussion.html)
   
 **In Class and After**    
   
@@ -153,7 +161,7 @@ Stats
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 6</h4>
 
-Working with many variables
+Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#week-6)
    
 **Before Class**   
 
@@ -161,7 +169,7 @@ Working with many variables
  
 
 * [Weekly Drill](`r Drill("Week-6.html")`)
-* [Weekly discussion posts](Week-6-Discussion.html)
+* [Weekly Discussion Posts](Week-6-Discussion.html)
   
 **In Class and After**    
   
@@ -170,7 +178,7 @@ Working with many variables
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 7</h4>
-Cleaning and Scraping
+Cleaning and Scraping. [Goals for the Week](Background/WeeklyGoals.html#week-7)
 
 **Before Class**   
 
@@ -178,7 +186,7 @@ Cleaning and Scraping
  
 
 * [Weekly Drill](`r Drill("Week-7.html")`)
-* [Weekly discussion posts](Week-7-Discussion.html)
+* [Weekly Discussion Posts](Week-7-Discussion.html)
   
 **In Class and After**    
   

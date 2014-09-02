@@ -1,0 +1,31 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: no
+---
+
+# COMP 110 - Weekly Goals
+
+&nbsp; <!-- to make room for the title.  Fix this in CSS or with a <div>
+
+&nbsp;
+
+This document is still under construction!!
+
+## Week 1
+
+At the end of this week, you should be able to:
+
+* Log in to the RStudio server (or use a desktop version).
+* Create an RMarkdown source file with simple contents.
+* Hand in your RMarkdown work.
+* Understand what a data table is.
+* Be aware of the meaning of the different components of a URL or file name.
+
+
+## Week 2
+
+Building on the Week 1 goals, at the end of Week 2, you should be able to:
+
