@@ -1,0 +1,15 @@
+You are **required** to make at least two intelligent posts to this forum **before** the class meets.  Some appropriate topics for posts:
+
+* Questions you have about the readings of the sort you would like brought up in class.
+* Responses to other participant's questions.
+* Comments about connections or contradictions among different topics in the course.
+* Reports from the news or your main field of interest about data-oriented work. (Criterion: You should provide a link to the raw data file, or something similar.  If nothing is available, move on.)
+
+Please note that the individual readings also have a place for comment and discussion. Use those to comment or correct or suggest changes for that reading. These reading-specific corrections or comments are optional, and don't count toward the two posts you should make on this page.  Of course, you are welcome to turn your comment on a reading page into a discussion or comment on this page.
+
+Each week has a different discussion forum.  Here are the links:
+
+[Week 1](Week-1-Discussion.html), [Week 2](Week-2-Discussion.html), [Week 3](Week-3-Discussion.html), [Week 4](Week-4-Discussion.html), [Week 5](Week-5-Discussion.html), [Week 6](Week-6-Discussion.html), [Week 7](Week-7-Discussion.html), 
+
+```{r child="CSS/DisqusTemplate.Rmd"}
+```

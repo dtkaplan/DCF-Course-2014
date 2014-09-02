@@ -1,0 +1,9 @@
+---
+title: "Week 7 Discussion"
+output: html_document
+---
+
+This is the discussion forum for Week **7** of the Data & Computing Fundamentals.
+
+```{r child="discussion-template.Rmd"}
+```
