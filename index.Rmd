@@ -39,18 +39,17 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   <div class="col-sm-6 col-md-4 col-lg-3">
   <h4>READ THESE PLEASE</h4>
 
-* [Course Policies and Structure](Background/StructureAndPolicies.html)
+* [Course Policies and Structure](Background/Structure.html)
   
   <h4>Resources</h4>
   
-* [Week Goals](Background/WeeklyGoals.html#week-2)
+* [Weekly Goals](Background/WeeklyGoals.html)
   
 * Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
-  
-  
-<h4 title="Wed. 11 Sept." class="this-week">Week 1</h4> 
+
+<h4 title="Wed. 10 Sept." class="this-week">Week 1</h4> 
 
 Infrastructure for computing with data. [Goals for the week.](Background/WeeklyGoals.html#week-1)
 
@@ -61,7 +60,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
     [A Quick Start with R](`r Notes("Rbasics","Rbasics.html")`),
     [Paths and File Types](`r Notes("DataOrganization", "FileTypes.html")`)
     
-* Videos: Logging in to the RStudio server [I](https://www.youtube.com/watch?v=3Y_i3PxIKfg&feature=youtu.be) & [II](https://www.youtube.com/watch?v=cr5KR4wmb2U&feature=youtu.be).  R/Markdown [I](http://youtu.be/w4hLT7WyjnM) & [II](http://youtu.be/MdxNFiXm1qE).
+* Videos (optional): Logging in to the RStudio server [I](https://www.youtube.com/watch?v=3Y_i3PxIKfg&feature=youtu.be) & [II](https://www.youtube.com/watch?v=cr5KR4wmb2U&feature=youtu.be).  R/Markdown [I](http://youtu.be/w4hLT7WyjnM) & [II](http://youtu.be/MdxNFiXm1qE).
 
 * [Weekly Drill](`r Drill("Week-1.html")`)
 * [Weekly Discussion Posts](Week-1-Discussion.html)
@@ -72,7 +71,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Wed. 18 Sept.">Week 2</h4>
+   <h4 title="Wed. 17 Sept.">Week 2</h4>
 Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#week-2)
    
 **Before Class**   
