@@ -1,0 +1,11 @@
+---
+title: "Notes for class on Week 1"
+author: "Daniel Kaplan"
+date: "September 3, 2014"
+output: html_document
+---
+
+Start with this example about big data and what it can be used for:
+<http://www.nytimes.com/2014/09/02/science/sharing-taxis-nyc-mathematics.html>
+
+A team of mathematicians and engineers has calculated that if taxi riders were willing to share a cab, New York City could reduce the current fleet of 13,500 taxis up to 40 percent.
