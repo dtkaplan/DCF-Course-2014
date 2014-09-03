@@ -30,5 +30,5 @@ options( width=60,
          # Printing tables
          xtable.type="html",
          xtable.include.rownames=FALSE)
-require(DCFdevel)
+require(DCF)
 ```
