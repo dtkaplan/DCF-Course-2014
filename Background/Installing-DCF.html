@@ -54,43 +54,16 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
-<div id="comp-110---weekly-goals" class="section level1">
-<h1>COMP 110 - Weekly Goals</h1>
-  &lt;!– to make room for the title. Fix this in CSS or with a
-<div>
-
+<div id="comp-110---installing-the-dcf-package" class="section level1">
+<h1>COMP 110 - Installing the DCF Package</h1>
 <p> </p>
-<p>This document is still under construction!!</p>
-<div id="week-1" class="section level2">
-<h2>Week 1</h2>
-<p>At the end of this week, you should be able to:</p>
-<ul>
-<li>Log in to the RStudio server (or use a desktop version).</li>
-<li>Create an RMarkdown source file with simple contents.</li>
-<li>Hand in your RMarkdown work.</li>
-<li>Understand what a data table is.</li>
-<li>Be aware of the meaning of the different components of a URL or file name.</li>
-</ul>
-</div>
-<div id="week-2" class="section level2">
-<h2>Week 2</h2>
-<p>Building on the Week 1 goals, at the end of Week 2, you should be able to:</p>
-<ul>
-<li>Be able to relate glyphs and frames to data. More specifically, seeing a simple scientific graph, be able to sketch in the form of the data table that underlies the graph.</li>
-<li>Use the helper functions <code>mPlot()</code>, and <code>mBar()</code> to generate graphics interactively by assigning variables to graphicaal attributes.</li>
-<li>Create an Rmd document using the template.</li>
-<li>Add R calculations to an Rmd document using the “chunk” notation.</li>
-<li>Use the <code>group_by()</code> and <code>summarise()</code> data verbs to calculate all-cases and groupwise summaries of data.</li>
-<li>Be able to chain operations together to produce novel, more complex operations.</li>
-<li>Distinguish between assignment (<code>&lt;-</code>) and chaining (<code>%&gt;%</code>).</li>
-<li>Use <code>str()</code>, <code>names()</code>, <code>nrow()</code>, and <code>head()</code> to get brief displays of data tables, and be able to interpret the output of those functions.</li>
-<li>Be able to use and understand the use of functions such as <code>mean()</code>, <code>sum()</code>, <code>n()</code> as they are involved in <code>summarise()</code>. This includes constructing appropriate variable names in the output of <code>summarise()</code> and using the named variable syntax (<code>=</code>).</li>
-<li>When getting <code>NA</code> as the output of a functions such as <code>mean()</code>, using the <code>na.rm=TRUE</code> optional argument.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
-<li>Recognize that <code>NA</code>, <code>NULL</code>, and <code>NaN</code> mean different, albeit related, things.</li>
-</ul>
-</div>
-<div id="week-3" class="section level2">
-<h2>Week 3</h2>
+<p> </p>
+<p>R provides a standard way to distribute additional data and software: the package. A package named <code>DCF</code> has been created for the Data &amp; Computing Fundamentals course. You will need to install this package on your R/RStudio system to use its resources.</p>
+<p>To install the package, execute these three commands in the console of your RStudio system.</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+install.packages(&quot;mosaic&quot;)
+devtools::install_github(&quot;dtkaplan/DCF&quot;)</code></pre>
+<p>You only need to do this once, but if you are using more than one RStudio system (e.g. the cloud server and a desktop version) you’ll have to do this on each system.</p>
 <p>Please use the comment system to make suggestions, point out errors, or to discuss the topic.</p>
 <div id="disqus_thread">
 
@@ -110,13 +83,6 @@ var disqus_shortname = 'dcf2014'; // required: replace example with your forum s
 Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
 <p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
-</div>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>I hate that you have to use <code>na.rm=TRUE</code> so often. In my view, this is what the default should be. Unfortunately, it’s hard to create a new default value, so we’re stuck with specifying <code>na.rm=TRUE</code> each time we use the functions.<a href="#fnref1">↩</a></p></li>
-</ol>
 </div>
 
 

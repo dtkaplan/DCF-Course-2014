@@ -1,0 +1,30 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: no
+---
+
+# COMP 110 - Installing the DCF Package
+
+&nbsp;
+
+&nbsp;
+
+
+R provides a standard way to distribute additional data and software: the package.  A package named `DCF` has been created for the Data & Computing Fundamentals course.  You will need to install this package on your R/RStudio system to use its resources.
+
+To install the package, execute these three commands in the console of your RStudio system.
+
+```{r eval=FALSE}
+install.packages("devtools")
+install.packages("mosaic")
+devtools::install_github("dtkaplan/DCF")
+```
+
+You only need to do this once, but if you are using more than one RStudio system (e.g. the cloud server and a desktop version) you'll have to do this on each system.
+
+```{r child="../CSS/DisqusTemplate.Rmd"}
+```
+

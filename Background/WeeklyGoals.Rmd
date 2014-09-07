@@ -29,6 +29,22 @@ At the end of this week, you should be able to:
 
 Building on the Week 1 goals, at the end of Week 2, you should be able to:
 
+* Be able to relate glyphs and frames to data.  More specifically, seeing a simple scientific graph, be able to sketch in the form of the data table that underlies the graph.
+* Use the helper functions `mPlot()`, and `mBar()` to generate graphics interactively by assigning variables to graphicaal attributes.
+* Create an Rmd document using the template.
+* Add R calculations to an Rmd document using the "chunk" notation.
+* Use the `group_by()` and `summarise()` data verbs to calculate all-cases and groupwise summaries of data.
+* Be able to chain operations together to produce novel, more complex operations.
+* Distinguish between assignment (`<-`) and chaining (`%>%`).
+* Use `str()`, `names()`, `nrow()`, and `head()` to get brief displays of data tables, and be able to interpret the output of those functions.
+* Be able to use and understand the use of functions such as `mean()`, `sum()`, `n()` as they are involved in `summarise()`.  This includes constructing appropriate variable names in the output of `summarise()` and using the named variable syntax (`=`).
+* When getting `NA` as the output of a functions such as `mean()`, using the `na.rm=TRUE` optional argument.^[I hate that you have to use `na.rm=TRUE` so often.  In my view, this is what the default should be.  Unfortunately, it's hard to create a new default value, so we're stuck with specifying `na.rm=TRUE` each time we use the functions.]
+* Recognize that `NA`, `NULL`, and `NaN` mean different, albeit related, things. 
+
+## Week 3
+
+
+
 
 
 

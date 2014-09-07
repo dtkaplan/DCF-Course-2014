@@ -45,6 +45,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   
 * [Weekly Goals](Background/WeeklyGoals.html)
 * [Macalester RStudio cloud server](http://www.macalester.edu/rstudio)
+* [Installing the DCF package](Background/Installing-DCF.html).
 * **HELP!** Available each evening with the HHMI Stats Fellows, location TBA. Sunday through Thursday 7:00-9:30pm.
   
 * Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
@@ -124,7 +125,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes:  
+* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`)
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)
