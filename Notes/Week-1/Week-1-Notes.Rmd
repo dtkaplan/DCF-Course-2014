@@ -9,3 +9,29 @@ Start with this example about big data and what it can be used for:
 <http://www.nytimes.com/2014/09/02/science/sharing-taxis-nyc-mathematics.html>
 
 A team of mathematicians and engineers has calculated that if taxi riders were willing to share a cab, New York City could reduce the current fleet of 13,500 taxis up to 40 percent.
+
+## RStudio
+
+Introduce R and RStudio.  Editing Rmd files.  
+
+Walk through the whole process including handing in the file.  
+
+* Publish on RPubs
+* Upload to Moodle
+
+## Data Entry Problem
+
+Give out the course reviews from 155.  Split people into groups of 4.  Ask them to figure out a plan for organizing the data, describe it in an Rmd document, and enter the data into a Google spreadsheet.  Their purpose: be able to see if 
+
+* individuals differ in their typical response and what the spread is between individuals.
+* answers to individual questions differ?
+* answers are systematically different for people who felt they liked the course or will use the material.
+
+We'll plan how to answer these questions this week, then revise and implement the plan in future weeks.
+
+Create readable google spreadsheets <https://g.co/oldsheets>
+
+Editing links: [edit Group-1](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&usp=sharing), [edit Group-2](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&usp=sharing)
+
+fetchGoogle links: [read Group-1](https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&single=true&gid=0&output=csv), [read Group-2](https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&single=true&gid=0&output=csv)
+

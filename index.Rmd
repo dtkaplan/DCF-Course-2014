@@ -48,7 +48,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 * [Installing the DCF package](Background/Installing-DCF.html).
 * **HELP!** Available each evening with the HHMI Stats Fellows, location TBA. Sunday through Thursday 7:00-9:30pm.
   
-* Videos from the Amherst/5-College series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
+* Videos from the Amherst/5-College R/RStudio series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
 
@@ -81,7 +81,7 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
 
 * Notes: 
     [R Commands](`r Notes("Rbasics")`), 
-    [Data Verbs](`r Notes("BasicDataCommands")`),
+    [Data Verbs](`r Notes("BasicDataCommands")`) & [Join](`r Notes("BasicDataCommands", "Join.html")`),
     [BasicGraphics](`r Notes("GraphicsConstructDeconstruct")`),
     [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
 
