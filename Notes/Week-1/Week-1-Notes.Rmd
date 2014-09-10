@@ -11,11 +11,31 @@ output:
 
 ## Orientation to Class Resources
 
-* Most important: [DCF Homepage](http://dtkaplan.github.io/DCF-Course-2014/).  Bookmark this page so you can get to it easily.
+* R and RStudio. 
+    R does the computations.  RStudio provides an interface to R that makes it easier to document your work, to access many of the features of R, and other things.
+    * Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
+    * Installing on your own computer.  You need both of these:
+        * [R software](http://cran.rstudio.com/)
+        * [RStudio desktop software](http://www.rstudio.com/products/RStudio/#Desk)
+
+* [DCF Homepage](http://dtkaplan.github.io/DCF-Course-2014/).  Bookmark this page so you can get to it easily.
 
 * The FAQ for the course: <http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html>
 
-* Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
+## The conceit of this course
+
+A very large part of the use and presentation of data draws on a small set of concepts and techniques that are not difficult individually and that can be taught individually.  The complexity of data use and presentation comes from combining these concepts and techniques in various ways to achieve our specific purposes. 
+
+We're going to start today with the infrastructure for these techniques:
+
+* the basic structure of data
+* commanding the computer to handle data and present the story we want to tell, usually a combination of narration and graphic summary.  (There's also modeling, but that's more complicated and won't play a big role in this course.)
+
+In coming weeks, we'll deal with the relationship between data and graphical presentations, the proper form of data to make a graphic (or a model), and how to transfigure the data we have into the form needed for a graphic.  We'll also talk about some widely used forms for graphic, to give you some ideas for how you might want to present your own data to achieve your own purpose.
+
+There will be some difficulties --- it's not so easy to instruct a computer to do the right thing.  But we will try to adopt a work-flow and notation that helps to reduce the inevitable problems.
+
+The basic problem is lack of instantaneous feedback of the sort given by a word processor or web browser.  This happens because a (potentially complicated) computer command can't be evaluated until it's complete .
 
 ## Some examples of contemporary data
 
