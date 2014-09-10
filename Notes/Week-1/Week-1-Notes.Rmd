@@ -1,9 +1,9 @@
 ---
 output:
-  pdf_document: default
   html_document:
     css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
     fig_caption: yes
+  pdf_document: default
 ---
 
 
@@ -17,6 +17,12 @@ output:
     * Installing on your own computer.  You need both of these:
         * [R software](http://cran.rstudio.com/)
         * [RStudio desktop software](http://www.rstudio.com/products/RStudio/#Desk)
+
+* Packages you will need:
+
+    * `yaml` & `devtools` through regular installation in RStudio
+    * `devtools::install_github( "rstudio/rmarkdown" )`
+    * Not today, but soon: `devtools::install_github( "dtkaplan/DCFdevel" )`
 
 * [DCF Homepage](http://dtkaplan.github.io/DCF-Course-2014/).  Bookmark this page so you can get to it easily.
 

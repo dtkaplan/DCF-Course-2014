@@ -48,6 +48,8 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 * [Macalester RStudio cloud server](http://www.macalester.edu/rstudio)
 * [Installing the DCF package](Background/Installing-DCF.html).
 * **HELP!** Available each evening with the HHMI Stats Fellows, location TBA. Sunday through Thursday 7:00-9:30pm.
+* Erik Anderson <ande7564@umn.edu>
+* Danny Kaplan <kaplan@macalester.edu>
   
 * Videos from the Amherst/5-College R/RStudio series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
