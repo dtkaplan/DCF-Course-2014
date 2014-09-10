@@ -71,7 +71,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   
 **In Class and After** 
 
-[Notes from Class](Notes/Week-1-Notes.html)
+[Notes from Class](Notes/Week-1/Week-1-Notes.html)
   
 [Assignment 1](`r Assignment("Assignment-One")`) due Fri. Sept. 20. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19069)
   </div>
