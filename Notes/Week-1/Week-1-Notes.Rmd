@@ -1,37 +1,123 @@
 ---
-title: "Notes for class on Week 1"
-author: "Daniel Kaplan"
-date: "September 3, 2014"
-output: html_document
+output:
+  pdf_document: default
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
 ---
 
-Start with this example about big data and what it can be used for:
-<http://www.nytimes.com/2014/09/02/science/sharing-taxis-nyc-mathematics.html>
 
-A team of mathematicians and engineers has calculated that if taxi riders were willing to share a cab, New York City could reduce the current fleet of 13,500 taxis up to 40 percent.
+# Class Notes: Week 1
 
-## RStudio
+## Orientation to Class Resources
 
-Introduce R and RStudio.  Editing Rmd files.  
+* Most important: [DCF Homepage](http://dtkaplan.github.io/DCF-Course-2014/).  Bookmark this page so you can get to it easily.
 
-Walk through the whole process including handing in the file.  
+* The FAQ for the course: <http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html>
 
-* Publish on RPubs
-* Upload to Moodle
+* Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
 
-## Data Entry Problem
+## Some examples of contemporary data
 
-Give out the course reviews from 155.  Split people into groups of 4.  Ask them to figure out a plan for organizing the data, describe it in an Rmd document, and enter the data into a Google spreadsheet.  Their purpose: be able to see if 
+### Taxicabs and the Shared Economy
 
-* individuals differ in their typical response and what the spread is between individuals.
-* answers to individual questions differ?
-* answers are systematically different for people who felt they liked the course or will use the material.
+A team of mathematicians and engineers has calculated that if taxi riders were willing to share a cab, New York City could reduce the current fleet of 13,500 taxis up to 40 percent. [Link to news story](http://www.nytimes.com/2014/09/02/science/sharing-taxis-nyc-mathematics.html) and an [interactive site](http://www.hubcab.org/) with the data.
 
-We'll plan how to answer these questions this week, then revise and implement the plan in future weeks.
+### Medicare Spending
 
-Create readable google spreadsheets <https://g.co/oldsheets>
+Newspaper article [here](http://www.nytimes.com/2013/05/08/business/hospital-billing-varies-wildly-us-data-shows.html)
 
-Editing links: [edit Group-1](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&usp=sharing), [edit Group-2](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&usp=sharing)
+Data available [here](http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/index.html).
 
-fetchGoogle links: [read Group-1](https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&single=true&gid=0&output=csv), [read Group-2](https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&single=true&gid=0&output=csv)
+[DTK notes](file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2014/Notes/MedicareSpending/PriceOfHealth.html)
+
+### Examples from many fields
+
+<pre>
+BabyNames                Names of children as recorded by the US Social
+                         Security Administration.
+CountryCentroids         
+CountryData              Many variables on countries from the CIA factbook,
+                         2014.
+CountryGroups            Membership in Country Groups
+DirectRecoveryGroups     
+MedicareCharges          
+MedicareProviders        
+MigrationFlows           Human Migration between Countries
+Minneapolis2013          Ballots in the 2013 Mayoral election in
+                         Minneapolis
+NCI60                    Gene expression in cancer.
+NCI60cells               Cell Line descriptions in the NCI-60 dataset
+WorldCities              Cities and their populations
+ZipDemography            Demographic information for most US ZIP Codes
+                         (Postal Codes)
+ZipGeography             Geographic information by US Zip Codes (Postal
+                         Codes)
+registeredVoters         A sample of the voter registration list for Wake
+                         County, North Carolina in Fall 2010.
+</pre>
+
+## Infrastructure
+
+### RStudio
+
+* Windows, panes, and tabs in RStudio.
+* R/Markdown  
+    * Opening an Rmd file for editing.
+    * Saving Rmd files
+    * Compiling Rmd to HTML
+* Handing in files
+    * Upload HTML files to Moodle.
+    * Downloading from RStudio server to your desktop so that you can upload them to Moodle.
+
+### Creating an Rmd File 
+
+Create an Rmd file named `Class-1.Rmd`.  Eventually, you will upload your HTML file to Moodle, under [In-class, Week 1](https://moodle.macalester.edu/mod/assign/view.php?id=21352)
+
+Markdown for ...
+
+* Headings, lists, mathematics
+* Links, images
+* R code chunks
+
+TASK: Create an narrative description of your classes this term.  Include links to the Moodle site, links to a relevant Wikipedia (or other) article, and an embedded figure (perhaps from Wikipedia).
+
+## Tidy Data
+
+Basics: Cases, Variables, rows, columns, quantitative, categorical
+
+### Exercises: Put these into tidy form.  
+
+Divide into groups and put your answer to the following in these spreadsheets:[Group-1](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&usp=sharing), [Group-2](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&usp=sharing), [Group-3](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dElIQkh0SWtyaW9aRkdMZVBERHdJNXc#gid=0), [Group-4](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dEYxdEhWZUI1S3NxN2ZaaThXSEtMVWc&usp=sharing), [Group-5](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dDVsLWJaUHV5emFVQlVfSjFrdmFkYXc&usp=sharing), [Group-6](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dFdvNGpFZkNuUHZqd2g2UEVDc0VEZEE&usp=sharing)
+
+Make a separate tab for each table.
+
+#### Height measurements
+
+In the 1880s, Francis Galton started to make a mathematical theory of evolution.  
+
+Here's part of a page from his lab notebook.  Translate it into tidy form.
+
+![A page from Francis Galton's notebook.](galton-notebook.jpg)
+
+
+#### Marital status in the US armed forces
+
+Here's the original, [untidy spreadsheet](https://docs.google.com/spreadsheets/d/1Ow6Cm4z-Z1Yybk3i352msulYCEDOUaOghmo9ALajyHo/edit#gid=1811988794).
+
+## Back to your Week-1 Document
+
+1. Add in answers to the above two questions, along with links to your group's spreadsheet.
+#. Add in answers to the [Week-1 drill problems](http://dtkaplan.github.io/DCF-2014/Drill/Week-1.html)
+
+When done, upload it to Moodle, under [In-class, Week 1](https://moodle.macalester.edu/mod/assign/view.php?id=21352).
+
+
+## The assignment document for next week
+
+Start on [Assignment 1](http://dtkaplan.github.io/DCF-2014/Assignments/Assignment-One).  
+
+* Create an Rmd document named `AssignmentOne-XXX.Rmd` (where `XXX` is your initials).
+* Eventually, by class next week, you'll hand it in on Moodle, [Week-1 Assignment hand in site](https://moodle.macalester.edu/mod/assign/view.php?id=19069).
+
 

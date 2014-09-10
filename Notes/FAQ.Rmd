@@ -1,0 +1,140 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+    toc: no
+---
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+# Data & Computing Fundamentals FAQ
+
+&nbsp;
+
+## Where can I find class resources?
+
+The DCF home page: <http://dtkaplan.github.io/DCF-Course-2014/>
+
+This FAQ: <FAQ.html>
+
+## Assignments & Readings
+
+### Where are the readings listed for each week?
+
+On the course home page, under that week.  They are called "notes" and there are typically several different links to notes on different topics.
+
+### What are "drill exercises"?
+
+These are short questions that you should be able to answer based on your reading of the notes.  They involve little or no computing.
+
+The point of the drill is to help you identify the concepts that you need to learn, and to test whether you have succeeded.
+
+### What are the weekly assignments?
+
+Each week in class, you'll be given a short assignment that involves creation of an Rmd/HTML document and typically some computing about data.
+
+The assignments are posted only one week at a time, so they can be updated based on the class's situation.
+
+### When are they due?
+
+A weekly assignment given at one Wednesday class is due the by the next class.
+
+You should complete the readings and drill exercises **before** the class meets.  Based on the readings, you should make two postings on different subjects in the [Weekly Discussion forum](http://dtkaplan.github.io/DCF-Course-2014/Week-1-Discussion.html).  You are welcome to go back and update things after class, but the initial post should be before the class meeting.
+
+### How do I hand assignments in?
+
+* For the drill problems
+
+    Write brief answers on paper and hand them in at the class meeting.
+
+* For the reading discussion postings 
+
+    Just post them!
+
+* For the weekly assignments
+
+    You will be writing an Rmd document and compiling it to HTML.  It is the HTML file that you will hand in, typically uploading it to Moodle.
+    
+    When you compile your Rmd to HTML, you will give instructions to embed other relevant documents within the HTML.  In particular, you'll embed the Rmd sources themselves.
+
+## Comments
+
+### What are the Disqus Comments for? 
+
+At the end of each reading, etc., is a space for posting comments, replies, etc.  Use these to post corrections, comments, etc. on that particular reading.  You can also post questions about the reading there.  (You can use those same questions or comments for your two weekly postings.)
+
+## The DCF Package
+
+### What is it?
+
+The R community distributes software in the form of "packages."  The DCF package contains data, a bit of course-specific software, and an assignment template in Rmd.
+
+### How do I install it?
+
+The `DCF` package is on a widely used open-source software sharing site called [Github](www.github.com).  You can install it from within the R session.
+
+```{r eval=FALSE}
+devtools::install_github( "dtkaplan/DCFdevel")
+```
+
+Notice that the name in the quoted string is "DCFdevel", but the package is `DCF`.
+
+### How do I update it?
+
+Just install it again.
+
+### Why does the DCF package keep changing?
+
+It's still under development.  This includes both getting things to work right and incorporating new ideas. 
+
+
+
+
+## RStudio Server
+
+### Changing your password
+
+To change your password, from within the RStudio app in your browser, choose TOOLS/SHELL.  A small window will open up with a prompt.  Give this command:
+```
+passwd
+```
+You will be prompted for a new password.  **Don't forget it!**
+
+## Google Spreadsheets
+
+### How do I create Google Spreadsheets? 
+
+If you want to create a spreadsheet that can be exported as CSV, use this link: <https://g.co/oldsheets>
+
+At some point we'll have a good, easy-to-use connection between R and Google Spreadsheets, but for now, reading the CSV directly from Google is the best we have.
+
+## The RPubs Service
+
+### What is it?
+
+A free service that allows you to post HTML files to the web **directly** from within RStudio.  This is convenient for a couple of reasons:
+
+1. You can update your published document at a single stroke and without worrying about overwriting the wrong document.
+2. Posting from RStudio Server is just as easy as posting from the desktop.
+
+### How do I use it?
+
+Set up an account.  See <http://rpubs.com/users/new>.
+
+When you want to publish an HTML file from within RStudio, press the little "publish" button within the HTML viewer.  You'll be prompted to login to RPubs as necessarily.
+
+### How do I find my files?
+
+Go to the address for your account name.  It will look like `http://rpubs.com/[your user name]`.
+
+
+<hr>
+```{r child="../CSS/DisqusTemplate.Rmd"}
+```
+
+
