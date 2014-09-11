@@ -6,21 +6,17 @@ output:
     toc: no
 ---
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
 
 # Data & Computing Fundamentals FAQ
 
-&nbsp;
+
 
 ## Where can I find class resources?
 
-The DCF home page: <http://dtkaplan.github.io/DCF-Course-2014/>
 
-This FAQ: <FAQ.html>
+* The DCF home page: <http://dtkaplan.github.io/DCF-Course-2014/>
+* This FAQ: [link](FAQ.html)
 
 ## Assignments & Readings
 
@@ -92,12 +88,48 @@ Just install it again.
 
 It's still under development.  This includes both getting things to work right and incorporating new ideas. 
 
+## RStudio Desktop
+
+### Why use the desktop version if the server is available?
+
+Desktop is generally faster and more reliable.  (The Server won't work for you if the network is down.)  It also connects well with services such as Dropbox or Google Drive.
+
+The disadvantage: you can't access your desktop from another computer.  This is useful, for instance, when you are working with another person, as in the nightly R help sessions.
+
+### What packages do I need to install?
+
+This list will evolve over time, but at present, the following commands will do the job:
+
+```{r eval=FALSE}
+install.packages( "devtools" )
+install.packages( "mosaic" )
+install.packages( "yaml" )
+devtools::install_github( "rstudio/rmarkdown" )
+devtools::install_github( "dtkaplan/DCFdevel" )
+```
+
+Just FYI: GitHub is a collaborative document server widely used for open-source software.  Packages that are undergoing rapid development are often served via GitHub.
+
+
+### What if I lose/break my computer with RStudio Desktop?
+
+It is, of course, easy to install RStudio desktop on another computer or to re-install it on a newly fixed (and wiped) computer.  The issue is retaining the files you created in RStudio.
+
+Backing up files is a generic problem, not something related to RStudio in particular.  Services like Dropbox or Google Drive (and others) provide automatic backup.  
+
+If you are using RStudio desktop, consider doing your work in a directory that's automatically backed up.  There's no conflict between Dropbox or Google Drive and RStudio: they compliment one another.  
+
+### Can I move files from RStudio Server to Desktop, or vice versa?
+
+Absolutely.  RStudio Server has an "export" facility that will download a file or directory structure to any computer running the browser.  It also has an import utility for uploading a zip file containing any content you want to put on RStudio Server.
+
+On a human level, it can be confusing to work on the same project both in RStudio Server and in the Desktop.  Consider doing your work on just one of the Server or the Desktop.  If you decide to change at a later date, no problem.
 
 
 
 ## RStudio Server
 
-### Changing your password
+### How do I change my password?
 
 To change your password, from within the RStudio app in your browser, choose TOOLS/SHELL.  A small window will open up with a prompt.  Give this command:
 ```
