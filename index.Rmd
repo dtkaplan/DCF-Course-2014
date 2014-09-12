@@ -55,7 +55,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
 
-<h4 title="Wed. 10 Sept." class="this-week">Week 1</h4> 
+<h4 title="Wed. 10 Sept.">Week 1</h4> 
 
 Infrastructure for computing with data. [Goals for the week.](Background/WeeklyGoals.html#week-1)
 
@@ -79,14 +79,14 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Wed. 17 Sept.">Week 2</h4>
+   <h4 title="Wed. 17 Sept."  class="this-week">Week 2</h4>
 Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#week-2)
    
 **Before Class**   
 
 * Notes: 
     [R Commands](`r Notes("Rbasics")`), 
-    [Data Verbs](`r Notes("BasicDataCommands")`) & [Join](`r Notes("BasicDataCommands", "Join.html")`),
+    [Data Verbs](`r Notes("BasicDataCommands")`),
     [BasicGraphics](`r Notes("GraphicsConstructDeconstruct")`),
     [Glyphs, Frames, and Guides](`r Notes("GraphicsConstructDeconstruct","Glyphs.html")`)  
 
@@ -110,7 +110,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 **Before Class**   
 
 * Notes: 
-    [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`),
+    [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`), & [Join](`r Notes("BasicDataCommands", "Join.html")`),
     [Tidying Data](TBA),
     [Graphics: Facets and Layers](TBA)  
 
