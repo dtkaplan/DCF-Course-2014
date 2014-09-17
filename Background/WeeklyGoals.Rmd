@@ -30,7 +30,7 @@ At the end of this week, you should be able to:
 Building on the Week 1 goals, at the end of Week 2, you should be able to:
 
 * Be able to relate glyphs and frames to data.  More specifically, seeing a simple scientific graph, be able to sketch in the form of the data table that underlies the graph.
-* Use the helper functions `mPlot()`, and `mBar()` to generate graphics interactively by assigning variables to graphicaal attributes.
+* Use the helper functions `mScatter()`, and `mBar()` to generate graphics interactively by assigning variables to graphical attributes.
 * Create an Rmd document using the template.
 * Add R calculations to an Rmd document using the "chunk" notation.
 * Use the `group_by()` and `summarise()` data verbs to calculate all-cases and groupwise summaries of data.

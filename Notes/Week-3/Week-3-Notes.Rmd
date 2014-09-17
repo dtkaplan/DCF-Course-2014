@@ -1,0 +1,18 @@
+
+
+Case studies: Disasters.  Which forms cause the most damage, greatest loss of life, economic loss.
+
+Medicare spending: see the questions at <file:///Users/kaplan/KaplanFiles/DCF-2014/CaseStudies/MedicareSpending/notes.html>
+
+* Groupwise means and sd.
+* Counts using group_by() and n().  (Group by the levels of the variable to be counted, perhaps including another variable for subdivisions.)
+* Converting counts to proportions. (Divide by sum().)
+    ```{r}
+    KidsFeet %>% group_by( biggerfoot,sex ) %>% 
+    summarise(count=n() )
+    ```
+* Graphics with mPlot(), mBar(), mMap()
+
+* Add a layer to a map, perhaps zip-code population with state boundaries.
+
+* Who votes for whom?  Wade county voters: create cross tabs on registration, etc.  Make bar charts to display patterns.
