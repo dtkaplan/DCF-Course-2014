@@ -95,6 +95,8 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
   
 **In Class and After**    
   
+[Notes from Class](Notes/Week-2/Week-2-Notes.html) and [graphics worksheet](http://dtkaplan.github.io/DCF-2014/Exercises/ParsingGraphics/PDF-2013-09-17-DTK-101.pdf)
+
 [Assignment 2](`r Assignment("Assignment-Two")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19070)
 
    </div>

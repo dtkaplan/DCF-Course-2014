@@ -1,0 +1,7 @@
+Scatter plots with error bars based on the 95% CI or standard deviation.
+
+Population in zip codes: average.
+
+Gene expression in NCI 60 for the different types of cancer.
+
+Dynamite plots.

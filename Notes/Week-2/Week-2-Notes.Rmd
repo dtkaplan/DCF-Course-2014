@@ -37,7 +37,8 @@ a. Introduce some software and commands that ...
 
 ### Today's Work
 
-Create an Rmd file, `InClass-2-XXX.Rmd`.  Work through the following topics, putting your answers into the Rmd file.
+1. Discussion on deconstructing graphs and glyphs.  [Link to worksheet](http://dtkaplan.github.io/DCF-2014/Exercises/ParsingGraphics/PDF-2013-09-17-DTK-101.pdf).
+#. Create an Rmd file, `InClass-2-XXX.Rmd`.  Work through the topics under "Software and Commands," putting your answers into the Rmd file. 
 
 ### Software and Commands
 
@@ -144,9 +145,5 @@ Compare the `Minneapolis2013` data table and the data table printed above.
 ### Zip Codes
 
 Make a scatter plot of the `ZipGeography` data.  Use latitude, longitude and time zone to set position and color.  By choosing the right combination, you should be able to construct a plot whose meaning is immediately obvious to anyone familiar with US geography.
-
-## Deconstructing Graphics
-
-See the handout and questions in CVC/Summer2014/Activities/DeconstructingGraphics/
 
 

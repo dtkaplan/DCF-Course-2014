@@ -1,0 +1,38 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+  pdf_document: default
+---
+
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+# Class Notes: Week 4
+
+
+Using `ggplot()` directly.  Layers ...
+
+## Constructing the Chart
+
+Consider three different grammar components of the charts:
+
+1. Frame
+2. Glyphs, known as *geoms* in `ggplot2`.
+3. Facets
+
+There must always be a frame and at least one glyph layer in a (non-empty) chart.
+
+Write down an appropriate `ggplot2` statement for generating each component. Say what aesthetics apply to each layer.  (Any layer can inherit aesthetics from the frame, or can override them.)  Take `TheData` to be a data frame containing relevant variables.  If other dataframes are needed, call them `Data1`, `Data2`, etc.
+
+1. Frame: `ggplot( data = TheData,  ? )`
+#. Layer 1: 
+#. Layer 2:
+#. Layer 3:
+#. Faceting:
+
+Write down an appropriate command to construct the graph (or something like it).  As a reminder, here are a few of the `ggplot2` functions:
+
+`ggplot()`, `geom_point()`, `geom_barchart()`, `geom_blank()`, `geom_boxplot()`, `geom_density()`, `geom_errorbar()`, `geom_polygon()`, `geom_line()`, `geom_path()`, `geom_ribbon()`, `geom_rug()`, `geom_text()`, `scale_y_log10()`, `scale_x_log10()`, `xlab()`, `ylab()`, `ggtitle()`
+
