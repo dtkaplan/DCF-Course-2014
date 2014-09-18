@@ -1,9 +1,9 @@
 ---
 output:
+  pdf_document: default
   html_document:
     css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
     fig_caption: yes
-  pdf_document: default
 ---
 
 ```{r child="../../CSS/DCF-common.Rmd"}
@@ -112,10 +112,10 @@ ggplot(data=VoteResults,
 ```
 
 This graph reflects the following data table (only part of which is shown):
-```{r echo=FALSE,results="asis"}
+```{r echo=FALSE}
 VoteResults %>% 
   arrange( desc(votes) ) %>%
-  head() %>% xtable()
+  head() 
 ```
 
 Compare the `Minneapolis2013` data table and the data table printed above.

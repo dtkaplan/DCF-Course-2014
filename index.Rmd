@@ -47,7 +47,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 * [FAQ](Notes/FAQ.html)
 * [Macalester RStudio cloud server](http://www.macalester.edu/rstudio)
 * [Installing the DCF package](Background/Installing-DCF.html).
-* **HELP!** Available each evening with the HHMI Stats Fellows, location TBA. Sunday through Thursday 7:00-9:30pm.
+* **HELP!** Available each evening with the HHMI Stats Fellows, location Olin-Rice 245. Sunday through Thursday 7:00-9:30pm.
 * Erik Anderson <ande7564@umn.edu>
 * Danny Kaplan <kaplan@macalester.edu>
   
@@ -79,7 +79,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Wed. 17 Sept."  class="this-week">Week 2</h4>
+   <h4 title="Wed. 17 Sept." >Week 2</h4>
 Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#week-2)
    
 **Before Class**   
@@ -95,9 +95,9 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
   
 **In Class and After**    
   
-[Notes from Class](Notes/Week-2/Week-2-Notes.html) and [graphics worksheet](http://dtkaplan.github.io/DCF-2014/Exercises/ParsingGraphics/PDF-2013-09-17-DTK-101.pdf)
+[Notes from Class](Notes/Week-2/Week-2-Notes.html) and [graphics worksheet](http://dtkaplan.github.io/DCF-2014/Exercises/ParsingGraphics/PDF-2014-09-17-DTK-101.pdf)
 
-[Assignment 2](`r Assignment("Assignment-Two")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19070)
+[Assignment 2](`r Assignment("Assignment-Two")`) due 24 Sept. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19070)
 
    </div>
    <div class="clearfix visible-md-block"></div>
@@ -105,7 +105,7 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
 <hr class="syllabus">
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 3</h4>
+   <h4 title="Oct. 1"  class="this-week">Week 3</h4>
 
 Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 
@@ -113,7 +113,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 
 * Notes: 
     [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`), details on a special data verb: [Join](`r Notes("BasicDataCommands", "Join.html")`),
-    [Tidying Data](TBA),
+
     [Graphics: Facets and Layers](TBA)  
 
 * [Weekly Drill](`r Drill("Week-3.html")`)
@@ -121,7 +121,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
   
 **In Class and After**    
   
-[Assignment 3](`r Assignment("Assignment-Three")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19072)
+[Assignment 3](`r Assignment("Assignment-Three")`) due 8 Oct. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19072)
 
    </div>
    <div class="clearfix visible-sm-block"></div>
@@ -132,14 +132,14 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`)
+* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Tidying Data](TBA)
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)
   
 **In Class and After**    
   
-[Assignment 4](`r Assignment("Assignment-Four")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19073)
+[Assignment 4](`r Assignment("Assignment-Four")`) due TBA [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19073)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
@@ -158,7 +158,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
   
 **In Class and After**    
   
-[Assignment 5](`r Assignment("Assignment-Five")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
+[Assignment 5](`r Assignment("Assignment-Five")`) due TBA [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
 
  
    </div>
@@ -182,7 +182,7 @@ Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#we
   
 **In Class and After**    
   
-[Assignment 6](`r Assignment("Assignment-Six")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
+[Assignment 6](`r Assignment("Assignment-Six")`) due TBA. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
