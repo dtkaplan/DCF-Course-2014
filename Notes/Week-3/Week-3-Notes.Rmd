@@ -1,6 +1,28 @@
 
+* Kids names by sex over the years: Abraham, Franklin (like Roosevelt), Jefferson, Winston, Adolf, the ones from Netta.
 
 Case studies: Disasters.  Which forms cause the most damage, greatest loss of life, economic loss.
+
+* Rates in the country data, e.g. miles of road per area, 
+* Fraction alive, cardio, other in NHANES
+
+### Filter
+
+CVC/Summer2014/Activities/Migration.Rmd --- there are all sorts of rank comparisons here involving the maximum, top five, and so on.
+
+Ordway bird seasonality: See <file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2013/Session3/RelationalData.html#/21>    
+* Pick out the 10 most common bird species.  How does their capture differ by month.
+
+Disasters: Make US maps showing, for different types of disasters, where they happen the most.
+
+Pick out the zip codes you would target for:
+
+* lots of elderly.
+* young people and high income.
+
+* Where do the elderly live in the US?  Zip-code data: see <file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2014/Notes/GraphicsBasics/graphics-basics.html#17>
+
+
 
 Medicare spending: see the questions at <file:///Users/kaplan/KaplanFiles/DCF-2014/CaseStudies/MedicareSpending/notes.html>
 
@@ -16,3 +38,15 @@ Medicare spending: see the questions at <file:///Users/kaplan/KaplanFiles/DCF-20
 * Add a layer to a map, perhaps zip-code population with state boundaries.
 
 * Who votes for whom?  Wade county voters: create cross tabs on registration, etc.  Make bar charts to display patterns.
+
+
+## Week 3
+
+EXERCISE:
+
+Find the location of 
+
+* the most northern and most southern city.  The city closest to 
+* the equator.
+
+END OF EXERCISE.

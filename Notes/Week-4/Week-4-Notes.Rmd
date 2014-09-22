@@ -11,6 +11,36 @@ output:
 
 # Class Notes: Week 4
 
+Drill on wide/narrow:  
+* pivot, fold, gather, spread, unite, ...
+* NCI60 --- just the probe data.  Change to narrow format and find the probes with the highest standard deviation of expression across all cell lines.
+
+### Rank
+
+Within each state, pull out the 100 zip codes with the highest minority populations.  Plot these out on a choropleth map of overall minority population.  (Or, maybe, foreign born.)
+
+You're doing the background research for a birdwatching manual.  
+
+* In the bird data, for each month, pull out the 4 highest species.
+* Pull out the species that are in the top 20 every month.  These are the year-round birds.
+* Modify the 4 highest in each-month to exclude the year-round birds.  (This will be an anti-join.
+
+For each country, pull out the two countries that have the strongest bilateral immigration.  Make a network graph of these
+
+### Long and Narrow
+
+Turn the immigration data into narrow, so that you can calculate the pairs that are close to being bilateral.  
+
+Doing a transform on a grouped variable allows you, if you want, to use aggregate quantities for that group.  For instance, the groups of males and females have different mean heights.  Here's how you would calculate the difference of an individual from his or her group's mean.
+
+```{r}
+NHANES <- group_by( NHANES, sex )
+NHANES <- mutate( NHANES, dheight=height-mean(height) )
+summarise( NHANES, sd(dheight) )
+```
+
+
+
 
 Using `ggplot()` directly.  Layers ...
 

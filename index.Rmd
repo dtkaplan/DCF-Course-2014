@@ -114,7 +114,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 * Notes: 
     [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`), details on a special data verb: [Join](`r Notes("BasicDataCommands", "Join.html")`),
 
-    [Graphics: Facets and Layers](TBA)  
+    [Graphics: Facets and Layers](`r Notes("GraphingIntro/BasicCommands.html")`)  
 
 * [Weekly Drill](`r Drill("Week-3.html")`)
 * [Weekly Discussion Posts](Week-3-Discussion.html)
@@ -132,7 +132,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Tidying Data](TBA)
+* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Tidying Data](TBA), [Rank functions](TBA), [Graphing Networks](TBA), [Within group operations]()
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)

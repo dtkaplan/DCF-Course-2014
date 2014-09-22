@@ -38,7 +38,6 @@ Building on the Week 1 goals, at the end of Week 2, you should be able to:
 
 * Construct a graphic with more than one layer of glyphs.
 * Recognize and understand the basic operation and purpose of these data verbs: *filter*, *select*, *mutate*, and *arrange*.
-* Understand how *filter* and *mutate* can, when used in conjunction with *group by*, draw on group-specific properties.
 * Be able to chain multiple operations together to produce novel, more complex operations.
 * Understand the function of the *join* data verb: combining information from two data tables into a single output data table.
 * Recognize that criterion used by *join* for matching cases from the two tables and that a case in input table A may match no cases in B, or one case in B, or multiple cases in B.
@@ -47,7 +46,14 @@ Building on the Week 1 goals, at the end of Week 2, you should be able to:
     * translate a variable to new levels (as in re-coding a categorical variable)
     * augment a data table to add new variables
 
+## Week 4
 
+* Understand how *filter* and *mutate* can, when used in conjunction with *group by*, draw on group-specific properties.
+* Recognize aspects of graphs chosen in order to enhance readability or interpretability.
+    * Order of categorical levels
+    * Logarithmic axes
+    * Discrete colors
+    * Shades, colors, and shapes for "minimal ink"
 
 
 
