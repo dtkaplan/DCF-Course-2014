@@ -8,7 +8,7 @@ Case studies: Disasters.  Which forms cause the most damage, greatest loss of li
 
 ### Filter
 
-CVC/Summer2014/Activities/Migration.Rmd --- there are all sorts of rank comparisons here involving the maximum, top five, and so on.
+WEEK 4 -- CVC/Summer2014/Activities/Migration.Rmd --- there are all sorts of rank comparisons here involving the maximum, top five, and so on.
 
 Ordway bird seasonality: See <file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2013/Session3/RelationalData.html#/21>    
 * Pick out the 10 most common bird species.  How does their capture differ by month.
