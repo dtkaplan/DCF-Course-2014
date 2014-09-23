@@ -132,7 +132,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Tidying Data](TBA), [Rank functions](TBA), [Graphing Networks](TBA), [Within group operations]()
+* Notes:  [Tidying Data](TBA), [Ranks](`r Notes("Rank")`), [Graphing Networks](TBA), [Within group operations](TBA)
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)
@@ -150,7 +150,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
    
 **Before Class**   
 
-* Notes: 
+* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Densities and distributions](`r Notes("Statistics","DraftNarrative.html")`)
  
 
 * [Weekly Drill](`r Drill("Week-5.html")`)
