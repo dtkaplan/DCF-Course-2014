@@ -1,5 +1,88 @@
+---
+output:
+  pdf_document: default
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+---
 
-* Kids names by sex over the years: Abraham, Franklin (like Roosevelt), Jefferson, Winston, Adolf, the ones from Netta.
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+# Class Notes: Week 2
+
+Data transfiguration and graphing exercises:
+
+## Fashions in Naming
+
+Objective: create a graph like the following comparing names that strike you as interesting.
+
+```{r echo=FALSE}
+myNames <- c("Abraham","Franklin","Jefferson","Washington", "Winston", "Adolf")
+Results <- 
+  BabyNames %>%
+  filter( name %in% myNames ) %>%
+  group_by( name, year ) %>%
+  summarise( total=sum(count) ) %>%
+  mutate( total=100*total/sum(total))
+Results %>% ggplot(aes(x=year,y=total,group=name)) +
+  geom_line( size=3, alpha=.5, aes(color=name)) +
+  ylab("Self-Normalized Popularity") + xlab("Year")
+```
+
+## Birds
+
+Use the `OrdwayBirds` and `OrdwaySpeciesNames` data tables to 
+* find the peak month for each major species
+* find major species that are seen in good numbers for at least 6 months of the year
+* identify, for the major species over each month, whether they tend to be seen almost only at the beginning or end of the month.
+
+```{r echo=FALSE,message=FALSE}
+Corrected <-
+  OrdwayBirds %>%
+  inner_join( OrdwaySpeciesNames ) %>% 
+  select( Species=SpeciesNameCleaned, Month, Day ) %>%
+  na.omit() ## cleaned 
+MaxMonth <- Corrected %>%
+  group_by( Species, Month ) %>%
+  summarise( n=n() ) %>% 
+  filter( rank( desc(n)) < 2 )
+MajorSpeciesIDs <-
+  Corrected %>%
+  group_by( Species ) %>% 
+  summarise( n=n() ) %>%
+  filter( rank( desc(n)) < 10 )
+OnlyMajorSpecies <-
+  Corrected %>% 
+  inner_join( MajorSpeciesIDs %>% select(Species)) %>%
+  droplevels( ) # drop the non-major species levels
+BigMonths <-
+  OnlyMajorSpecies %>%
+  group_by( Month, Species ) %>%
+  summarise( n=n() ) %>%
+  filter( n > 0.02*sum(n) )
+SixMonthsOrMore <-
+  BigMonths %>% 
+  group_by( Species ) %>%
+  summarise( months=n() ) %>% 
+  filter( months >= 6 )
+TimeOfMonth <-
+  OnlyMajorSpecies %>% 
+  inner_join( select(MaxMonth,-n)) %>%
+  mutate( Day=as.numeric(Day) ) %>%
+  group_by( Month, Species ) %>%
+  summarise( early=mean(Day<=10),
+             mid = mean(Day>10 & Day<20),
+             late= mean(Day>=20))
+```
+
+
+
+## Disasters
+
+
+
+
 
 Case studies: Disasters.  Which forms cause the most damage, greatest loss of life, economic loss.
 
@@ -10,10 +93,7 @@ Case studies: Disasters.  Which forms cause the most damage, greatest loss of li
 
 WEEK 4 -- CVC/Summer2014/Activities/Migration.Rmd --- there are all sorts of rank comparisons here involving the maximum, top five, and so on.
 
-Ordway bird seasonality: See <file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2013/Session3/RelationalData.html#/21>    
-* Pick out the 10 most common bird species.  How does their capture differ by month.
 
-Disasters: Make US maps showing, for different types of disasters, where they happen the most.
 
 Pick out the zip codes you would target for:
 
@@ -30,7 +110,7 @@ Medicare spending: see the questions at <file:///Users/kaplan/KaplanFiles/DCF-20
 * Counts using group_by() and n().  (Group by the levels of the variable to be counted, perhaps including another variable for subdivisions.)
 * Converting counts to proportions. (Divide by sum().)
     ```{r}
-    KidsFeet %>% group_by( biggerfoot,sex ) %>% 
+    mosaicData::KidsFeet %>% group_by( biggerfoot,sex ) %>% 
     summarise(count=n() )
     ```
 * Graphics with mPlot(), mBar(), mMap()

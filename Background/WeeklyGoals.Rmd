@@ -48,22 +48,38 @@ Building on the Week 1 goals, at the end of Week 2, you should be able to:
 
 ## Week 4
 
-* Understand how *filter* and *mutate* can, when used in conjunction with *group by*, draw on group-specific properties.
+* Understand how *filter* and *mutate* can, when used in conjunction with *group by*, draw on group-specific properties for comparison to individual cases.
+* Understand the concept of "rank" and how it can be used with *filter* and *group by* to perform operations such as "find the 3 biggest in each group."
+* Recognize the difference between wide and narrow formats of data.  Understand that it's possible to convert between wide and narrow and have examples in mind of when this is appropriate.
+* Be able to follow instructions to use layers in `ggplot()` to graph a network.
+
+
+## Week 5
 * Recognize aspects of graphs chosen in order to enhance readability or interpretability.
     * Order of categorical levels
     * Logarithmic axes
     * Discrete colors
     * Shades, colors, and shapes for "minimal ink"
+* Understand that "statistics" describe the collective properties of a set of cases.
+    * Be able to plot densities in one and two variables.
+    * Have a basic understanding of how box-and-whisker plots, or violin plots, can be used to compare densities of a quantitative variable at different levels of a categorical variable.
+* Recognize that a density can be a more effective presentation of the location of data, particularly when there are a very large number of cases.
+
+## Week 6
+
+* Understand why graphical presentations are ill-suited to display relationships that involve many variables.
+* Be able to create predictive models using clustering or decision trees.
+* Know how to evaluate the quality of two-level classification models.
+* Be aware of "dimension reduction" techniques such as SVD.
+
+## Week 7
+
+* Recognize different common ways of making data available over the Internet.
+* Be able to download or access data stored in these common ways.
+* Use simple regular expressions to find patterns in character strings.
+* Be able to identify "blunders" using graphics. Use *filter* to eliminate blundering cases or NA to mark them as blunders.
 
 
-
-
-## Remaining Weeks
-
-This document is still under construction!!
-
-
-* Recognize that `NA`, `NULL`, and `NaN` mean different, albeit related, things. 
 
 ```{r child="../CSS/DisqusTemplate.Rmd"}
 ```

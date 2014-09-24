@@ -6,7 +6,6 @@
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="pandoc" />
 
 
@@ -87,7 +86,6 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <ul>
 <li>Construct a graphic with more than one layer of glyphs.</li>
 <li>Recognize and understand the basic operation and purpose of these data verbs: <em>filter</em>, <em>select</em>, <em>mutate</em>, and <em>arrange</em>.</li>
-<li>Understand how <em>filter</em> and <em>mutate</em> can, when used in conjunction with <em>group by</em>, draw on group-specific properties.</li>
 <li>Be able to chain multiple operations together to produce novel, more complex operations.</li>
 <li>Understand the function of the <em>join</em> data verb: combining information from two data tables into a single output data table.</li>
 <li>Recognize that criterion used by <em>join</em> for matching cases from the two tables and that a case in input table A may match no cases in B, or one case in B, or multiple cases in B.</li>
@@ -99,11 +97,49 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </ul></li>
 </ul>
 </div>
-<div id="remaining-weeks" class="section level2">
-<h2>Remaining Weeks</h2>
-<p>This document is still under construction!!</p>
+<div id="week-4" class="section level2">
+<h2>Week 4</h2>
 <ul>
-<li>Recognize that <code>NA</code>, <code>NULL</code>, and <code>NaN</code> mean different, albeit related, things.</li>
+<li>Understand how <em>filter</em> and <em>mutate</em> can, when used in conjunction with <em>group by</em>, draw on group-specific properties for comparison to individual cases.</li>
+<li>Understand the concept of “rank” and how it can be used with <em>filter</em> and <em>group by</em> to perform operations such as “find the 3 biggest in each group.”</li>
+<li>Recognize the difference between wide and narrow formats of data. Understand that it’s possible to convert between wide and narrow and have examples in mind of when this is appropriate.</li>
+<li>Be able to follow instructions to use layers in <code>ggplot()</code> to graph a network.</li>
+</ul>
+</div>
+<div id="week-5" class="section level2">
+<h2>Week 5</h2>
+<ul>
+<li>Recognize aspects of graphs chosen in order to enhance readability or interpretability.
+<ul>
+<li>Order of categorical levels</li>
+<li>Logarithmic axes</li>
+<li>Discrete colors</li>
+<li>Shades, colors, and shapes for “minimal ink”</li>
+</ul></li>
+<li>Understand that “statistics” describe the collective properties of a set of cases.
+<ul>
+<li>Be able to plot densities in one and two variables.</li>
+<li>Have a basic understanding of how box-and-whisker plots, or violin plots, can be used to compare densities of a quantitative variable at different levels of a categorical variable.</li>
+</ul></li>
+<li>Recognize that a density can be a more effective presentation of the location of data, particularly when there are a very large number of cases.</li>
+</ul>
+</div>
+<div id="week-6" class="section level2">
+<h2>Week 6</h2>
+<ul>
+<li>Understand why graphical presentations are ill-suited to display relationships that involve many variables.</li>
+<li>Be able to create predictive models using clustering or decision trees.</li>
+<li>Know how to evaluate the quality of two-level classification models.</li>
+<li>Be aware of “dimension reduction” techniques such as SVD.</li>
+</ul>
+</div>
+<div id="week-7" class="section level2">
+<h2>Week 7</h2>
+<ul>
+<li>Recognize different common ways of making data available over the Internet.</li>
+<li>Be able to download or access data stored in these common ways.</li>
+<li>Use simple regular expressions to find patterns in character strings.</li>
+<li>Be able to identify “blunders” using graphics. Use <em>filter</em> to eliminate blundering cases or NA to mark them as blunders.</li>
 </ul>
 <p>Please use the comment system to make suggestions, point out errors, or to discuss the topic.</p>
 <div id="disqus_thread">
@@ -145,12 +181,12 @@ $(document).ready(function () {
 
 </script>
 
-<!-- dynamically load mathjax for compatibility with --self-contained -->
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

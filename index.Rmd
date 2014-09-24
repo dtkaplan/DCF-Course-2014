@@ -132,7 +132,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes:  [Wide versus Narrow](`r Notes("WideAndNarrow")`), [Ranks](`r Notes("Rank")`), [Graphing Networks](TBA), [Within group operations](TBA)
+* Notes:  [Wide versus Narrow](`r Notes("WideAndNarrow")`),  [Within-group Operations](TBA), [Ranks](`r Notes("Rank")`), [Graphing Networks](TBA)
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)
