@@ -41,7 +41,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 <h4>Resources</h4>
 
 * [Course Policies and Structure](Background/StructureAndPolicies.html)
-* [Templates for Graphics](`r Notes( "GraphicsIntro", "GraphicsTemplates.html")`)
+* [Templates for Graphics](`r Notes( "GraphingIntro", "GraphicsTemplates.html")`)
 * [Weekly Goals](Background/WeeklyGoals.html)
 * [FAQ](Notes/FAQ.html)
 * [Macalester RStudio cloud server](http://www.macalester.edu/rstudio)
