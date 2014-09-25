@@ -112,9 +112,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 **Before Class**   
 
 * Notes: 
-    [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`), details on a special data verb: [Join](`r Notes("BasicDataCommands", "Join.html")`),
-
-    [Graphics: Facets and Layers](`r Notes("GraphingIntro/BasicCommands.html")`)  
+    [More Data Verbs](`r Notes("BasicDataCommands","MoreDataVerbs.html")`), details on a special data verb: [Join](`r Notes("BasicDataCommands", "Join.html")`), [Graphics: Facets and Layers](`r Notes("GraphingIntro", "GraphicsCommands.html")`)  
 
 * [Weekly Drill](`r Drill("Week-3.html")`)
 * [Weekly Discussion Posts](Week-3-Discussion.html)
