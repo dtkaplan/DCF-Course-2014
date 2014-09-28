@@ -1,95 +1,38 @@
 ---
 output:
-  pdf_document: default
   html_document:
     css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
     fig_caption: yes
+  pdf_document: default
 ---
 
 ```{r child="../../CSS/DCF-common.Rmd"}
 ```
 
-# Class Notes: Week 2
+# Class Notes: Week 3
 
-Data transfiguration and graphing exercises:
+## All together now
 
-## Fashions in Naming
-
-Objective: create a graph like the following comparing names that strike you as interesting.
-
-```{r echo=FALSE}
-myNames <- c("Abraham","Franklin","Jefferson","Washington", "Winston", "Adolf")
-Results <- 
-  BabyNames %>%
-  filter( name %in% myNames ) %>%
-  group_by( name, year ) %>%
-  summarise( total=sum(count) ) %>%
-  mutate( total=100*total/sum(total))
-Results %>% ggplot(aes(x=year,y=total,group=name)) +
-  geom_line( size=3, alpha=.5, aes(color=name)) +
-  ylab("Self-Normalized Popularity") + xlab("Year")
-```
-
-## Birds
-
-Use the `OrdwayBirds` and `OrdwaySpeciesNames` data tables to 
-* find the peak month for each major species
-* find major species that are seen in good numbers for at least 6 months of the year
-* identify, for the major species over each month, whether they tend to be seen almost only at the beginning or end of the month.
-
-```{r echo=FALSE,message=FALSE}
-Corrected <-
-  OrdwayBirds %>%
-  inner_join( OrdwaySpeciesNames ) %>% 
-  select( Species=SpeciesNameCleaned, Month, Day ) %>%
-  na.omit() ## cleaned 
-MaxMonth <- Corrected %>%
-  group_by( Species, Month ) %>%
-  summarise( n=n() ) %>% 
-  filter( rank( desc(n)) < 2 )
-MajorSpeciesIDs <-
-  Corrected %>%
-  group_by( Species ) %>% 
-  summarise( n=n() ) %>%
-  filter( rank( desc(n)) < 10 )
-OnlyMajorSpecies <-
-  Corrected %>% 
-  inner_join( MajorSpeciesIDs %>% select(Species)) %>%
-  droplevels( ) # drop the non-major species levels
-BigMonths <-
-  OnlyMajorSpecies %>%
-  group_by( Month, Species ) %>%
-  summarise( n=n() ) %>%
-  filter( n > 0.02*sum(n) )
-SixMonthsOrMore <-
-  BigMonths %>% 
-  group_by( Species ) %>%
-  summarise( months=n() ) %>% 
-  filter( months >= 6 )
-TimeOfMonth <-
-  OnlyMajorSpecies %>% 
-  inner_join( select(MaxMonth,-n)) %>%
-  mutate( Day=as.numeric(Day) ) %>%
-  group_by( Month, Species ) %>%
-  summarise( early=mean(Day<=10),
-             mid = mean(Day>10 & Day<20),
-             late= mean(Day>=20))
-```
+### Command Guide
+Review the 1-page command guide: ["Enough R for DCF"](http://dtkaplan.github.io/DCF-2014/CourseNotes/Guides/EnoughDCF.pdf)
 
 
 
-## Disasters
+### World Cities data.
 
+* Plot the latitude and longitude of the cities.
+* Find the total urban population of each country.  
+    * Plot this as a choropleth map.
+    * Plot this as a scatter plot, using median latitude and longitude for each country to set position.
+* Extremes
+    * Find the northernmost city. 
+    * Find the city closest to the equator.
+    
+## Group Activities
 
+1. [Popularity of names](Notes/Week-3/Week-3-Handout.pdf)
+2. [Bird species](Notes/Week-3/Week-3-Handout.pdf)
 
-
-
-Case studies: Disasters.  Which forms cause the most damage, greatest loss of life, economic loss.
-
-* Rates in the country data, e.g. miles of road per area, 
-* Fraction alive, cardio, other in NHANES
-
-### Filter
 
 WEEK 4 -- CVC/Summer2014/Activities/Migration.Rmd --- there are all sorts of rank comparisons here involving the maximum, top five, and so on.
 
@@ -108,25 +51,15 @@ Medicare spending: see the questions at <file:///Users/kaplan/KaplanFiles/DCF-20
 
 * Groupwise means and sd.
 * Counts using group_by() and n().  (Group by the levels of the variable to be counted, perhaps including another variable for subdivisions.)
-* Converting counts to proportions. (Divide by sum().)
-    ```{r}
-    mosaicData::KidsFeet %>% group_by( biggerfoot,sex ) %>% 
-    summarise(count=n() )
-    ```
-* Graphics with mPlot(), mBar(), mMap()
 
 * Add a layer to a map, perhaps zip-code population with state boundaries.
 
 * Who votes for whom?  Wade county voters: create cross tabs on registration, etc.  Make bar charts to display patterns.
 
 
-## Week 3
 
 EXERCISE:
 
-Find the location of 
 
-* the most northern and most southern city.  The city closest to 
-* the equator.
 
 END OF EXERCISE.

@@ -41,15 +41,16 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
 <h4>Resources</h4>
 
 * [Course Policies and Structure](Background/StructureAndPolicies.html)
+* 1-page guide to ["Enough R for DCF"](`r Notes("Guides","EnoughDCF.pdf")`)
 * [Templates for Graphics](`r Notes( "GraphingIntro", "GraphicsTemplates.html")`)
 * [Weekly Goals](Background/WeeklyGoals.html)
 * [FAQ](Notes/FAQ.html)
 * [Macalester RStudio cloud server](http://www.macalester.edu/rstudio)
 * [Installing the DCF package](Background/Installing-DCF.html).
-* **HELP!** Available each evening with the HHMI Stats Fellows, location Olin-Rice 245. Sunday through Thursday 7:00-9:30pm.
-* Erik Anderson <ande7564@umn.edu>
-* Danny Kaplan <kaplan@macalester.edu>
-  
+* Contact Us:
+    - Danny Kaplan <kaplan@macalester.edu>
+    - Erik Anderson <ande7564@umn.edu>
+    - **HELP!** Available each evening with the HHMI Stats Fellows in Olin-Rice 245. Sun. through Thurs. 7:00-9:30pm.
 * Videos from the Amherst/5-College R/RStudio series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">

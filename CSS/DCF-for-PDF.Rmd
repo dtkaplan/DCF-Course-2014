@@ -1,0 +1,4 @@
+```{r include=FALSE}
+# opts_chunk$set( out.width="3in",tidy=FALSE,warning=FALSE)
+options( xtable.type="latex")
+```

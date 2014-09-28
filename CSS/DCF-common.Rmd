@@ -23,8 +23,8 @@ baseTheme <- theme_tufte( ticks=TRUE )
 library(xkcd)
 funTheme <- theme_xkcd()
 library(ScoreR)
-opts_chunk$set( tidy=FALSE, out.width="50%", comment=NA,
-                warning=FALSE)
+# opts_chunk$set( tidy=FALSE, out.width="50%", comment=NA,
+#                warning=FALSE)
 options( width=60, 
          na.rm=TRUE,
          # Printing tables
