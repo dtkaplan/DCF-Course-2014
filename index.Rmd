@@ -56,7 +56,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
 
-<h4 title="Wed. 10 Sept.">Week 1   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sept. 10</h4> 
+<h4 title="Wed. 10 Sept.">Week 1   &nbsp;<span style="float:right;">Sept. 10</span></h4> 
 
 Infrastructure for computing with data. [Goals for the week.](Background/WeeklyGoals.html#week-1)
 
@@ -80,7 +80,7 @@ Infrastructure for computing with data. [Goals for the week.](Background/WeeklyG
   </div>
   <div class="clearfix visible-sm-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Wed. 17 Sept." >Week 2  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sept. 17</h4>
+   <h4 title="Wed. 17 Sept." >Week 2  &nbsp; <span style="float:right;">Sept. 17</span></h4>
 Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#week-2)
    
 **Before Class**   
@@ -106,7 +106,7 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
 <hr class="syllabus">
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Oct. 1"  class="this-week">Week 3  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Oct. 1</h4>
+   <h4 title="Oct. 1"  class="this-week">Week 3  &nbsp;<span style="float:right;">Oct. 1</span></h4>
 
 Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 
@@ -127,12 +127,12 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 4  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Oct. 8</h4>
+   <h4>Week 4  &nbsp;<span style="float:right;">Oct. 8<span></h4>
 Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
 
-* Notes:  [Wide versus Narrow](`r Notes("WideAndNarrow")`),  [Within-group Operations](`r Notes("BasicDataComands","WithinGroupOperations.html")`), [Ranks](`r Notes("Rank")`), [Graphing Networks](`r Notes("Networks", "Networks.html")`)
+* Notes:  [Wide versus Narrow](`r Notes("WideAndNarrow")`),  [Within-group Operations](`r Notes("BasicDataCommands","WithinGroupOperations.html")`), [Ranks](`r Notes("Rank")`), [Graphing Networks](`r Notes("Networks", "Networks.html")`)
 
 * [Weekly Drill](`r Drill("Week-4.html")`)
 * [Weekly Discussion Posts](Week-4-Discussion.html)
@@ -143,7 +143,7 @@ Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 5  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Oct. 16</h4>
+   <h4>Week 5  &nbsp;<span style="float:right;">Oct. 16</span></h4>
    
 Stats and Properties of Cases Collectively. [Goals for the Week](Background/WeeklyGoals.html#week-5)
 
@@ -168,7 +168,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
    <div class="clearfix visible-md-block"></div>
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 6   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Oct. 29</h4>
+   <h4>Week 6   &nbsp;<span style="float:right;">Oct. 29</span></h4>
 
 Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#week-6)
    
@@ -186,7 +186,7 @@ Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#we
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 7   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nov. 5</h4>
+   <h4>Week 7   &nbsp; <span style="float:right;">Nov. 5</span></h4>
 Cleaning and Scraping. [Goals for the Week](Background/WeeklyGoals.html#week-7)
 
 **Before Class**   
