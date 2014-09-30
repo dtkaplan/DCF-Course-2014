@@ -150,7 +150,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
    
 **Before Class**   
 
-* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Densities and distributions](`r Notes("Statistics","DraftNarrative.html")`)
+* Notes: [Graphics Choices](`r Notes("GraphicsChoices","DraftNarrative.html")`), [Distributions & Statistics](`r Notes("Stats","DraftNarrative.html")`)
  
 
 * [Weekly Drill](`r Drill("Week-5.html")`)
