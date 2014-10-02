@@ -9,6 +9,40 @@ output:
 ```{r child="../../CSS/DCF-common.Rmd"}
 ```
 
+
+# As it played out that night ...
+
+### Agenda
+
+* Review the [command guide](../../CourseNotes/Guides/EnoughDCF.pdf) 
+    You should try to reach a point where the contents make sense.  You don't have to master every command; use the sheet for a reference.
+  
+  
+* Basic strategy: know your input and imagine your output.  Think in English about 
+    * what data verbs to use
+    * the arguments to each verb
+* Some `BabyNames` exercises, talking through it and having each student implement the commands:
+    * How many kids are there? (about 333M)  `summarise()`
+    * What are the five most popular names over all the years. `group_by()`, `summarise()`, `arrange()` `desc()` `head()`
+    * What are the five most popular names in 2013? `filter()` `arrange()` `desc()`
+    * What are the two most popular names for each year?  What are the two most popular in each year for each sex? `group_by()` `summarise()` `rank()` `<= 2`
+    
+* Making a small Rmd file
+    * Open from template.
+    * Save with an appropriate name.
+    * Change the "This file.Rmd" in the boilerplate. Don't screw with the YAML.
+    * Compile.  Did it work?  No, check the previous step.
+    * Delete the instruction text from the template.
+    * Add some text: "These are the most popular baby names..."
+    * Add a chunk: The 5 most popular baby names.
+    * Compile to HTML
+    * Upload the HTML to moodle.
+
+
+* The [data verb worksheet](../../Background/DataVerb-Worksheet.pdf) How the flow chart works.
+    * Make the graph of names over the years --- they can choose their own names.
+    
+    
 # Class Notes: Week 3
 
 ## All together now
@@ -20,15 +54,45 @@ Review the 1-page command guide: ["Enough R for DCF"](http://dtkaplan.github.io/
 
 ### World Cities data.
 
-* Plot the latitude and longitude of the cities.
+* Plot the latitude and longitude of the cities. --- already in glyph-ready form.
 * Find the total urban population of each country.  
     * Plot this as a choropleth map.
     * Plot this as a scatter plot, using median latitude and longitude for each country to set position.
 * Extremes
+    * Largest city in each country.
     * Find the northernmost city. 
+    * Find the northernmost city in each country with a population > 100000
     * Find the city closest to the equator.
-    
-## Group Activities
+
+## Names
+
+* Find the top 5 in each year.  Note that the grouping still holds after a filter.
+```{r}
+Top5 <-
+  BabyNames %>% 
+  group_by( year, sex ) %>%
+  filter( rank(desc(count))<=5 )
+groups( Top5 )
+```
+
+* Find those names that have remained in the top five for more than 20 years.
+```{r}
+LongRunning <- 
+  Top5 %>% ungroup() %>%
+  group_by( name, sex ) %>%
+  filter( n() > 20 ) %>% 
+  summarize( nyears=n() )
+```
+
+* Of these, find the 10 female and 10 male names with the shortest run (closest to 20 years)
+```{r}
+OurGroup <- 
+  LongRunning %>%
+  group_by( sex ) %>%
+  filter( rank(nyears)<=10)
+```
+
+## Small Group Activities
 
 1. [Popularity of names](Notes/Week-3/Week-3-Handout.pdf)
 2. [Bird species](Notes/Week-3/Week-3-Handout.pdf)

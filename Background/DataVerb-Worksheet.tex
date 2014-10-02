@@ -1,0 +1,210 @@
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\textbf{{#1}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Choosing Data Verbs},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+\setlength{\droptitle}{-2em}
+  \title{Choosing Data Verbs}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\subsection{What's your input and your intended
+output?}\label{whats-your-input-and-your-intended-output}
+
+Questions about your input and output data frames:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  For the input data table(s):
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    What is the meaning of a case?
+  \item
+    How many cases are there?
+  \item
+    Is there more than one input data table?
+  \end{enumerate}
+\item
+  For the output data table:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    What is the meaning of a case?
+  \item
+    How many cases are there?
+  \item
+    Are there more cases in the input than the output?
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Choosing a Data Verb}\label{choosing-a-data-verb}
+
+Walk through these questions. Stop when you hit the first ``yes''
+answer.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Are there two input tables? Use \texttt{join()}
+
+  Otherwise \ldots{}
+\item
+  Is the ``physical'' meaning of a case different from input to output?
+  Example: cases are people in input, but cases are age groups in the
+  output. Use \texttt{group\_by()} and \texttt{summarise()}
+
+  Otherwise \ldots{}
+\item
+  Are there fewer cases in the output than in the input? Use
+  \texttt{filter()} or \texttt{head()}, \texttt{sample\_n()}, etc.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Does the output have the first few cases in the input? Use
+    \texttt{head()} (or \texttt{tail()} for the last few cases).
+
+    Otherwise \ldots{}
+  \item
+    Are the cases in the output randomly selected from the input? Use
+    \texttt{sample\_n()}
+
+    Otherwise \ldots{}
+  \item
+    Are the cases in the output a subset from the input of cases that
+    meet one or more criteria? Use \texttt{filter()}
+  \end{enumerate}
+
+  Otherwise \ldots{}
+\item
+  There is a variable in the output that is not in the input? Example,
+  there's population and area in the input. The output includes
+  population density. Use \texttt{mutate()}
+
+  Otherwise \ldots{}
+\item
+  Are there some variables in the input that are not in the output? Use
+  \texttt{select()}
+
+  Otherwise \ldots{}
+\item
+  Are the cases are the same in the input and the output, but in a
+  different order. Use \texttt{arrange()}
+
+  Otherwise
+\item
+  It sounds like the input is the same as the output. If so, you don't
+  need any data verb. If you don't think this is compelling, Start over
+  and reconsider the above questions.
+\end{enumerate}
+
+\subsection{Adverbs}\label{adverbs}
+
+The arguments to a data verb include a data table and one or more
+``adverbs'' that describe how the verb is to operate.
+
+\subsubsection{Join}\label{join}
+
+There are two data-verb arguments. No adverbs are needed, unless you
+want to specify what cases to keep. See \texttt{merge()} in that
+situation.
+
+\subsubsection{Arrange}\label{arrange}
+
+The quantity or quantities by which to arrange the cases.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{HappinessIndex %>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{( gdpPerCapita )}
+\NormalTok{HappinessIndex %>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{( region, gdpPerCapita )}
+\CommentTok{# Sort by region, within each region break ties by GDP.}
+
+\CommentTok{# Descending order, pipe the quantity to `desc()`}
+\NormalTok{HappinessIndex %>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{( region, gdpPerCapita %>%}\StringTok{ }\KeywordTok{desc}\NormalTok{() )}
+\end{Highlighting}
+\end{Shaded}
+
+\end{document}

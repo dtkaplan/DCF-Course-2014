@@ -1,0 +1,16 @@
+---
+title: "Overall Strategy for Weeks 3 - 7"
+author: "Daniel Kaplan"
+date: "October 1, 2014"
+output: html_document
+---
+
+Pick one kind of problem to work on.
+
+* Week 1: No data except examples (The taxicab app data worked well.)
+* Week 2: NHANES (for simple graphics with `mScatter()`) and Minneapolis2013
+* Week 3: BabyNames
+* Week 4: Medicare and Geography
+* Week 5:
+* Week 6:
+* Week 7:
