@@ -9,6 +9,10 @@ output:
 ```{r child="../../CSS/DCF-common.Rmd"}
 ```
 
+Graphing networks: just a demo
+
+Long and narrow: just a demo
+
 # Class Notes: Week 4
 
 Drill on wide/narrow:  

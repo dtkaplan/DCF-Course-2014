@@ -1,3 +1,8 @@
+
+Graphics choices: just reading and some drill. What's wrong with this graph?  They don't need to master it.
+
+
+
 Scatter plots with error bars based on the 95% CI or standard deviation.
 
 Population in zip codes: average.
@@ -7,4 +12,6 @@ Gene expression in NCI 60 for the different types of cancer.
 Dynamite plots.
 
 Density plot of when the major birds appear. Month + Day/30
+
+A demo of interactive graphics with Google Vis and the GoogleVis package.  Do a template example and have the students put it in an Rmd file.
 

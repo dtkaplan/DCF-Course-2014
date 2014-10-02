@@ -106,7 +106,7 @@ Data summaries and graphics. [Goals for the Week](Background/WeeklyGoals.html#we
 <hr class="syllabus">
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 title="Oct. 1"  class="this-week">Week 3  &nbsp;<span style="float:right;">Oct. 1</span></h4>
+   <h4 title="Oct. 1" >Week 3  &nbsp;<span style="float:right;">Oct. 1</span></h4>
 
 Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 
@@ -121,13 +121,13 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
 **In Class and After**    
   
 * [Assignment 3](`r Assignment("Assignment-Three")`) due 8 Oct. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19072)
-* In-class activities: One about [birds](Notes/Week-3-Handout-2.pdf) and the other about [baby names](Notes/Week-3-Handout.pdf)
+* In-class activity:  [baby names](Notes/Week-3-Handout.pdf)
 
    </div>
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 4  &nbsp;<span style="float:right;">Oct. 8<span></h4>
+   <h4 class="this-week">Week 4  &nbsp; <span style="float:right;">Oct. 8<span></h4>
 Data BackStory [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   

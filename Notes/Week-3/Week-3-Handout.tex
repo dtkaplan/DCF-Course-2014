@@ -1,0 +1,268 @@
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage[margin=.5in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\textbf{{#1}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\usepackage{graphicx}
+% Redefine \includegraphics so that, unless explicit options are
+% given, the image width will not exceed the width of the page.
+% Images get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\ScaleIfNeeded{%
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+{%
+ \catcode`\@=11\relax%
+ \gdef\includegraphics{\@ifnextchar[{\Oldincludegraphics}{\Oldincludegraphics[width=\ScaleIfNeeded]}}%
+}%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={DCF Week 3 Activity},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+\setlength{\droptitle}{-2em}
+  \title{DCF Week 3 Activity}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{}
+  \preauthor{}\postauthor{}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{Data and Computing Fundamentals}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Popular Names}\label{popular-names}
+
+The relative popularity of different names for babies varies over the
+years and decades. In this exercise, you're going to visualize how the
+popularity of names varies in time.
+
+\subsection{Tasks}\label{tasks}
+
+You're going to be working individually first, and then in groups.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  First, undertake an \emph{analysis} of data transfiguration tasks.
+  What kind of data table is the final goal, what is available as the
+  input data. Find a path from input to the final goal in terms of data
+  verbs.
+\item
+  Second, \emph{design} the steps of the transfiguration process.
+  Describe these in English (if only because your English is a lot
+  better than your R at this stage in your education).
+\item
+  Third, \emph{implement} the design in R.
+\end{itemize}
+
+In any work, it's important to have a goal and a plan for data table
+transfigurations. This need not be elaborate.
+
+\begin{multicols}{2}
+
+\subsection{Objective}\label{objective}
+
+Create a graph like the following using name of interest to you.
+
+\includegraphics{./Week-3-Handout_files/figure-latex/unnamed-chunk-4.pdf}
+
+The raw material you have is the \texttt{BabyNames} data set in the DCF
+package. Write a few example lines in the format of the
+\texttt{BabyNames}, identifying the variable names and typical levels or
+values.
+
+\vspace*{1.5in}
+
+Point out which variables are categorical. These can potentially be used
+for defining groups of cases.
+
+\subsubsection{First, Individually \ldots{}}\label{first-individually}
+
+\paragraph{Step 1.}\label{step-1.}
+
+Analyze the graphic to figure out what a glyph-ready data table should
+look like. Mostly, this involves figuring out what variables are
+represented in the graph. Write down a small example of a glyph-ready
+data frame that you think could be used to make something in the form of
+the graphic.
+
+\vspace*{1.5in}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  What variable(s) from the raw data table do not appear at all in the
+  graph?
+\item
+  What variable(s) in the graph are similar to corresponding variables
+  in the raw data table, but might have been transformed in some way.
+\end{itemize}
+
+\paragraph{Step 2}\label{step-2}
+
+Consider how the cases differ between the raw input and the glyph-ready
+table.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Have cases been \textbf{filtered} out?
+\item
+  Have cases been grouped and \textbf{aggregated/summarized} within
+  groups in any way?
+\item
+  Have any new variables been introduced?
+\end{itemize}
+
+\paragraph{Step 3}\label{step-3}
+
+Using English, write down a sequence of steps that will accomplish the
+transfiguration from the raw data table to your hypothesized glyph-ready
+data table.
+
+\paragraph{Step 4: Confer with your
+colleagues}\label{step-4-confer-with-your-colleagues}
+
+As a group, compare your different analyses in Steps 1 through 3. Your
+goal is to develop a consensus for the design in Step 3.
+
+\begin{itemize}
+\item
+  \textbf{FIRST}, each person in turn should present his or her analysis
+  with others in the group \textbf{listening}. Don't be shy about saying
+  things like, ``But I'm not sure about this,'' or, ``Hearing what
+  person X just said, I realize that this is wrong. I'll explain how
+  it's wrong.''
+\item
+  \textbf{AFTER} everyone has presented, start a discussion to develop a
+  consensus about the sequence of operations and the parameters of each
+  (e.g.: What's being filtered out.) Use the whiteboard to keep a record
+  of your consensus.
+\end{itemize}
+
+\paragraph{Step 5: First individually, then as a
+group.}\label{step-5-first-individually-then-as-a-group.}
+
+Translate your design, step by step, into R.
+
+\paragraph{Step 6: Implementation}\label{step-6-implementation}
+
+Now you can start writing the commands themselves. Do so, try to
+identify and solve any problems that arise, and make your glyph-ready
+data.
+
+For graphing, you can use this template:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Results %>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{year,}\DataTypeTok{y=}\NormalTok{total,}\DataTypeTok{group=}\NormalTok{name)) +}
+\StringTok{   }\KeywordTok{geom_line}\NormalTok{( }\DataTypeTok{size=}\DecValTok{3}\NormalTok{, }\DataTypeTok{alpha=}\NormalTok{.}\DecValTok{5}\NormalTok{, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color=}\NormalTok{name)) +}
+\StringTok{   }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Popularity"}\NormalTok{) +}\StringTok{ }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Year"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\paragraph{Finally \ldots{}}\label{finally}
+
+A list of Bible-related names is available this way:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{BibleNames <-}\StringTok{ }\KeywordTok{fetchData}\NormalTok{( }\StringTok{"DCF/BibleNames.csv"} \NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Retrieving from http://www.mosaic-web.org/go/datasets/DCF/BibleNames.csv
+\end{verbatim}
+
+Using this data table, and working as a group:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Make a data table showing the most popular biblenames over all the
+  years.
+\item
+  Make an informative plot showing the trends over the years of
+  Bible-related names as a proportion of all names.
+\end{itemize}
+
+\end{multicols}
+
+\end{document}
