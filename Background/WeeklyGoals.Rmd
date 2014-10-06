@@ -51,7 +51,8 @@ Building on the Week 1 goals, at the end of Week 2, you should be able to:
 * Understand how *filter* and *mutate* can, when used in conjunction with *group by*, draw on group-specific properties for comparison to individual cases.
 * Understand the concept of "rank" and how it can be used with *filter* and *group by* to perform operations such as "find the 3 biggest in each group."
 * Recognize the difference between wide and narrow formats of data.  Understand that it's possible to convert between wide and narrow and have examples in mind of when this is appropriate.
-* Be able to follow instructions to use layers in `ggplot()` to graph a network.
+* Recognize that networks consist of *vertices* and *edges* that connect pairs of vertices.
+* Be able to construct (using data verbs) data tables that list edges and edge-wise variables. Be able to *follow instructions* to use layers in `ggplot()` to graph a network along with the edge and vertex properties. (You don't need to be able to graph networks from scratch, although it's not that hard.)
 
 
 ## Week 5

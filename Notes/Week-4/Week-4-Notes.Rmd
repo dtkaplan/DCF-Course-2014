@@ -9,9 +9,220 @@ output:
 ```{r child="../../CSS/DCF-common.Rmd"}
 ```
 
+## Demo: Wide and Narrow
+
+```{r}
+require(rworldmap)
+data(countrySynonyms)
+```
+
+`View()` the `countrySynonyms` table.
+Is this in wide or narrow format?  What would the other format look like?
+
+To convert it to narrow format ... Hint: In the end, you may not need the "key" variable.
+
+```{r}
+require(tidyr)
+Translate <- 
+  countrySynonyms %>%
+  select(-ID) %>%
+  mutate( ISO3=toupper(ISO3)) %>%
+  gather( value=country, key=bogus, name1:name8) %>%
+  select( -bogus ) %>%
+  mutate( country=ifelse(country %in% c("","<NA>"), NA, country)) %>%
+  na.omit
+```
+
+Ideas about which is to be preferred?
+
+## All together:
+
+Population by ISO2 and ISO3
+
+Country Codes at ...
+
+<http://www.fao.org/countryprofiles/iso3list/en/>
+
+Country Synonyms:
+```{r}
+Synonyms <- fetchData("DCF/CountrySynonyms.csv")
+```
+
+ISO2 and ISO3 codes
+```{r}
+Codes <- fetchData("DCF/CountryCodes.csv")
+```
+
+
+1. Pull out the country and population data from `CountryData`
+#. Translate `country` in `CountryData` to `ISO3` using `Synonyms`
+#. Then translate `ISO3` to `ISO2` using `Codes`
+#. Merge with `WorldCities` by `country`/`ISO2`
+
+
+## World Cities
+
+Check the table for plausibility.  
+* What's the total number of people represented?
+```{r}
+WorldCities %>% 
+  summarise( total=sum(population))
+```
+
+* How many cities larger than 100,000? Than 1,000,000?
+
+* Make a scatterplot of the latitude and longitude of the cities larger than 100K
+```{r}
+p <-  
+  WorldCities %>%
+  filter( population > 1e5 ) %>%
+  ggplot( aes(x=longitude, y=latitude )) +
+    geom_point(alpha=.1, aes(size=population)) +
+    scale_size_area()
+```
+
+* What's the biggest city in each country?
+```{r}
+BiggestByCountry <- 
+  WorldCities %>% 
+  group_by( country ) %>%
+  filter( rank(desc(population)) == 1 )
+```
+
+Add that to the plot as another layer.  Make it red.
+```{r}
+p + geom_point( data=BiggestByCountry, color='red')
+```
+
+* Countries where the biggest city is more than 5M people
+```{r}
+BiggestByCountry %>%
+  filter( population > 5000000)
+```
+
+Connecting with population ...
+
+## In Groups
+
+Working with your group, figure out a strategy for adding in, for each country, the total population of that country.
+
+
+
+
+## Give them `CountryByISO2`
+
+
+
+
+
+
+
+* Country name synonyms
+
+
+* Cities that are the largest, by fraction of the population, in each country.
+    * Need the country population data: from `CountryData`
+    ```{r}
+Population <-
+  CountryData %>%
+  select( country, pop )
+```
+
+Now join these to the `WorldCities` data ...
+
+`WorldCities` has ISO-2 country codes.
+
+`CountryData` had common names (in English).  We need to translate from one to the other.
+
+A table is available via
+```{r}
+Codes <- fetchData("DCF/CountryCodes.csv")
+```
+
+Pull out the country and ISO-2 variables
+```{r}
+Codes <-
+  Codes %>%
+  select(country, ISO2)
+```
+
+Join with `Population`
+```{r}
+Population <-
+  Population %>%
+  inner_join( Codes )
+```
+
+Add  `ISO2` column to `WorldCities` in place of `country`
+```{r}
+WorldCities <-
+  WorldCities %>%
+  mutate( ISO2=country) %>%
+  select( -country )
+```
+
+Merge `Population` with `WorldCities` on `ISO2`
+```{r}
+WorldCities <-
+  WorldCities %>%
+  inner_join( Population )
+```
+
+
+
+World cities:
+
+The basic questions ...
+
+* Northernmost, Southermost Closest to the equator
+* Fraction of country population that lives in cities.
+* Countries where the biggest city is twice as large as the next biggest.
+* Compare the pop of the biggest city to the other cities.  Find the rank of the city that is less than half the population of the biggest cities.
+
+
+
+
+## Medicare
+
+Generate city-wise population, age, race statistics.
+
+For a given DRG, or body-system, look at per-capita number of procedures as function of age.   
+
+How many of the US cities are in the World Cities data table? 
+
+Find the cities that don't have a match.
+
+For each city in the US, find the area of that city, the population density etc.
+
+Plot out the old-age cities.
+
+Plot out the cities 
+
+For each DRG, find the three top and bottom states in terms of number of procedures per capita.
+
 Graphing networks: just a demo
 
 Long and narrow: just a demo
+
+# Global migration -- Everyone together
+
+http://data.worldbank.org/data-catalog/global-bilateral-migration-database
+
+Countries that send people to the US.  Make a map.
+
+Trends over time of countries that send people to the US.  (Convert to narrow, use `geom_lines()` with `group` property.)
+
+Set color by GDP of the sending country.
+
+Bilateral migration --- put the inbound and outbound migration as different variables.  A network based on ...
+
+* Balance between countries
+* What's total migration as a fraction of the population?
+* Which countries have strong gender imbalance of migration?
+
+### Rank
+
+Within each state, pull out the 100 zip codes with the highest minority populations.  Plot these out on a choropleth map of overall minority population.  (Or, maybe, foreign born.)
 
 # Class Notes: Week 4
 
