@@ -1,0 +1,93 @@
+---
+title: "DCF Week 4 Warm Up Exercises"
+output:
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+    keep_tex: yes
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
+  word_document:
+    fig_height: 3
+    fig_width: 5
+date: "Data and Computing Fundamentals"
+---
+
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+```{r ref_label="../../CSS/DCF-for-PDF.Rmd"}
+```
+
+```{r include=FALSE}
+library( knitr )
+opts_chunk$set( echo=FALSE, results="hide")
+```
+
+Do the work here in an Rmd file named `Week-4-Warmup-XXX.Rmd`.  Rather than typing commands at the console, type them into a chunk and run that chunk in the console.  When the chunk does what you want, compile the Rmd document to HTML.  Then move on to the next task and repeat the cycle: compose, get it working, compile to HTML.
+
+## Cities of the World
+
+The data table `WorldCities` (in the `DCF` package) identifies cities around the world that have large populations or are large for their region.
+
+* Check the table for plausibility: Is it possibly what it is claimed to be?.  What's the total number of people represented?  Explain why or why not the data pass the plausibility test.
+
+```{r}
+WorldCities %>% 
+  summarise( total=sum(population))
+```
+
+* How many cities larger than 100,000? Larger than 1,000,000?
+
+* Make a scatterplot of the latitude and longitude of the cities larger than 100K.
+    * Decide what variables to map to the $x$ and $y$ aesthetics.^[Remember, "aesthetic" is being used in its original sense, refers to how things are perceived.]
+    * Use the size of the dot to show the city's population.  In other words, map the variable population to the `size` aesthetic.
+    * Use transparency, called `alpha` to handle overplotting.  Alpha can run from zero to one: zero is completely transparent (a.k.a. invisible); one is completely opaque.  You will be *setting* `alpha` the same for every city.
+        Recall that in `ggplot` graphics, variables are *mapped* to aesthetics using the `aes()` function.  In contrast, aesthetic properties that are the same for every case are *set* outside the `aes()` function.  In a typical use, the `ggplot()` command will look like 
+        ```
+        ggplot( data=???, aes( x=???, y=??? ))
+```  
+    The layers of the plot will be used like this: 
+    ```
+geom_point( alpha=???, aes( size=??? ) )
+``` 
+    where, of course, you will replace the `???` with appropriate variables or constants or data tables.
+```{r}
+p <-  
+  WorldCities %>%
+  filter( population > 1e5 ) %>%
+  ggplot( aes(x=longitude, y=latitude )) +
+    geom_point(alpha=.1, aes(size=population)) +
+    scale_size_area()
+```
+    
+* When you have your plotting commands complete, use those commands to make another graphic, but add this expression to govern the `size` attribute: `+ scale_size_area()`.  This will make the *area* of the dot proportional to the value of the variable mapped to it.  Without `scale_size_area()`, the *diameter* of the dot is proportional to the variable.  Explain which scale, area or diameter, you think is most informative.  (Include both graphics in your Rmd file.)
+
+* Create a data table `BiggestByCountry` that has the one biggest city in each country.
+```{r}
+BiggestByCountry <- 
+  WorldCities %>% 
+  group_by( country ) %>%
+  filter( rank(desc(population)) == 1 )
+```
+
+
+* Plot the locations of `BiggestByCountry` as another layer in your graphic.  Make them red. 
+    ```{r eval=FALSE}
+p + 
+  geom_point( data=BiggestByCountry, color='red', alpha=.5, aes(size=population)) +
+  geom_text( data=BiggestByCountry, size=2, aes( label=name ))
+```
+
+* Add to the graphic the names of the cities from `BiggestByCountry`.  Hint: use `geom_text()`.  Set the `size=2`. Remember, *setting* is different from *mapping* a variable. 
+
+* Find the countries where the biggest city is more than 5M people
+```{r}
+BiggestByCountry %>%
+  filter( population > 5000000)
+```
+    The resulting table will be a manageable size; display as output in your report just these variables: city name, country, and population.
+    
+* List by name all of the data verbs you used in this work.
+
