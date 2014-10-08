@@ -66,7 +66,8 @@ finalPlot <-
   geom_polygon( data=mosaic:::World_Countries_df,
                 color="white", fill=NA, 
                 aes( x=long, y=lat, group=group )) +
-  geom_point( aes(size=urbanFrac, color=cut(log10(population),breaks=7) ) ) +
+  geom_point( aes(size=urbanFrac, 
+                  color=cut(log10(population),breaks=7) ) ) +
   scale_size_area() 
 
 ```    
@@ -77,7 +78,7 @@ Do this work with one or more partners.  One person should compose the Rmd file,
 * Tom Jefferson, <monticello@yahoo.com>
 * Abby Adams, <aa@baycolony.org>
 
-To get the email to show up as a link, enclose it in braces (`<` and `>`)
+To get the email to show up as a link, enclose it in angle bracket, e.g., `<bfranklin76@gmail.com>`.
 
 ## Joining Multiple Files
 
@@ -89,11 +90,15 @@ finalPlot
 
 ### One: Envision the Output
 
-What will the glyph-ready data look like to produce the plot?  Sketch out the table putting in a case or two of made-up data in the right form.
+What will the glyph-ready data look like to produce the plot? 
 
-Take a picture of your sketch and send it to yourself so that you can put a sketch of the table in your Rmd document.
+Start by analyzing the graphic.     
+    * What variables form the frame?
+    * What is the glyph? (Ignore the country borders, which are really a guide, not a glyph.) 
+    * What graphical properties does the glyph have?  Which variables are mapped to those properties?
+Sketch out, on paper, the table by writing the variable names and a case or two of made-up data in the usual rectangular format.
 
-\vspace*{1.5in}
+Take a picture of your sketch and send it to yourself so that you can include your sketch of the table in your Rmd document.  (If you don't remember how to include a graphic in an Rmd file, ask!)
 
 ### Two: Look at the Starting Data
 
@@ -111,7 +116,7 @@ As you do the selecting, rename variables as appropriate so that you can join th
 
 To rename a variable using `select()`, use a command like this:
 ```
-NewName <- select( InputData, newname=oldname,
+NewTable <- select( InputTable, newname=oldname,
                    ... other vars you want to include )
 ```
 
@@ -119,12 +124,15 @@ NewName <- select( InputData, newname=oldname,
 
 Note that `WorldCities` represents the country in a different encoding than `CountryCentroids` and `CountryData`.  You'll see the acronym ISO in some of the variable names.  This stands for the International Standards Organization, which publishes such things as standard country abbreviations.
 
-You'll have to translate the `WorldCities` country into a form compatible with `CountryData` and `CountryCentroids`, or *vice versa*.  To do this, you may find the `Codes` and `Synonyms` data tables useful.  Load them with this command.
+You'll have to translate the `WorldCities` country into a form compatible with `CountryData` and `CountryCentroids`, or *vice versa*.  To do this, you may find the `Codes` and `Synonyms` data tables useful.  Load them with these commands.
 
-```{r}
-"http://www.mosaic-web.org/go/datasets/DCF/CountryCodes.rda" %>%
-  url() %>%
-  load()
+```{r eval=TRUE,echo=TRUE}
+Codes <- 
+  fetchData("DCF/CountryCodes.csv") %>%
+  select(ISO2, ISO3)
+Synonyms <- 
+  fetchData("DCF/CountrySynonyms.csv") %>% 
+  mutate( country=as.character(country))
 ```
 
 Write down on paper a plan for joining the information in the various tables in order to carry out the translation.  This should show, at each stage, which data tables you need to join and what variable(s) they should be joined on.  Give a sketch of what you plan the output from the join to look like.  Remember, `inner_join()` requires the matching variables to have the same name, so you may need to rename some variables.  Include this on your plan.
@@ -137,7 +145,7 @@ Carry out the appropriate operation to transfigure `WorldCities` into a form who
 
 One of the variables you will be plotting is "urban fraction of the total population," a number between 0 and 100%. Perform the appropriate transfiguration to create this variable.
 
-### Final: Make the graph
+### Final Step: Make the graph
 
 This is a matter of *mapping* variables in your glyph-ready data into graphical aesthetics.
 
