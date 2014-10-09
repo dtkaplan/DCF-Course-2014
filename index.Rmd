@@ -130,7 +130,7 @@ Data Verbs  [Goals for the Week](Background/WeeklyGoals.html#week-3)
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 class="this-week">Week 4  &nbsp; <span style="float:right;">Oct. 8<span></h4>
+   <h4>Week 4  &nbsp; <span style="float:right;">Oct. 8<span></h4>
 Working with Multiple Tables [Goals for the Week](Background/WeeklyGoals.html#week-4)
 
 **Before Class**   
@@ -143,12 +143,13 @@ Working with Multiple Tables [Goals for the Week](Background/WeeklyGoals.html#we
 **In Class and After**    
   
 
-* [Warm-Up Activity](Notes/Week-4/Week-4-WarmUp.pdf) and the [Group Activity](Notes/Week-4/Week-4-Join.pdf). Submit the HTML files [here on Moodle](https://moodle.macalester.edu/mod/assign/view.php?id=25920).
+* [Warm-Up Activity](Notes/Week-4/Week-4-WarmUp.pdf)  Submit the HTML file [here on Moodle](https://moodle.macalester.edu/mod/assign/view.php?id=25920).
 * [Assignment 4](`r Assignment("Assignment-Four")`) due Oct 15 [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19073)
+* OPTIONAL: [Case study](Notes/Week-4/Week-4-Join.pdf) about join.
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 5  &nbsp;<span style="float:right;">Oct. 15</span></h4>
+   <h4 class="this-week">Week 5  &nbsp;<span style="float:right;">Oct. 15</span></h4>
    
 Stats and Properties of Cases Collectively. [Goals for the Week](Background/WeeklyGoals.html#week-5)
 
