@@ -1,7 +1,7 @@
 
 Graphics choices: just reading and some drill. What's wrong with this graph?  They don't need to master it.
 
-
+Play with color brewer <http://colorbrewer2.org/#> and three different kinds of colors. 
 
 Scatter plots with error bars based on the 95% CI or standard deviation.
 

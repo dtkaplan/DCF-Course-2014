@@ -164,7 +164,8 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
   
 **In Class and After**    
   
-[Assignment 5](`r Assignment("Assignment-Five")`) due TBA [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
+* Colors palettes: [ColorBrewer](http://colorbrewer2.org/#)
+* [Assignment 5](`r Assignment("Assignment-Five")`) due TBA [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
 
  
    </div>
