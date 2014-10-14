@@ -1,13 +1,13 @@
 ---
-title: "DCF Week 5 Warm-Up Exercises"
+title: "DCF Week 5 Warm-Up for Assignment"
 output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: yes
   pdf_document:
     fig_height: 3
     fig_width: 5
     keep_tex: yes
-  html_document:
-    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
-    fig_caption: yes
   word_document:
     fig_height: 3
     fig_width: 5
@@ -15,6 +15,12 @@ date: "Data and Computing Fundamentals"
 ---
 
 <!-- http://tinyurl.com/m4o4n2b/ stands for http://www.mosaic-web.org/go/datasets/ -->
+
+<!--
+
+See CleanRestaurants.R.
+
+-->
 
 
 ```{r child="../../CSS/DCF-common.Rmd"}
@@ -165,14 +171,4 @@ p <-
 
 * Do the same for the distribution of `SCORES` by `ACTION`.
 
-
-### In DRAFT
-
-Clean up the `Restaurants` data.
-
-* Remove quotes inside strings.
-* Turn Score into a number
-* Turn CURRENTGRADE into a single letter.  Replace non-letters with NA.
-* Turn ACTION into a single letter.  NA's for those that are non-letters.
-* Turn BORO into a single number.  NA's for those not 1:5.
 
