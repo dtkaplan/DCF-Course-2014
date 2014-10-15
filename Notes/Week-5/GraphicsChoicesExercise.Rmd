@@ -1,0 +1,240 @@
+---
+title: "Graphics Choices"
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+    keep_tex: yes
+  word_document:
+    fig_height: 3
+    fig_width: 5
+date: "Data and Computing Fundamentals"
+---
+
+
+
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+```{r ref_label="../../CSS/DCF-for-PDF.Rmd"}
+```
+
+```{r include=FALSE }
+library( knitr )
+opts_chunk$set( echo=FALSE, message=FALSE, warning=FALSE,
+                results="hide", out.width="40%" ) 
+```
+
+
+## Simple Graphics for Gene Expression
+
+In the 1980s, the [National Cancer Institute](http://www.cancer.gov/) developed a set of 60 cancer cell lines, called [NCI60](http://www.broadinstitute.org/mpr/NCI60/NCI60.html). The original purpose was for screening potential anti-cancer drugs. A recent overview in [*Nature*](http://www.nature.com/nrc/journal/v6/n10/full/nrc1951.html) describes some of the ongoing work with these cell lines.  
+
+Here you will examine gene expression in these cell lines using data described in [Staunton *et al.*](http://www.pnas.org/content/98/19/10787.full). More than 41,000 probes were used for each of the 60 cell lines.
+
+For convenience, the data are provided by the `DCI` package in two data tables `NCI60` and `NCI60cells`.^[`NCI60` and `NCI60cells` are lightly re-organized from the [form provided by Staunton *et al.*](http://www.broadinstitute.org/mpr/NCI60/NCI60.html).]
+
+`NCI60` is somewhat large  --- 41,078 probes by 60 cell lines.  Each of those 2,454,680 entries is a measure of how much a particular gene was expressed in one cell line.  
+
+In this exercise, you're going to look at just one of the probes.  The question you will make a graphic to address is:
+
+**Is the probe's gene expressed in different amounts across different types of cancer?**
+
+This activity is intended to be about the construction of informative graphics, not the mechanics of transfiguring data.  To save time, the following set of commands should be copied into your report, so that you can execute them to create glyph-ready data.
+
+You should be able to read and understand the commands, but you don't have to construct them from scratch.^[A few lines involve data cleaning, which you have not yet studied.  Don't worry about the lines where `as.character()` or `gsub()` appear.]
+
+```{r echo=TRUE, eval=FALSE}
+probeSelected <- "[Your probe name, e.g. DZIP1L, goes here.]"
+```
+
+```{r}
+probeSelected <- "A_32_P33263"
+```
+
+```{r echo=TRUE}
+Narrow <-
+  NCI60 %>% 
+  gather( cellLine, expression, -Probe ) %>%
+  mutate( cellLine=as.character(cellLine) )
+JustTheTypes <- 
+  NCI60cells %>%
+  mutate( cellLine=as.character(cellLine) ) %>% 
+  mutate( cellLine=gsub("\\:",".", cellLine)) %>%
+  select(cellLine, tissue )
+Narrow <- inner_join( Narrow, JustTheTypes )
+MyProbe <- 
+  Narrow %>% 
+  filter( Probe==probeSelected ) 
+```
+
+The `Narrow` and `MyProbe` data frames are in glyph-ready form.
+
+
+We're ready for a simple graphic:  Make a scatter plot of the expression versus tissue type:
+
+```{r echo=TRUE}
+ggplot( MyProbe, aes(x=tissue, y=expression)) +
+  geom_point() + 
+  theme(axis.text.x=element_text(angle=60,hjust=1))
+```
+
+
+
+It's hard to see, at a glance, the differences between expressions in the various tissue types.  Therefore, this is not a good graphic.
+
+It's very common in the professional literature to display data like these as a bar chart.  It might look like this:
+
+```{r echo=TRUE}
+SimpleStats <-
+  MyProbe %>%
+  group_by( tissue ) %>%
+  summarise( mid=mean( expression ))
+ggplot( SimpleStats, aes(x=tissue, y=mid )) + 
+  geom_bar( stat="identity" ) +
+  theme(axis.text.x=element_text(angle=60,hjust=1))
+```
+
+
+Before going on, decide what you like and don't like about this plot.  Write it down
+
+
+Then continue ...
+
+... but not before you've written down your opinions ...
+
+... Really!
+
+... Are you ready now?  
+
+... You've really written something?
+
+... Then go on.
+
+
+There are several bad features of this plot:
+
+* Too much ink.
+* The order of the levels of `tissue` is alphabetical.  It's unlikely that the mechanisms of cancer consider what we call different types of cancer in English.  So the x-axis order is being wasted.
+* The precision of the feature (mean expression) is not shown.  How would the viewer know whether this spread is just the result of random variation?
+
+
+Here are several suggestions for improving the graphic:
+
+1. Lighten up on the color.  Perhaps `alpha=.2`.  Or perhaps a dot plot rather than a bar chart.
+2. Reorder the tissue types.
+    
+    One way to do this is to pick a quantity that you want to dictate the order of groups.  For instance, the mean expression.
+    * Create a data table of that quantity for each group (as with `SimpleStats`).
+    * Reorder the categories based on the quantity:
+    
+        ```{r echo=TRUE}
+SimpleStats2 <-
+  SimpleStats %>%
+  mutate( tissue=reorder( tissue, mid ) )
+```
+        Use `disc()` to order the other way.
+3. Show a statistical measure of the variation.
+    
+    Without going into details of statistical method, a very common way to present the imprecision in an estimated quantity is with a "standard error." For quantities such as the mean, the standard error has a simple form (but not necessarily a form that will be obvious to you).  Here's the calculation:
+    
+    ```{r echo=TRUE}
+SimpleStats3 <-
+  MyProbe %>%
+  group_by( tissue ) %>%
+  summarise( mid=mean( expression ),
+             se=sd(expression)/sqrt(n()) ) 
+```
+    
+4. Show the expression values for individual cases.
+5. Use a different modality, e.g. a dot plot, a box-and-whiskers plot (with `notch=TRUE`).
+
+The conventional solution is not the best: show the bars along with the measure of precision.
+
+```{r}
+ggplot( SimpleStats3, aes(x=tissue, y=mid )) + 
+  geom_bar( stat="identity" ) +
+  geom_errorbar(aes( ymax=mid+2*se,ymin=mid-2*se),width=.2) +
+  theme(axis.text.x=element_text(angle=60,hjust=1))
+```
+
+Statisticians refer to such things as "dynamite plots," in a way intended to be pejorative.  You can find a better way to present these data.
+
+```{r results='hide'}
+SimpleStats4 <-
+  SimpleStats3 %>% 
+  mutate( tissue=reorder( tissue, mid ) )
+pp <- ggplot( SimpleStats4, aes(x=tissue, y=mid )) + 
+  geom_pointrange( aes(x=tissue, y=mid, ymax=mid+2*se, ymin=mid-2*se)) +
+  geom_point( data=MyProbe, 
+              aes(x=tissue, y=expression, color=tissue),
+              position=position_jitter( width=.1 )) + 
+  theme(axis.text.x=element_text(angle=60,hjust=1)) + 
+  ylab("Expression")
+
+```
+
+## Explication of the Data Transfiguration
+
+The `NCI60` table is in wide format: each of the cell lines is its own variable.  You're going to turn it into a narrow format.
+
+1. Look at the variable names in `NCI60`.  How many are there?
+#. Run this command:
+    ```{r echo=TRUE}
+Narrow <-
+  NCI60 %>% 
+  gather( cellLine, expression, -Probe ) %>%
+  mutate( cellLine=as.character(cellLine) )
+```
+
+Look at a small random set of the cases in `Narrow`.  How many variables are there now?
+    
+Add in the cell types (with some technical corrections to make names match)
+```{r echo=TRUE}
+JustTheTypes <- 
+  NCI60cells %>%
+  mutate( cellLine=as.character(cellLine) ) %>% 
+  mutate( cellLine=gsub("\\:",".", cellLine)) %>%
+  select(cellLine, tissue )
+```
+
+Now, add the kind of cell line the each case belongs to.  This information is in the `NCI60cells` table.  The variables already have matching names.
+
+```{r echo=TRUE}
+Narrow <- inner_join( Narrow, JustTheTypes )
+```
+    
+```{r results='hide'}
+biggies <- 
+  Narrow %>% 
+  group_by( Probe ) %>% 
+  summarise( spread=sd(expression) ) %>% 
+  arrange(abs(spread-2)) %>% 
+  head(15)
+```
+
+Pick one of these probes to look at, it doesn't matter which one.^[In reality, the choice of probe makes a great deal of difference.  These particularly probes were chosen based on a screening test.  In an upcoming part of the course, you'll look at how to deal with multiple variables, such as the 41,078 variables here.] 
+```{r results='asis'}
+paste( as.character(biggies$Probe), collapse="\n") %>% cat
+```
+
+Using your probe, filter out only the cases involving that probe, for instance:
+```{r}
+MyProbe <- 
+  Narrow %>% 
+  filter( Probe=="A_32_P33263" ) 
+```
+
+The result, `MyProbe` has 60  to 600 cases. It should look like this:
+```{r results='markup'}
+head( MyProbe, 4 )
+```
+
+Now, `MyProbe` will look like this:
+```{r results='markup'}
+head( MyProbe, 3)
+```
+
