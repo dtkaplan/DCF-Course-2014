@@ -79,7 +79,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="r"><code>probeSelected &lt;- &quot;[Your probe name, e.g. DZIP1L, goes here.]&quot;</code></pre>
 <pre class="r"><code>Narrow &lt;-
   NCI60 %&gt;% 
-  gather( cellLine, expression, -Probe ) %&gt;%
+  tidyr::gather( cellLine, expression, -Probe ) %&gt;%
   mutate( cellLine=as.character(cellLine) )
 JustTheTypes &lt;- 
   NCI60cells %&gt;%

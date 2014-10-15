@@ -164,9 +164,9 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
   
 **In Class and After**    
   
+* Warm-up: [Making graphics choices](Notes/Week-5/GraphicsChoicesExercise.html)
 * Colors palettes: [ColorBrewer](http://colorbrewer2.org/#)
-* [Week-5 Warm-up](Notes/Week-5/Week-5-Warmup.html) (same as assignment 5)
-* [Assignment 5](Notes/Week-5/Week-5-Warmup.html) due Oct 28. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
+* Starting on [Assignment 5](Notes/Week-5/Week-5-Warmup.html) in class. Due Oct 28. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
 
  
    </div>

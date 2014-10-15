@@ -58,7 +58,7 @@ probeSelected <- "A_32_P33263"
 ```{r echo=TRUE}
 Narrow <-
   NCI60 %>% 
-  gather( cellLine, expression, -Probe ) %>%
+  tidyr::gather( cellLine, expression, -Probe ) %>%
   mutate( cellLine=as.character(cellLine) )
 JustTheTypes <- 
   NCI60cells %>%
