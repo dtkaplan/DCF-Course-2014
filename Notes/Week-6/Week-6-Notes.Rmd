@@ -1,4 +1,8 @@
 
+* Teach tab completion for variable names,
+
+* Using Rmd files.
+
 
 
 * Build a decision-tree model of the factors that determine strong one-way emigration.  (Ratio of GDP, life expectancy, ...)

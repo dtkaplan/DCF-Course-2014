@@ -7,7 +7,7 @@ output:
   pdf_document:
     fig_height: 3
     fig_width: 5
-    keep_tex: yes
+    keep_tex: no
   word_document:
     fig_height: 3
     fig_width: 5
@@ -75,7 +75,6 @@ Note that the `DBA` variable contains the name of the restaurant.
 Restaurants %>% nrow()
 ```
 
-* Some of the entries in the 
 * How many distinct restaurant names are there? 
 
 ```{r}
