@@ -65,7 +65,7 @@ Government agencies have increasingly been putting data in publicly accessible p
 [New York City publishes](https://data.cityofnewyork.us/) many datasets, including health inspections of restaurants.  That's what you're going to work on now.
 
 The data table `Restaurants` contains information about each health violation.  (See the introduction for how to access the data table.)
-Note that the `DBA` variable contains the name of the restaurant.
+Note that the `DBA` variable contains the name of the restaurant.^[The data tables are published by the New York City government as a zip file at `https://data.cityofnewyork.us/Health/Restaurant-Inspection-Results/4vkw-7nck?`]
 
 
 * What is the meaning of a case in this data table?  You can look at the data table with this command: `View( Restaurants )`.

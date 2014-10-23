@@ -180,7 +180,9 @@ ggplot( SimpleStats, aes(x=tissue, y=mid )) +
   theme(axis.text.x=element_text(angle=60,hjust=1))
 ```
 
-Statisticians refer to such things as "dynamite plots," in a way intended to be pejorative.  You can find a better way to present these data.
+Statisticians refer to such things as "dynamite plots," in a way intended to be pejorative.  You can find a better way to present these data.^[See Classic: Belia, et al. “Researchers Misunderstand Confidence Intervals and Standard Error Bars”, Psych Methods, 2005 and Lane and Sandor: “Designing Better Graphs by Including Distributional Information and Integrating Words, Numbers, and Images”, Psych Methods, 2009]
+
+
 
 ```{r results='hide'}
 SummaryStats3 <-
