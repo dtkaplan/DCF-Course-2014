@@ -3,6 +3,18 @@
 
 * Using Rmd files.
 
+### HTML Markup
+
+Show a web page and the source from it. <http://en.wikipedia.org/wiki/Mile_run_world_record_progression>
+
+Show one that's hopeless (Cherry Blossom), too much javascript
+
+Show one where you download a file (311 Calls?  World Bank?)
+
+Show publishing a google doc and reading as HTML
+
+
+
 
 
 * Build a decision-tree model of the factors that determine strong one-way emigration.  (Ratio of GDP, life expectancy, ...)
