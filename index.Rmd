@@ -3,7 +3,6 @@ output:
   html_document:
     css: CSS/DCF-Course-style.css
     fig_caption: yes
-    keep_md: yes
     self_contained: no
   pdf_document: default
 ---
