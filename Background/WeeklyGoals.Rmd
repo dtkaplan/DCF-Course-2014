@@ -67,19 +67,24 @@ Building on the Week 1 goals, at the end of Week 2, you should be able to:
     * Have a basic understanding of how box-and-whisker plots, or violin plots, can be used to compare densities of a quantitative variable at different levels of a categorical variable.
 * Recognize that a density can be a more effective presentation of the location of data, particularly when there are a very large number of cases.
 
+
 ## Week 6
+
+* Recognize different common ways of making data available over the Internet.
+* Be able to download or access data stored in these common ways.
+* Use simple regular expressions to find patterns in character strings.
+* Be able to identify "blunders" using graphics. Use *filter* to eliminate blundering cases or NA to mark them as blunders.
+
+## Week 7
 
 * Understand why graphical presentations are ill-suited to display relationships that involve many variables.
 * Be able to create predictive models using clustering or decision trees.
 * Know how to evaluate the quality of two-level classification models.
 * Be aware of "dimension reduction" techniques such as SVD.
 
-## Week 7
 
-* Recognize different common ways of making data available over the Internet.
-* Be able to download or access data stored in these common ways.
-* Use simple regular expressions to find patterns in character strings.
-* Be able to identify "blunders" using graphics. Use *filter* to eliminate blundering cases or NA to mark them as blunders.
+
+
 
 
 

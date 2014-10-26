@@ -149,7 +149,7 @@ Working with Multiple Tables [Goals for the Week](Background/WeeklyGoals.html#we
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 class="this-week">Week 5  &nbsp;<span style="float:right;">Oct. 15</span></h4>
+   <h4>Week 5  &nbsp;<span style="float:right;">Oct. 15</span></h4>
    
 Stats and Properties of Cases Collectively. [Goals for the Week](Background/WeeklyGoals.html#week-5)
 
@@ -166,7 +166,7 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
   
 * Warm-up: [Making graphics choices](Notes/Week-5/GraphicsChoicesExercise.html)
 * Colors palettes: [ColorBrewer](http://colorbrewer2.org/#)
-* Starting on [Assignment 5](Notes/Week-5/Week-5-Warmup.html) in class. Due Oct 28. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
+* Starting on [Assignment 5](Notes/Week-5/Week-5-WarmUp.html) in class. Due Oct 28. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19074)
 
  
    </div>
@@ -176,9 +176,9 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
    <div class="clearfix visible-md-block"></div>
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 6   &nbsp;<span style="float:right;">Oct. 29</span></h4>
+   <h4 class="this-week">Week 6   &nbsp;<span style="float:right;">Oct. 29</span></h4>
 
-Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#week-6)
+Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#week-6)
    
 **Before Class**   
 
@@ -195,7 +195,7 @@ Working with many variables. [Goals for the Week](Background/WeeklyGoals.html#we
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Week 7   &nbsp; <span style="float:right;">Nov. 12</span></h4>
-Cleaning and Scraping. [Goals for the Week](Background/WeeklyGoals.html#week-7)
+Working with multiple variables [Goals for the Week](Background/WeeklyGoals.html#week-7)
 
 **Before Class**   
 
