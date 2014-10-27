@@ -181,7 +181,7 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
    
 **Before Class**   
 
-* Notes: 
+* Notes: [Scraping and cleaning data](`r Notes("ScrapingData","DraftNarrative.html")`)
  
 
 * [Weekly Drill](`r Drill("Week-6.html")`)
