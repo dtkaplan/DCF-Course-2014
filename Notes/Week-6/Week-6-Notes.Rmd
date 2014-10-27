@@ -5,6 +5,12 @@
 
 ### HTML Markup
 
+See "NuclearReactors.Rmd"
+
+In groups of 2 or 3, find an interesting Wikipedia page with a table, scrape the data from it, and generate a figure that tells an interesting story.
+
+More details: As you can see from the attachments, I used the "readHTMLTable()" function in the XML package in R to scrape data from tables that exist in Wikipedia.  In the file "scraping1.pdf" I've downloaded the list of TV shows or films show in or set in Liverpool England (see http://en.wikipedia.org/wiki/List_of_films_and_television_shows_set_or_shot_in_Liverpool for the source), while in scraping2.pdf, I'm downloading the list of all nuclear reactors in Japan (see http://en.wikipedia.org/wiki/List_of_nuclear_reactors).  In both cases, the goal is to say something about the distribution over time (for the Liverpool example) or the change in capacity over time (for the Japanese reactors).  
+
 Show a web page and the source from it. <http://en.wikipedia.org/wiki/Mile_run_world_record_progression>
 
 Show one that's hopeless (Cherry Blossom), too much javascript
