@@ -46,8 +46,6 @@ result = readHTMLTable(paste(wikipedia, page, sep="/"),
   stringsAsFactors=FALSE)
 table = result[[21]]  # change to appropriate table number
 names(table)
-str(table)
-head(table)
 ```
 
 ```{r}
@@ -71,5 +69,5 @@ Interpretation: the average net capacity of nuclear power plants in Japan tended
 
 In groups of 3, find an interesting Wikipedia page with a table, scrape the data from it, and generate a figure that tells an interesting story. (I'd suggest finding a simple table, as more complex ones are harder to parse.)
 
-You should include a sentence which interprets the figure. Your formatted R Markdown output file (.html or .pdf) should be submitted by email to `nhorton@amherst.edu` before the start of class on Wednesday, October 15th and cc'ed to all group members.  Please use the subject line `STAT135: scraping` for the message.
+You should include a sentence which interprets the figure.
 

@@ -193,7 +193,7 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
 
 * Warm-Up: [Big data?](Notes/Week-6/NotSoBig.html)
 * [Dates as a variable type](Notes/Week-6/DatesAsNumbers.html)
-* Web Scraping [In-class project]()
+* Web Scraping: In-class project [Rmd file](Notes/Week-6/NuclearReactors.Rmd) and [PDF version](Notes/Week-6/NuclearReactors.pdf)
 * Regular expressions: [A short introduction](Notes/Week-6/RegEx.html) 
 * [Assignment 6](`r Assignment("Assignment-Six")`) due TBA. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
 

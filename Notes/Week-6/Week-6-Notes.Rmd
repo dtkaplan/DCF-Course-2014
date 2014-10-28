@@ -3,6 +3,12 @@
 
 * Using Rmd files.
 
+### Census data
+
+<http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t>
+
+### How `readHTMLTable()` works
+
 ### HTML Markup
 
 See "NuclearReactors.Rmd"
