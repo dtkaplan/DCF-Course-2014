@@ -1,44 +1,6 @@
 
 
 
-Use the Bird cleaning data from the exercise you originally intended for week 3.
 
-## Scraping
+* Build a decision-tree model of the factors that determine strong one-way emigration.  (Ratio of GDP, life expectancy, ...)
 
-A bit about finding data.  What's data and what's a summary.  If it's not in something like tabular form, give up.
-
-### Types of Files
-
-* html
-* csv
-* xlsx
-* package-specific files
-
-### Not files: part of a web session
-
-Global Migration Database: <http://databank.worldbank.org/data/views/variableselection/selectvariables.aspx?source=global-bilateral-migration#>
-
-### How to read them in.
-
-* XML for picking tables.  Can we make a command that head()s all of the tables in the list so that you can pick one out? lapply()
-
-* Demo of foreign   --- find some sites with package-specific data
-
-* XLSX --- show that it can be done.  They don't need to master this.  Conversion to CSV, yes. A tutorial? <http://www.r-bloggers.com/read-excel-files-from-r/>
-
-* text files
-
-## Cleaning
-
-* types: numerical, factor, string, ... how to examine them.
-* are there values that just shouldn't be there: "J" for sex.
-* checking against a priori bounds, e.g. month is 1:12, day is 1:31, wing-span is < 1 m
-* inner_join against a translation table
-* regular expressions using extract to, say, 
-    * breaking a string with two or more variables into the separate variables.
-    * pull out numbers from a string.  Using mutate() 
-    * maybe [this package](http://www.r-bloggers.com/canned-regular-expressions-qdapregex-0-1-2-on-cran/) or <RegEx101.com>
-
-UN City codes: <http://www.unece.org/fileadmin/DAM/cefact/locode/au.htm>
-
-Activity: One about [birds](Notes/Week-3-Handout-2.pdf) 

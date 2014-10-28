@@ -1,0 +1,106 @@
+---
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-2014/CSS/DCF-style.css
+    fig_caption: yes
+    toc: no
+---
+
+```{r child="/Users/kaplan/KaplanFiles/DCF-2014/CSS/DCF-common.Rmd"}
+```
+
+```{r include=FALSE}
+require(lubridate)
+library( XML )
+library( RCurl )
+library( data.table )
+options( width=100 )
+```
+
+## From Strings to Numbers
+
+You've seen two major types of variables: quantitative and categorical.  You're used to using quoted character strings as the levels of categorical variables, and numbers for quantitative variable.
+
+Often, you will encounter data files which have variables whose meaning is numeric but whose representation is a character string.  This can occur when one or more cases is given a non-numeric value, e.g., "not available" or ".".
+
+To correct these use the `as.numeric()` and `as.character()` functions.
+
+For example, in the `OrdwayBirds` data, the `Month`, `Day` and `Year` variables are all being stored as categorical variables.  Convert these to numbers with the  following:
+```{r}
+OrdwayBirds <- OrdwayBirds %>%
+  mutate( Month=as.numeric(as.character(Month)),
+          Year=as.numeric(as.character(Year)),
+          Day=as.numeric(as.character(Day)))
+```
+
+Exercise: Not all of the `Day` values in `OrdwayBirds` are legitimate.  Find the ones that are clearly out of place and filter them from the data.
+
+### Dates as Dates
+
+Dates are generally written down as character strings, for instance, "29 October 2014".  As you know, dates have a natural order.  When you plot values suc as "16 December 2014" and "29 October 2014", you expect the December date to come before the October date, even though this is not true alphabetically of the string itself.  
+
+When you plot a value that is numeric, you expect the axis to be marked with a few round numbers.  A plot from 0 to 100 might have ticks at 0, 20, 40, 60, 100.  
+It's similar dates.  When you are plotting dates within one month, you expect the day of the month to be shown on the axis.  But if you are plotting a range of several years, you it would be appropriate to show only the years on the axis.
+
+When you are given dates stored as a character string, it can be useful to convert them to a genuine dates.  For instance, in the `OrdwayBirds` data, the `Timestamp` variable refers to the time the data were transcribed from the original lab notebook to the computer file. You can translate the character string into a genuine date using functions from the `lubridate` package.  Consider a few of the date character strings:
+```{r}
+OrdwayBirds %>% select( Timestamp ) %>% sample_n( size=3 )
+```
+
+These dates are written in a format showing month/day/year hour/minute/second.   The `mdy_hms()` function converts strings in this format to a date.  As an example, suppose you want to examine when the entries were transcribed and who did them.  You might create a small data table like this.
+```{r}
+library( lubridate )
+WhenAndWho <- OrdwayBirds %>% 
+  select(Who=DataEntryPerson, When=Timestamp) %>%
+  mutate( When=mdy_hms(When) )
+```
+
+And as a plot ...
+```{r}
+ggplot( WhenAndWho, aes(When, Who)) + geom_point( alpha=0.2 ) 
+```
+
+Many of the same operations that apply to numbers can be used on dates.  For example:
+```{r}
+WhenAndWho %>% 
+  group_by( Who ) %>% 
+  summarise( start=min(When,na.rm=TRUE),
+             finish=max(When, na.rm=TRUE)) %>%
+  mutate( duration=finish-start)
+```
+
+There are many similar `lubridate` functions for converting into dates strings in different formats, e.g. `ymd()`, `dmy()`, and so on.  There are also functions like `hour()`, `yday()`, 
+
+
+### Exercise
+
+What does this plot tell you?
+
+```{r}
+WhenAndWho %>% 
+  ggplot( aes( x=Who, y=hour(When))) + geom_violin() + coord_flip()
+```
+
+
+### Small Project
+
+Find the entries in `OrdwayBirds` where there is a mistake spelling the species.  Do these mistakes tend to happen at certain times of day?
+
+
+```{r echo=FALSE,eval=FALSE}
+CleanedSpeciesNames <- OrdwaySpeciesNames %>%
+  mutate(SpeciesName=as.character(SpeciesName),
+         SpeciesNameCleaned=as.character(SpeciesNameCleaned) )
+Mistakes <- OrdwayBirds %>%
+  select(Who=DataEntryPerson, When=Timestamp, SpeciesName) %>%
+  mutate( When=mdy_hms(When), 
+          SpeciesName=as.character(SpeciesName) ) %>%
+  inner_join( CleanedSpeciesNames ) %>%
+  mutate( mistake=SpeciesName != SpeciesNameCleaned )
+```
+
+```{r eval=FALSE}
+Mistakes %>% 
+  ggplot( aes( y=hour(When),x=mistake)) + geom_violin( ) + facet_wrap( ~ Who )
+```
+```

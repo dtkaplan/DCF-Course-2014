@@ -4,7 +4,7 @@ author: "Daniel Kaplan"
 date: "October 1, 2014"
 output: html_document
 ---
-
+ 
 Pick one kind of problem to work on.
 
 * Week 1: No data except examples (The taxicab app data worked well.)
