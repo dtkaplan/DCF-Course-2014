@@ -52,49 +52,26 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
+<div id="starters" class="section level2">
+<h2>Starters</h2>
 <ul>
-<li><p>Teach tab completion for variable names,</p></li>
-<li><p>Using Rmd files.</p></li>
+<li>Teach tab completion for variable names, function names, and arguments</li>
+<li>Using Rmd files.</li>
 </ul>
-<div id="census-data" class="section level3">
-<h3>Census data</h3>
-<p><a href="http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t">http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t</a></p>
+<div id="an-example-of-available-data" class="section level3">
+<h3>An example of available data</h3>
+<p>Files you can download: Examples:<br />* US Census data <a href="http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t">http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t</a> * New York City 311 calls <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9</a>. Here’s <a href="http://dtkaplan.github.io/DCF-2014/CourseNotes/ScrapingData/311-Calls.html">the graph of complaint count against time</a></p>
+<p>What variables are going to cause trouble?</p>
 </div>
-<div id="html-markup" class="section level3">
-<h3>HTML Markup</h3>
-<p>See “NuclearReactors.Rmd”</p>
-<p>In groups of 2 or 3, find an interesting Wikipedia page with a table, scrape the data from it, and generate a figure that tells an interesting story.</p>
-<p>More details: As you can see from the attachments, I used the “readHTMLTable()” function in the XML package in R to scrape data from tables that exist in Wikipedia. In the file “scraping1.pdf” I’ve downloaded the list of TV shows or films show in or set in Liverpool England (see <a href="http://en.wikipedia.org/wiki/List_of_films_and_television_shows_set_or_shot_in_Liverpool">http://en.wikipedia.org/wiki/List_of_films_and_television_shows_set_or_shot_in_Liverpool</a> for the source), while in scraping2.pdf, I’m downloading the list of all nuclear reactors in Japan (see <a href="http://en.wikipedia.org/wiki/List_of_nuclear_reactors">http://en.wikipedia.org/wiki/List_of_nuclear_reactors</a>). In both cases, the goal is to say something about the distribution over time (for the Liverpool example) or the change in capacity over time (for the Japanese reactors).</p>
-<p>Show a web page and the source from it. <a href="http://en.wikipedia.org/wiki/Mile_run_world_record_progression">http://en.wikipedia.org/wiki/Mile_run_world_record_progression</a></p>
-<p>Show one that’s hopeless (Cherry Blossom), too much javascript</p>
-<p>Show one where you download a file (311 Calls? World Bank?)</p>
-<p>Show publishing a google doc and reading as HTML</p>
-<p>Use the Bird cleaning data from the exercise you originally intended for week 3.</p>
 </div>
-<div id="scraping" class="section level2">
-<h2>Scraping</h2>
-<p>A bit about finding data. What’s data and what’s a summary. If it’s not in something like tabular form, give up.</p>
-<div id="types-of-files" class="section level3">
-<h3>Types of Files</h3>
-<ul>
-<li>html</li>
-<li>csv</li>
-<li>xlsx</li>
-<li>package-specific files</li>
-</ul>
-</div>
-<div id="not-files-part-of-a-web-session" class="section level3">
-<h3>Not files: part of a web session</h3>
-<p>Global Migration Database: <a href="http://databank.worldbank.org/data/views/variableselection/selectvariables.aspx?source=global-bilateral-migration#">http://databank.worldbank.org/data/views/variableselection/selectvariables.aspx?source=global-bilateral-migration#</a></p>
-</div>
-<div id="how-to-read-them-in." class="section level3">
-<h3>How to read them in.</h3>
-<ul>
-<li><p>XML for picking tables. Can we make a command that head()s all of the tables in the list so that you can pick one out? lapply()</p></li>
-<li><p>Demo of foreign — find some sites with package-specific data</p></li>
-<li><p>XLSX — show that it can be done. They don’t need to master this. Conversion to CSV, yes. A tutorial? <a href="http://www.r-bloggers.com/read-excel-files-from-r/">http://www.r-bloggers.com/read-excel-files-from-r/</a></p></li>
-<li><p>text files</p></li>
-</ul>
+<div id="reading-directly-from-the-web" class="section level2">
+<h2>Reading directly from the web</h2>
+<p><a href="NuclearReactors.pdf">Nuclear plants activity</a></p>
+<p>Show the HTML markup for the <a href="http://en.wikipedia.org/wiki/List_of_nuclear_reactors">web page</a> drawing attention to <code>&lt;table&gt;</code></p>
+<p>They don’t need to master this. Conversion to CSV, yes. A tutorial? <a href="http://www.r-bloggers.com/read-excel-files-from-r/">http://www.r-bloggers.com/read-excel-files-from-r/</a></p>
+<div id="big-data" class="section level3">
+<h3>Big Data?</h3>
+<p><a href="NotSoBig.pdf">Not so big activity</a></p>
 </div>
 </div>
 <div id="cleaning" class="section level2">

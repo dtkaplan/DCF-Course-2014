@@ -1,56 +1,31 @@
 
-* Teach tab completion for variable names,
+## Starters
 
+* Teach tab completion for variable names, function names, and arguments
 * Using Rmd files.
 
-### Census data
+### An example of available data
 
-<http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t>
+Files you can download: Examples:    
+* US Census data <http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t>
+* New York City 311 calls <https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9>.  Here's [the graph of complaint count against time](http://dtkaplan.github.io/DCF-2014/CourseNotes/ScrapingData/311-Calls.html) 
 
-### How `readHTMLTable()` works
+What variables are going to cause trouble?
 
-### HTML Markup
+## Reading directly from the web
 
-See "NuclearReactors.Rmd"
+[Nuclear plants activity](NuclearReactors.pdf)
 
-In groups of 2 or 3, find an interesting Wikipedia page with a table, scrape the data from it, and generate a figure that tells an interesting story.
+Show the HTML markup for the [web page](http://en.wikipedia.org/wiki/List_of_nuclear_reactors) drawing attention to `<table>`
 
-More details: As you can see from the attachments, I used the "readHTMLTable()" function in the XML package in R to scrape data from tables that exist in Wikipedia.  In the file "scraping1.pdf" I've downloaded the list of TV shows or films show in or set in Liverpool England (see http://en.wikipedia.org/wiki/List_of_films_and_television_shows_set_or_shot_in_Liverpool for the source), while in scraping2.pdf, I'm downloading the list of all nuclear reactors in Japan (see http://en.wikipedia.org/wiki/List_of_nuclear_reactors).  In both cases, the goal is to say something about the distribution over time (for the Liverpool example) or the change in capacity over time (for the Japanese reactors).  
 
-Show a web page and the source from it. <http://en.wikipedia.org/wiki/Mile_run_world_record_progression>
+  They don't need to master this.  Conversion to CSV, yes. A tutorial? <http://www.r-bloggers.com/read-excel-files-from-r/>
+  
+### Big Data?
 
-Show one that's hopeless (Cherry Blossom), too much javascript
+[Not so big activity](NotSoBig.pdf)
 
-Show one where you download a file (311 Calls?  World Bank?)
 
-Show publishing a google doc and reading as HTML
-
-Use the Bird cleaning data from the exercise you originally intended for week 3.
-
-## Scraping
-
-A bit about finding data.  What's data and what's a summary.  If it's not in something like tabular form, give up.
-
-### Types of Files
-
-* html
-* csv
-* xlsx
-* package-specific files
-
-### Not files: part of a web session
-
-Global Migration Database: <http://databank.worldbank.org/data/views/variableselection/selectvariables.aspx?source=global-bilateral-migration#>
-
-### How to read them in.
-
-* XML for picking tables.  Can we make a command that head()s all of the tables in the list so that you can pick one out? lapply()
-
-* Demo of foreign   --- find some sites with package-specific data
-
-* XLSX --- show that it can be done.  They don't need to master this.  Conversion to CSV, yes. A tutorial? <http://www.r-bloggers.com/read-excel-files-from-r/>
-
-* text files
 
 ## Cleaning
 

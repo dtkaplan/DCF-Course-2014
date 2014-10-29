@@ -35,7 +35,7 @@ Create your Rmd file from the DCF assignment template, saving it as `Week-6-Warm
 
 You're going to do some data cleaning.  The data originally come from <https://health.data.ny.gov/Health/Genealogical-Research-Death-Index-Beginning-1957/vafa-pf2s>, where they are available as a CSV file.
 
-The data from the site were downloaded, creating a CSV file of size 47.4 MB.  In order to make cleaning the data more convenient, the CSV file was pre-processed to include just 5 of ten original variables.  This was saved in Rda format, ending up at 2.9 MB.  That's the file you will be using. Load it with this command:
+The data from the site were downloaded, creating a CSV file of size 47.4 MB.  In order to make cleaning the data more convenient, the CSV file was pre-processed to include just five of ten original variables.  This was saved in Rda format, ending up at 2.9 MB.  That's the file you will be using. Load it with this command:
 
 ```{r echo=FALSE,eval=FALSE}
 load( "~/Downloads/Deaths.rda")
