@@ -1,13 +1,13 @@
 ---
 title: "DCF Week 6 Warm-Up & Assignment"
 output:
-  html_document:
-    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
-    fig_caption: no
   pdf_document:
     fig_height: 3
     fig_width: 5
     keep_tex: no
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
   word_document:
     fig_height: 3
     fig_width: 5
@@ -49,6 +49,7 @@ load( url( "http://tinyurl.com/m4o4n2b/DCF/Deaths.rda" ) )
 Take a look at the data with `str()`. Note that it consists of five variables with lengthy names.  Four of the five variables are character strings.
 
 You're going to clean these data to make it possible to graph them like this:
+
 ```{r echo=FALSE, fig.cap="Number of deaths each day of the year."}
 Deaths2 <- Deaths %>% 
   select( name=`Decedent First Name`, 

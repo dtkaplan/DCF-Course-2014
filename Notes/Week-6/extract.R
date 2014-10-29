@@ -1,6 +1,6 @@
 #' Extract substrings
 #' 
-extract <- function( data, pattern, var, ... ) {
+extract <- function( .data, pattern, var, ... ) {
   var <- substitute( var )
   resNames <- list( ... )
   dataStrings <- as.character( 

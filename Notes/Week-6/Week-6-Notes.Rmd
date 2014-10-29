@@ -4,6 +4,33 @@
 * Teach tab completion for variable names, function names, and arguments
 * Using Rmd files.
 
+### Regular Expressions
+
+```{r eval=FALSE}
+source("http://tinyurl.com/m4o4n2b/DCF/extract.R" )
+```
+
+Pull out 100,000 names from `BabyNames`, adding up the totals over the years by sex.  Call this `NameList`.  
+
+* Names ending with "a".
+* Names ending with a vowel.
+* Names ending with a vowel or "y".
+* Names with 3 consonants in a row.
+* Names with 3 vowels in a row.
+
+Interactive site for testing expressions: <http://regexone.com/>
+
+#### Extraction
+
+```{r eval=FALSE}
+NameList %>% 
+    extract(., "([aeiou])$", name, vowel=1 ) %>%
+    group_by( sex, vowel ) %>% 
+    summarise( total=sum(count) ) %>%
+    arrange( sex, desc(total) )
+```
+
+
 ## Starters
 
 * [The janitorial problem](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=1) 

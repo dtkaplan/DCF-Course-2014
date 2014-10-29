@@ -1,13 +1,13 @@
 ---
 title: "Big or Not So Big?"
 output:
-  html_document:
-    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
-    fig_caption: no
   pdf_document:
     fig_height: 3
     fig_width: 5
     keep_tex: no
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
   word_document:
     fig_height: 3
     fig_width: 5
@@ -19,7 +19,7 @@ date: "Data and Computing Fundamentals"
 library( DCF )
 ```
 
-In March 2014, the Centers for Medicare and Medicaid Services released data on treatments provided by more than 880,000 health-care providers. ([CMS News Release](http://blog.cms.gov/2014/04/09/historic-release-of-data-delivers-unprecedented-transparency-on-the-medical-services-physicians-provide-and-how-much-they-are-paid/) and [New York Times article](http://www.nytimes.com/2014/04/28/business/one-therapist-4-million-in-2012-medicare-billing.html]).
+In March 2014, the Centers for Medicare and Medicaid Services released data on treatments provided by more than 880,000 health-care providers. ([CMS News Release](http://blog.cms.gov/2014/04/09/historic-release-of-data-delivers-unprecedented-transparency-on-the-medical-services-physicians-provide-and-how-much-they-are-paid/) and [New York Times article](http://www.nytimes.com/2014/04/28/business/one-therapist-4-million-in-2012-medicare-billing.html).)
 
 
 The download site for the data, [here](http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html), provides the data in ZIP archive format (but **don't** download it).  The ZIP file is 414 MB.  When unzipped, the resulting text file is 1.7 GB.  There are 9,153,273 rows.  Is this large?  How can you approach such data?
@@ -71,7 +71,7 @@ NoGender <- Providers %>%
 ```
     Look at the distribution of `provider_type` for the `NoGender` cases.  What do you conclude?
 3. The `nppes_credentials` variable describes the type of health-care provider?  How many different levels are there?  Look at the counts in each level in descending order.  What patterns do you see?
-    Outline in words a strategy to correct the mistakes?
+    Outline in words a strategy to correct the mistakes.
 
 
 

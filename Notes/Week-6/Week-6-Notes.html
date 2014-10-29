@@ -58,6 +58,27 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Teach tab completion for variable names, function names, and arguments</li>
 <li>Using Rmd files.</li>
 </ul>
+<div id="regular-expressions" class="section level3">
+<h3>Regular Expressions</h3>
+<pre class="r"><code>source(&quot;http://tinyurl.com/m4o4n2b/DCF/extract.R&quot; )</code></pre>
+<p>Pull out 100,000 names from <code>BabyNames</code>, adding up the totals over the years by sex. Call this <code>NameList</code>.</p>
+<ul>
+<li>Names ending with “a”.</li>
+<li>Names ending with a vowel.</li>
+<li>Names ending with a vowel or “y”.</li>
+<li>Names with 3 consonants in a row.</li>
+<li>Names with 3 vowels in a row.</li>
+</ul>
+<p>Interactive site for testing expressions: <a href="http://regexone.com/">http://regexone.com/</a></p>
+<div id="extraction" class="section level4">
+<h4>Extraction</h4>
+<pre class="r"><code>NameList %&gt;% 
+    extract(., &quot;([aeiou])$&quot;, name, vowel=1 ) %&gt;%
+    group_by( sex, vowel ) %&gt;% 
+    summarise( total=sum(count) ) %&gt;%
+    arrange( sex, desc(total) )</code></pre>
+</div>
+</div>
 </div>
 <div id="starters" class="section level2">
 <h2>Starters</h2>

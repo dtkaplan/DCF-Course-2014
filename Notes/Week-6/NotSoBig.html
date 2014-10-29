@@ -57,7 +57,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
-<p>In March 2014, the Centers for Medicare and Medicaid Services released data on treatments provided by more than 880,000 health-care providers. (<a href="http://blog.cms.gov/2014/04/09/historic-release-of-data-delivers-unprecedented-transparency-on-the-medical-services-physicians-provide-and-how-much-they-are-paid/">CMS News Release</a> and <a href="http://www.nytimes.com/2014/04/28/business/one-therapist-4-million-in-2012-medicare-billing.html]">New York Times article</a>.</p>
+<p>In March 2014, the Centers for Medicare and Medicaid Services released data on treatments provided by more than 880,000 health-care providers. (<a href="http://blog.cms.gov/2014/04/09/historic-release-of-data-delivers-unprecedented-transparency-on-the-medical-services-physicians-provide-and-how-much-they-are-paid/">CMS News Release</a> and <a href="http://www.nytimes.com/2014/04/28/business/one-therapist-4-million-in-2012-medicare-billing.html">New York Times article</a>.)</p>
 <p>The download site for the data, <a href="http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html">here</a>, provides the data in ZIP archive format (but <strong>don’t</strong> download it). The ZIP file is 414 MB. When unzipped, the resulting text file is 1.7 GB. There are 9,153,273 rows. Is this large? How can you approach such data?</p>
 <p>There are different definitions of “big”.</p>
 <ol style="list-style-type: decimal">
@@ -87,7 +87,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="r"><code>NoGender &lt;- Providers %&gt;%
   filter( nppes_provider_gender==&quot;&quot;)</code></pre>
 Look at the distribution of <code>provider_type</code> for the <code>NoGender</code> cases. What do you conclude?</li>
-<li><p>The <code>nppes_credentials</code> variable describes the type of health-care provider? How many different levels are there? Look at the counts in each level in descending order. What patterns do you see? Outline in words a strategy to correct the mistakes?</p></li>
+<li><p>The <code>nppes_credentials</code> variable describes the type of health-care provider? How many different levels are there? Look at the counts in each level in descending order. What patterns do you see? Outline in words a strategy to correct the mistakes.</p></li>
 </ol>
 </div>
 <div class="footnotes">
