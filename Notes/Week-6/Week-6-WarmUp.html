@@ -77,16 +77,20 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div>
  
 </div>
-<p>What’s going on at about day 120? Why the sudden drop in the number of deaths?</p>
-<p>What’s going on at the very end of the year?</p>
+<p>Some curious observations:</p>
+<ul>
+<li>What’s going on at about day 120? Why the sudden drop in the number of deaths?</li>
+<li>What’s going on at the very end of the year?</li>
+</ul>
 <p>You don’t have to fix these problems (yet), just explain what they are.</p>
 <div id="make-the-names-convenient" class="section level3">
 <h3>Make the names convenient</h3>
+<p>The names given in the original file are very long. It’s helpful to shorten them up, like this:</p>
 <pre class="r"><code>Deaths &lt;- Deaths %&gt;% head %&gt;%
   select( name=`Decedent First Name`, 
           age=`Decedent Age`, 
           ... and so on for the other three vars.)</code></pre>
-<p>Note that the original variable names are quoted with a backquote (```). This is for technical reasons, but you must do it when variable names contain spaces or other punctuation characters.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>Note that the original variable names are quoted with a backquote (`). This is for technical reasons, but you must do it when variable names contain spaces or other punctuation characters.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 </div>
 <div id="how-many-sexes" class="section level3">
 <h3>How many sexes?</h3>
@@ -97,6 +101,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h3>Names of People</h3>
 <p>Look at a few of the first names of the people. The character strings holding the names have several blank spaces after the name. These are called <em>trailing spaces</em>.</p>
 <p>Get rid of the trailing spaces, while retaining any spaces within the names, as in Lu Ann.</p>
+<p>While you’re at it, get rid of leading spaces (if any), the blanks at the front of the string.</p>
 </div>
 <div id="age-is-not-always-in-years" class="section level3">
 <h3>Age is not always in years</h3>
@@ -112,21 +117,11 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>Make the plot shown at the top of this section.</p>
 <p>The sharp drop near day 120 is an artifact. Figure out what causes it and fix it.</p>
 </div>
-<div id="fixing-the-birds" class="section level2">
-<h2>Fixing the Birds</h2>
-<ul>
-<li><p>Check the numbers, wing span, etc. Correct the species name as before.</p></li>
-<li><p>Make a graph of wing span, etc. versus species.</p></li>
-<li><p>Do the band numbers make sense. Are their duplicates? How many singletons, 2-times, 3-times, etc. Were these the birds captured and recaptured?</p></li>
-<li><p>Who worked when on data entry? How long did it take them to enter a bird?</p></li>
-<li><p>Pull out the ones who were recaptured. How much time went by between initial capture and recapture.</p></li>
-</ul>
-</div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>R lets you use just about anything as a variable name, so long as it is enclosed in backquotes.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>R lets you use just about anything as a variable name, so long as the name is enclosed in backquotes.<a href="#fnref1">↩</a></p></li>
 </ol>
 </div>
 

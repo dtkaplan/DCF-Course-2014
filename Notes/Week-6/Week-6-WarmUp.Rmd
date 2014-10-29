@@ -15,7 +15,6 @@ date: "Data and Computing Fundamentals"
 ---
 
 
-http://factfinder2.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_11_5YR_DP04&prodType=table
 
 ```{r child="../../CSS/DCF-common.Rmd"}
 ```
@@ -81,14 +80,18 @@ ggplot( data=DayCount,
 
 <div>&nbsp;</div>
 
-What's going on at about day 120?  Why the sudden drop in the number of deaths?
+Some curious observations:
 
-What's going on at the very end of the year?
+
+* What's going on at about day 120?  Why the sudden drop in the number of deaths?
+* What's going on at the very end of the year?
 
 You don't have to fix these problems (yet), just explain what they are.
 
 
 ### Make the names convenient
+
+The names given in the original file are very long.  It's helpful to shorten them up, like this:
 
 ```{r eval=FALSE, echo=TRUE}
 Deaths <- Deaths %>% head %>%
@@ -128,19 +131,3 @@ Make the plot shown at the top of this section.
 
 The sharp drop near day 120 is an artifact.  Figure out what causes it and fix it.
   
-## Fixing the Birds
-
-* Check the numbers, wing span, etc.  Correct the species name as before.
-
-* Make a graph of wing span, etc. versus species.
-
-* Do the band numbers make sense.  Are their duplicates? How many singletons, 2-times, 3-times, etc.
-Were these the birds captured and recaptured?
-
-* Who worked when on data entry?  How long did it take them to enter a bird?
-
-
-
-* Pull out the ones who were recaptured.  How much time went by between initial capture and recapture.
-
-

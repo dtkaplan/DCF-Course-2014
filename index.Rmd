@@ -182,7 +182,7 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
 **Before Class**   
 
 * Notes: [Scraping and cleaning data](`r Notes("ScrapingData","DraftNarrative.html")`)
-* Regular expressions: [A short introduction](`r Notes( "ScrapingData","RegularExpressons.html")`) 
+* Regular expressions: [A short introduction](`r Notes( "ScrapingData","RegularExpressions.html")`) 
 * Of potential interest ...
     * New York Times article on [data scientists as janitors](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0)
     * Videos on data cleaning: [one](https://www.youtube.com/watch?v=6mMDymfGfvw) & [two](https://www.youtube.com/watch?v=FeREFj874lI).  See note.^[The presenter of these videos (Paul Vichanis (sp?), at <http://www.mybringback.com/>) uses a very different style of R than we are using.  Don't worry about the details of the commands he uses.  Just get a feel for the overall problem.] 
