@@ -182,7 +182,8 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
 **Before Class**   
 
 * Notes: [Scraping and cleaning data](`r Notes("ScrapingData","DraftNarrative.html")`)
-* Regular expressions: [A short introduction](`r Notes( "ScrapingData","RegularExpressions.html")`) 
+* [Regular expressions](`r Notes( "ScrapingData","RegularExpressions.html")`) 
+* [Dates as a variable type](Notes/Week-6/DatesAsNumbers.html)
 * Of potential interest ...
     * New York Times article on [data scientists as janitors](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0)
     * Videos on data cleaning: [one](https://www.youtube.com/watch?v=6mMDymfGfvw) & [two](https://www.youtube.com/watch?v=FeREFj874lI).  See note.^[The presenter of these videos (Paul Vichanis (sp?), at <http://www.mybringback.com/>) uses a very different style of R than we are using.  Don't worry about the details of the commands he uses.  Just get a feel for the overall problem.] 
@@ -193,10 +194,12 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
   
 **In Class and After**    
 
-* Warm-Up: [Big data?](Notes/Week-6/NotSoBig.html)
-* [Dates as a variable type](Notes/Week-6/DatesAsNumbers.html)
 * Web Scraping: In-class project [Rmd file](Notes/Week-6/NuclearReactors.Rmd) and [PDF version](Notes/Week-6/NuclearReactors.pdf)
-* [Assignment 6](`r Assignment("Assignment-Six")`) due TBA. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
+* [Big data?](Notes/Week-6/NotSoBig.html)
+
+* [Warm-up & Assignment](Notes/Week-6/Week-6-WarmUp.html)
+
+* [Assignment 6](Notes/Week-6-WarmUp.html) due Nov. 12. [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19075)
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">

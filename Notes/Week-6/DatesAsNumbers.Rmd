@@ -82,9 +82,9 @@ WhenAndWho %>%
 ```
 
 
-### Small Project
+### Small Project (Optional)
 
-Find the entries in `OrdwayBirds` where there is a mistake spelling the species.  Do these mistakes tend to happen at certain times of day?
+Find the entries in `OrdwayBirds` where there is a mistake spelling the species.  Do these mistakes tend to happen at certain times of day? Make an appropriate graphic.
 
 
 ```{r echo=FALSE,eval=FALSE}
@@ -99,8 +99,7 @@ Mistakes <- OrdwayBirds %>%
   mutate( mistake=SpeciesName != SpeciesNameCleaned )
 ```
 
-```{r eval=FALSE}
+```{r eval=FALSE,echo=FALSE}
 Mistakes %>% 
   ggplot( aes( y=hour(When),x=mistake)) + geom_violin( ) + facet_wrap( ~ Who )
-```
 ```
