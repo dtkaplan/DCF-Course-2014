@@ -1,8 +1,14 @@
 
-## Starters
+## Before
 
 * Teach tab completion for variable names, function names, and arguments
 * Using Rmd files.
+
+## Starters
+
+* [The janitorial problem](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=1) 
+* Where will you get data in your own work.  Likely you'll have a connection.
+
 
 ### An example of available data
 
