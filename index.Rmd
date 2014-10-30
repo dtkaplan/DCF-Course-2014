@@ -175,14 +175,14 @@ Stats and Properties of Cases Collectively. [Goals for the Week](Background/Week
    <div class="clearfix visible-md-block"></div>
 
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4 class="this-week">Week 6   &nbsp;<span style="float:right;">Oct. 29</span></h4>
+   <h4>Week 6   &nbsp;<span style="float:right;">Oct. 29</span></h4>
 
 Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#week-6)
    
 **Before Class**   
 
 * Notes: [Scraping and cleaning data](`r Notes("ScrapingData","DraftNarrative.html")`)
-* [Regular expressions](`r Notes( "ScrapingData","RegularExpressions.html")`) 
+* [Regular expressions](`r Notes( "ScrapingData","RegularExpressions.html")`) and a [cheat sheet](http://krijnhoetmer.nl/stuff/regex/cheat-sheet/)
 * [Dates as a variable type](Notes/Week-6/DatesAsNumbers.html)
 * Of potential interest ...
     * New York Times article on [data scientists as janitors](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0)
@@ -203,7 +203,7 @@ Scraping and Cleaning Data. [Goals for the Week](Background/WeeklyGoals.html#wee
 
    </div>
    <div class="col-sm-6 col-md-4 col-lg-3">
-   <h4>Week 7   &nbsp; <span style="float:right;">Nov. 12</span></h4>
+   <h4 class="this-week">Week 7   &nbsp; <span style="float:right;">Nov. 12</span></h4>
 Working with multiple variables [Goals for the Week](Background/WeeklyGoals.html#week-7)
 
 **Before Class**   
