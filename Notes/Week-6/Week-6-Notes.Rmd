@@ -40,7 +40,7 @@ NameList %>%
 ### An example of available data
 
 Files you can download: Examples:    
-* US Census data <http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t>
+* US Census data <t>
 * New York City 311 calls <https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9>.  Here's [the graph of complaint count against time](http://dtkaplan.github.io/DCF-2014/CourseNotes/ScrapingData/311-Calls.html) 
 
 What variables are going to cause trouble?

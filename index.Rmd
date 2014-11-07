@@ -208,24 +208,24 @@ Working with multiple variables [Goals for the Week](Background/WeeklyGoals.html
 
 **Before Class**   
 
-* Notes: 
+* Notes: [Working with Multiple Variables](`r Notes("ManyVariables","DraftNarrative.html")`)
  
 
-* [Weekly Drill](`r Drill("Week-7.html")`)
+<!-- * [Weekly Drill](`r Drill("Week-7.html")`) -->
 * [Weekly Discussion Posts](Week-7-Discussion.html)
   
 **In Class and After**    
   
-[Assignment 7](`r Assignment("Assignment-Seven")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19076)
-   
+<!-- [Assignment 7](`r Assignment("Assignment-Seven")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19076) -->
+
+Assignment 7: Work on anything not yet done from the previous weeks.  No new assignment here.
    </div>
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
    <div class="col-sm-6 col-md-4 col-lg-3">
    <h4>Wrapping-up</h4>
 
-* Exam
-* Handing in the final assignment.
+* The 30-minute "final" exam: [link here](ExamInfo.html)
 * Resources for continuing on ...
     * Tips on [refining `ggplot()` graphics](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/) ... [data source](http://www.ihapss.jhsph.edu/data/NMMAPS/Data/data_download_gz.htm)
    </div>

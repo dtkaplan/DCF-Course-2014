@@ -1,0 +1,19 @@
+---
+title: "DCF Final Exam Information"
+date: "Fall 2014"
+output: html_document
+---
+
+There is a final exam in the DCF course.  Here is some information.
+
+* It is designed to be completed in 30 minutes.  (Regular 4-credit courses have a 2-hour final, so the final for a 1-credit course ought to be 1/4 of that.)
+* The exam will be available to you a week after the last class meeting.
+* The best way for you to study is
+    1. Re-read the notes for each week.
+    2. Re-read your assignment write-ups.
+    
+* You do not need to write programs for the final.  Instead, you will be expected to read and interpret short programs. (It's easy to make trivial mistakes when writing that can take a long time to locate.  Debugging is an important skill in computing, but it's not a skill that's been emphasized in this DCF course.)
+* The final is a take-home.  Do it any time between now and the end of the exam period for Fall 2014.
+* The final is "open book." That is, you are welcome to use any resource **except other people**.
+* There will be a few more problems than can be done in 30 minutes.  But take **only 30 minutes**.  Set a timer and force yourself to stop at 30 minutes.  Only the first few problems will be used in computing a grade.  It helps me in designing the course to get a realistic idea of how much can be done in 30 minutes.
+* The exam will be distributed on paper.
