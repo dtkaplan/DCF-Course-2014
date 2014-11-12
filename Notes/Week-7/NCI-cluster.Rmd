@@ -1,0 +1,59 @@
+---
+title: "DCF Week 7 Warm-Up"
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+    keep_tex: no
+  word_document:
+    fig_height: 3
+    fig_width: 5
+date: "Data and Computing Fundamentals"
+---
+
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+## Clustering  Gene Expression
+
+
+Take a look at the NCI60 expression data.  Ask what each of these things do.
+
+
+```{r}
+Long <- NCI60 %>% mutate( Probe=as.character(Probe )) %>%
+  gather(value=expression, key=cellLine, -Probe)
+# Average multiple entries 
+Long <- Long %>% mutate( cellLine=as.character(cellLine )) %>%
+  group_by( cellLine, Probe ) %>%
+  summarise( expression=mean(expression, na.rm=TRUE ))
+Cells <- NCI60cells %>% select( cellLine, tissue ) %>%
+  mutate( cellLine=gsub(":",".",as.character(cellLine)))
+Long <- inner_join( Long, Cells )
+# Average over 
+# 50 biggest variance probes
+Keepers <- Long %>%
+  group_by( Probe ) %>%
+  summarise( var=sd(expression, na.rm=TRUE)) %>% 
+  filter( row_number(desc(var)) <= 50 )
+```
+
+```{r}
+NCI60 <- NCI60 %>% mutate( Probe=as.character(Probe) )
+K <- Keepers %>% select(-var)
+JustBiggies <- NCI60 %>% inner_join(K)
+```
+
+```{r}
+TT <- t(JustBiggies[,-1]) %>% data.frame()
+```
+
+Do the clustering
+```{r fig.width=20,fig.height=6}
+Dists <- dist(TT)
+Clusts <- hclust(Dists)
+plot( Clusts )
+```

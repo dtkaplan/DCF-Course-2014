@@ -74,7 +74,7 @@ plot(partyMod2, gp = gpar(fontsize = 6),
 ```{r}
 prediction <- predict( partyMod )
 Simple <- Simple %>%
-  mutate( prediction=prediction )
+  mutate( node = nodeNum, prediction=prediction )
 with( Simple, mosaic::tally( party ~ prediction ))
 ```
 Get rid of LIB.
@@ -83,3 +83,25 @@ Build and interpret a partitioning model.
 
 Which terminal node does each case belong to?
 
+<!--  THIS was from party, rather than partykit
+
+```{r eval=FALSE}
+nodeNum <- partyMod@where
+prediction <- Predict( partyMod )
+Simple <- Simple %>%
+  mutate( node = nodeNum, prediction=prediction )
+```
+
+```{r eval=FALSE}
+NodeStats <- Simple %>% 
+  group_by( node ) %>%
+  summarise( count=n(), 
+             Age=mean(Age,na.rm=TRUE), 
+             F=sum(gender=="F")/n(),
+             DEM=sum(party=="DEM")/n(),
+             REP=sum(party=="REP")/n(),
+             UNA=sum(party=="UNA")/n()
+             )
+```
+
+end of deleted section -->

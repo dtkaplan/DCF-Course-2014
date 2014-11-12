@@ -13,7 +13,9 @@ output:
     fig_width: 5
 date: "Data and Computing Fundamentals"
 ---
-
+```{r}
+require(rpart)
+```
 
 ## Unsupervised Learning
 
@@ -22,6 +24,12 @@ date: "Data and Computing Fundamentals"
 ### NCI 60
 
 ### Show a glaucoma prediction
+
+```{r}
+data("GlaucomaM", package = "TH.data")
+glaucoma_rpart <- rpart(Class ~ ., data = GlaucomaM, 
+                        control = rpart.control(xval = 100)
+```
 
 ### Calculate a diabetes prediction
 
