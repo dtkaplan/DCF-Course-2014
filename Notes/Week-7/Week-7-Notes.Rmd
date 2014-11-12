@@ -1,3 +1,43 @@
+---
+title: "DCF Week 7 Warm-Up"
+output:
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+    keep_tex: no
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
+  word_document:
+    fig_height: 3
+    fig_width: 5
+date: "Data and Computing Fundamentals"
+---
+
+
+## Unsupervised Learning
+
+### Cluster the countries
+
+### NCI 60
+
+### Show a glaucoma prediction
+
+### Calculate a diabetes prediction
+
+What are the highest risk groups?
+
+## Supervised Learning
+
+### Baby Names
+
+Look at all the letters in girls' names, compare to boy's names.
+
+As features, use length, last letter, 
+
+### Predictors of Immigration
+
+
 
 
 

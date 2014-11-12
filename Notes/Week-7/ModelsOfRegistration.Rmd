@@ -1,0 +1,100 @@
+---
+title: "DCF Week 7 Warm-Up"
+output:
+  html_document:
+    css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
+    fig_caption: no
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+    keep_tex: no
+  word_document:
+    fig_height: 3
+    fig_width: 5
+date: "Data and Computing Fundamentals"
+---
+
+```{r child="../../CSS/DCF-common.Rmd"}
+```
+
+
+
+Install the `partykit` package.
+```{r include=FALSE}
+library( partykit )
+```
+
+Work with the registered voters data.  What are the determinants of being registered in a party?  What are the determinants of being inactive.
+
+```{r}
+Reg <- registeredVoters
+summary( Reg$race )
+summary( Reg$gender )
+summary( Reg$Age )
+summary( Reg$voter_status )
+summary( Reg$party )
+```
+
+```{r}
+Simple <- Reg %>%
+  filter( party != "LIB" ) %>% 
+  select( race, gender, Age, voter_status, party, ZIP=res_zip_code ) %>%
+  mutate( ZIP=as.character(ZIP))
+Simple <- ZipDemography %>% 
+  select( ZIP, income=Medianhouseholdincomedollars) %>%
+  inner_join( Simple ) 
+```
+
+```{r}
+partyMod <- ctree( party ~ race + gender + Age, data=Simple )
+```
+```{r fig.width=20, out.width="100%"}
+plot(partyMod, gp = gpar(fontsize = 6),     
+  inner_panel=node_inner,
+  ip_args=list(
+       abbreviate = TRUE, 
+       id = FALSE)
+  )
+```
+
+```{r}
+partyMod2 <- ctree( party ~ race + gender + Age + income, data=Simple)
+```
+
+```{r fig.width=20, out.width="100%"}
+plot(partyMod2, gp = gpar(fontsize = 6),     
+  inner_panel=node_inner,
+  ip_args=list(
+       abbreviate = TRUE, 
+       id = FALSE)
+  )
+```
+
+Get rid of LIB.
+
+Build and interpret a partitioning model.
+
+Which terminal node does each case belong to?
+
+<!--  THIS was from party, rather than partykit
+
+```{r eval=FALSE}
+nodeNum <- partyMod@where
+prediction <- Predict( partyMod )
+Simple <- Simple %>%
+  mutate( node = nodeNum, prediction=prediction )
+```
+
+```{r eval=FALSE}
+NodeStats <- Simple %>% 
+  group_by( node ) %>%
+  summarise( count=n(), 
+             Age=mean(Age,na.rm=TRUE), 
+             F=sum(gender=="F")/n(),
+             DEM=sum(party=="DEM")/n(),
+             REP=sum(party=="REP")/n(),
+             UNA=sum(party=="UNA")/n()
+             )
+```
+
+end of deleted section -->
