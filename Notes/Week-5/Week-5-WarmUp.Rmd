@@ -131,8 +131,8 @@ load( "Cuisines.rda" )
 You can create a table where the case is "an individual restaurant branch" with this statement:
 ```{r echo=TRUE,eval=FALSE}
 RR <- Restaurants %>% 
-  group_by( PHONE ) %>% 
-  filter( row_number(PHONE)==1 )
+  group_by( CAMIS, STREET, ZIPCODE ) %>% 
+  filter( row_number(ZIPCODE)==1 )
 ```
 
 Get the latitude and longitude of each zip code from `ZipGeography`.  Plot out the location of each restaurant, using the borough for color. Use the aesthetic 

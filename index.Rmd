@@ -217,8 +217,10 @@ Working with multiple variables [Goals for the Week](Background/WeeklyGoals.html
 **In Class and After**    
   
 <!-- [Assignment 7](`r Assignment("Assignment-Seven")`) [Hand in here.](https://moodle.macalester.edu/mod/assign/view.php?id=19076) -->
-
-Assignment 7: Work on anything not yet done from the previous weeks.  No new assignment here.
+* In-class activities: 
+    * [Clusters and cell lines](clusteringGenetics.pdf)
+    * [Politics and data](PoliticalData.pdf)
+* In lieu of Assignment 7: Work on anything not yet done from the previous weeks.  No new assignment here.
    </div>
    <div class="clearfix visible-sm-block"></div>
    <div class="clearfix visible-lg-block"></div>
