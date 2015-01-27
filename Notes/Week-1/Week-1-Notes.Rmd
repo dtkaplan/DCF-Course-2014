@@ -1,53 +1,24 @@
 ---
 output:
-  pdf_document: default
   html_document:
     css: ~/KaplanFiles/DCF-Course-2014/CSS/DCF-Course-style.css
     fig_caption: yes
+  pdf_document: default
 ---
 
 
-# Class Notes: Week 1
+# DCF Class Notes: Week 1
 
-## Orientation to Class Resources
-
-* R and RStudio. 
-    R does the computations.  RStudio provides an interface to R that makes it easier to document your work, to access many of the features of R, and other things.
-    * Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
-    * Installing on your own computer.  You need both of these:
-        * [R software](http://cran.rstudio.com/)
-        * [RStudio desktop software](http://www.rstudio.com/products/RStudio/#Desk)
-
-* Packages you will need:
-
-    * `yaml` & `devtools` through regular installation in RStudio
-    * `devtools::install_github( "rstudio/rmarkdown" )`
-    * Not today, but soon: `devtools::install_github( "dtkaplan/DCFdevel" )`
-
-* [DCF Homepage](http://dtkaplan.github.io/DCF-Course-2014/).  Bookmark this page so you can get to it easily.
-
-* The FAQ for the course: <http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html>
-
-## The conceit of this course
-
-A very large part of the use and presentation of data draws on a small set of concepts and techniques that are not difficult individually and that can be taught individually.  The complexity of data use and presentation comes from combining these concepts and techniques in various ways to achieve our specific purposes. 
-
-We're going to start today with the infrastructure for these techniques:
-
-* the basic structure of data
-* commanding the computer to handle data and present the story we want to tell, usually a combination of narration and graphic summary.  (There's also modeling, but that's more complicated and won't play a big role in this course.)
-
-In coming weeks, we'll deal with the relationship between data and graphical presentations, the proper form of data to make a graphic (or a model), and how to transfigure the data we have into the form needed for a graphic.  We'll also talk about some widely used forms for graphic, to give you some ideas for how you might want to present your own data to achieve your own purpose.
-
-There will be some difficulties --- it's not so easy to instruct a computer to do the right thing.  But we will try to adopt a work-flow and notation that helps to reduce the inevitable problems.
-
-The basic problem is lack of instantaneous feedback of the sort given by a word processor or web browser.  This happens because a (potentially complicated) computer command can't be evaluated until it's complete .
-
-## Some examples of contemporary data
+## Introduction: examples of contemporary data
 
 ### Taxicabs and the Shared Economy
 
 A team of mathematicians and engineers has calculated that if taxi riders were willing to share a cab, New York City could reduce the current fleet of 13,500 taxis up to 40 percent. [Link to news story](http://www.nytimes.com/2014/09/02/science/sharing-taxis-nyc-mathematics.html) and an [interactive site](http://www.hubcab.org/) with the data.
+
+* Traditional style: take a sample of taxi passengers.  Ask them where they got on and where they got off the taxi.
+* New style: 
+    * Every taxi transaction is registered, including GPS coordinates of flag up and flag down
+    * A taxi-hailing app can register all calls for service, even those that aren't successful.
 
 ### Medicare Spending
 
@@ -57,33 +28,80 @@ Data available [here](http://www.cms.gov/Research-Statistics-Data-and-Systems/St
 
 [DTK notes](file:///Users/kaplan/KaplanFiles/MOSAIC/CVC/Summer2014/Notes/MedicareSpending/PriceOfHealth.html)
 
+## The logic of this course
+
+A very large part of the use and presentation of data draws on a small set of concepts and techniques.  These are not difficult individually and can be taught individually as simple manoeuvres.  In this way, they are simple, like Legos©. The complexity of data use and presentation comes from combining these concepts and techniques in various ways to achieve our specific purposes just as an elaborate model can be built out of simple blocks.
+
+Picture of Legos  | Picture of lego model
+----------------- | ----------------------
+
+We're going to start today with the infrastructure for these techniques:
+
+* the basic structure of data
+* commanding the computer to handle data and present the story we want to tell, usually a combination of narration and graphic summary.  (There's also modeling, but that's more complicated and won't play a big role in this course.)
+
+In coming weeks, we will study
+* the relationship between data and graphical presentations
+* the proper form of data to make a graphic (or a model) 
+* how to wrangle the data we have into the form needed for a graphic
+* some widely used forms for graphics, to give you some ideas for how you might want to present your own data to achieve your own purpose. 
+* simple techniques to access data presented as web pages
+* a couple of machine-learning techniques that illustrate how to deal with large numbers of variables
+
+
+
+## Orientation to Class Resources
+
+* R and RStudio. 
+    R does the computations.  RStudio provides an interface to R that makes it easier to document your work, to access many of the features of R, and other things.
+    * Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
+    * Installing on your own computer.  You need both of these:
+        * [R software](http://cran.rstudio.com/)
+        * [RStudio desktop software](http://www.rstudio.com/products/RStudio/#Desk) CHANGE THIS TO THE preview edition.
+
+* Packages you will need:
+
+    * `yaml` & `devtools` through regular installation in RStudio
+    * `devtools::install_github("rstudio/rmarkdown")`
+    * `devtools::install_github("dtkaplan/DCF")`
+    * `devtools::install_github("dtkaplan/DCFinteractive")
+
+* DCF Homepage is on Moodle.  
+
+* An FAQ for the course: <http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html>. For questions of a general methodological nature, e.g. "How do I rename a variable?" please post the question on the Disqus discussion site.
+
+Data sets we will access regularly for examples.
+
 ### Examples from many fields
 
 <pre>
 BabyNames                Names of children as recorded by the US Social
                          Security Administration.
-CountryCentroids         
-CountryData              Many variables on countries from the CIA factbook,
-                         2014.
+CountryCentroids         Geographic location of countries
+CountryData              Many variables on countries from the 2014 CIA factbook.
 CountryGroups            Membership in Country Groups
 DirectRecoveryGroups     
 MedicareCharges          
 MedicareProviders        
 MigrationFlows           Human Migration between Countries
-Minneapolis2013          Ballots in the 2013 Mayoral election in
-                         Minneapolis
+Minneapolis2013          Ballots in the 2013 Mayoral election in Minneapolis
 NCI60                    Gene expression in cancer.
 NCI60cells               Cell Line descriptions in the NCI-60 dataset
 WorldCities              Cities and their populations
-ZipDemography            Demographic information for most US ZIP Codes
-                         (Postal Codes)
-ZipGeography             Geographic information by US Zip Codes (Postal
-                         Codes)
-registeredVoters         A sample of the voter registration list for Wake
-                         County, North Carolina in Fall 2010.
+ZipDemography            Demographic information for most US ZIP Codes (Postal Codes)
+ZipGeography             Geographic information by US Zip Codes (Postal Codes)
+registeredVoters         A sample of the voter registration list for Wake County, North Carolina in Fall 2010.
 </pre>
 
 ## Infrastructure
+
+### Installation
+
+1. RStudio
+    a. Server <macalester.edu/rstudio> with your Mac email id and the last 4 digits of your student ID number.  (If there are leading zeros, try dropping them.)
+    #. Desktop: install R from <www.r-project.org> and the RStudio preview edition from <rstudio.com>
+#. Check for packages: devtools, ggplot2, dplyr, DCF (from Github), mosaicData, NHANES, DCFinteractive, mosaic, knitr, rmarkdown, rpart, shiny, manipulate ... PUT THESE IN A COMMAND DOCUMENT
+
 
 ### RStudio
 
@@ -98,7 +116,9 @@ registeredVoters         A sample of the voter registration list for Wake
 
 ### Creating an Rmd File 
 
-Create an Rmd file named `Class-1.Rmd`.  Eventually, you will upload your HTML file to Moodle, under [In-class, Week 1](https://moodle.macalester.edu/mod/assign/view.php?id=21352)
+Using the DCF template file for Rmd.
+
+Create an Rmd file named `Class-1.Rmd`.  Eventually, you will upload your HTML file to Moodle, under [In-class, Week 1](Moodle link here.)
 
 Markdown for ...
 
@@ -136,7 +156,7 @@ Here's the original, [untidy spreadsheet](https://docs.google.com/spreadsheets/d
 1. Add in answers to the above two questions, along with links to your group's spreadsheet.
 #. Add in answers to the [Week-1 drill problems](http://dtkaplan.github.io/DCF-2014/Drill/Week-1.html)
 
-When done, upload it to Moodle, under [In-class, Week 1](https://moodle.macalester.edu/mod/assign/view.php?id=21352).
+When done, upload it to Moodle, under [In-class, Week 1](Moodle link here).
 
 
 ## The assignment document for next week
@@ -146,4 +166,7 @@ Start on [Assignment 1](http://dtkaplan.github.io/DCF-2014/Assignments/Assignmen
 * Create an Rmd document named `AssignmentOne-XXX.Rmd` (where `XXX` is your initials).
 * Eventually, by class next week, you'll hand it in on Moodle, [Week-1 Assignment hand in site](https://moodle.macalester.edu/mod/assign/view.php?id=19069).
 
+We'll be done when you've uploaded at least the first part of your assignment to Moodle.  You can refine it later.
 
+```{r child="../../CSS/DisqusTemplate.Rmd"}
+```
