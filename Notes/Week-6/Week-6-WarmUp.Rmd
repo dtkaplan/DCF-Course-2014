@@ -89,32 +89,13 @@ Some curious observations:
 
 You don't have to fix these problems (yet), just explain what they are.
 
-
-### Make the names convenient
-
-The names given in the original file are very long.  It's helpful to shorten them up, like this:
-
-```{r eval=FALSE, echo=TRUE}
-Deaths <- Deaths %>% head %>%
-  select( name=`Decedent First Name`, 
-          age=`Decedent Age`, 
-          ... and so on for the other three vars.)
-```
-Note that the original variable names are quoted with a backquote (`).  This is for technical reasons, but you must do it when variable names contain spaces or other punctuation characters.^[R lets you use just about anything as a variable name, so long as the name is enclosed in backquotes.] 
-
 ### How many sexes?
 
 Check the possible values for sex.  Why are there so many?  Fix them so that the different character-string versions of the same sex are unified.  
 
 Hint: To delete characters, even blank characters, you can use `gsub()`.
 
-### Names of People
 
-Look at a few of the first names of the people.  The character strings holding the names have several blank spaces after the name.  These are called *trailing spaces*.
-
-Get rid of the trailing spaces, while retaining any spaces within the names, as in Lu Ann.
-
-While you're at it, get rid of leading spaces (if any), the blanks at the front of the string.
 
 ### Age is not always in years
 

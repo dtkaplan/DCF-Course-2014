@@ -1,5 +1,5 @@
 ---
-output:
+output: 
   html_document:
     css: CSS/DCF-Course-style.css
     fig_caption: yes
@@ -41,6 +41,7 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
   
 <h4>Resources</h4>
 
+* Small group sessions [video room](https://appear.in/mosaic-web)
 * [Course Policies and Structure](Background/StructureAndPolicies.html)
 * Guides
     * 1-page guide to ["Enough R for DCF"](`r Notes("Guides","EnoughDCF.pdf")`)
@@ -54,7 +55,9 @@ DCF is a seven-week, one-credit hour course.  It's intended to provide an introd
     - Danny Kaplan <kaplan@macalester.edu>
     - Erik Anderson <ande7564@umn.edu>
     - **HELP!** Available each evening with the HHMI Stats Fellows in Olin-Rice 245. Sun. through Thurs. 7:00-9:30pm.
-* Videos from the Amherst/5-College R/RStudio series: [link](http://www3.amherst.edu/~nhorton/rstudio/)  
+* Videos
+    * [RStudio/O'Reilly data science series](http://blog.rstudio.org/2014/11/06/introduction-to-data-science-with-r-video-workshop/)
+    * [Amherst/5-College R/RStudio series](http://www3.amherst.edu/~nhorton/rstudio/)  
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
 

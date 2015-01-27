@@ -1,0 +1,30 @@
+---
+title: "New Resources for DCF"
+date: "Fall 2014"
+output: html_document
+---
+
+## Week 2 or 3, meet for 30 minutes with the stats fellows
+
+Students have a little project to work on, one-on-one with the stats fellows.  Try to have as many tutors as possible.
+
+Give a small project for them to do with the tutors.  The tutors will have the problems --- the students have to meet with them in order to get the problem.  Bill this as a collaborative project.
+
+## How to use a discussion forum
+
+From David Bressoud:
+
+Piazza: I have struggled in the past with how to use this. If it's voluntary, no one uses it. If it's required, it gets filled up with junk that people post to satisfy the requirement, and they resent having to spend time posting or reading through nonsense. I tried something different this semester that the students REALLY liked: voluntary with bonus points for using it. Students could earn 1 bonus point for posting a question and 2 bonus points for answering a question. They were limited to 2 bonus points per week and 15 points over the entire semester. I was not picky about the quality of what got posted, but was pleasantly surprised that people asked questions that they really wanted answered and many posted thoughtful responses. Each bonus point could be used to increase the score on a homework assignment by 10 percentage points. I typically got about 10 questions posted per week. Students found it useful and not onerous.
+
+## Case Study
+
+A nice article about inferring why things make the reddit front page:
+<http://blog.revolutionanalytics.com/2014/11/reddit-front-page.html>
+
+There is a final exam in the DCF course.  Here is some information.
+
+## Many visualizations
+
+<http://www.reddit.com/r/dataisbeautiful>
+
+Perhaps suitable for exams?  Separate problems for each student?

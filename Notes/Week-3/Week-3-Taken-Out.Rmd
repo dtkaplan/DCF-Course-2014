@@ -1,11 +1,20 @@
 ---
-title: "Week 3 Taken Out"
-author: "Daniel Kaplan"
-date: "September 27, 2014"
-output: html_document
+output:
+  pdf_document:
+    keep_tex: yes
+    toc: yes
+  html_document:
+    css: ../../CSS/DCF-style.css
+    fig_caption: yes
+    toc: yes
 ---
 
+```{r child="../../CSS/DCF-common.Rmd"}
+```
 
+```{r include=FALSE}
+require(xtable)
+```
 
 
 

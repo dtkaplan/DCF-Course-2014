@@ -164,6 +164,23 @@ When you want to publish an HTML file from within RStudio, press the little "pub
 
 Go to the address for your account name.  It will look like `http://rpubs.com/[your user name]`.
 
+### Changing the names of Variables
+
+**SOMETHING LIKE THIS**
+
+The variable names given in the original data table are very long.  It's helpful to shorten them up, like this:
+
+```{r eval=FALSE, echo=TRUE}
+Deaths <- Deaths %>% head %>%
+  select( name=`Decedent First Name`, 
+          age=`Decedent Age`, 
+          ... and so on for the other three vars.)
+```
+Note that the original variable names are quoted with a backquote (`).  This is for technical reasons, but you must do it when variable names contain spaces or other punctuation characters.^[R lets you use just about anything as a variable name, so long as the name is enclosed in backquotes.] 
+
+### Delete leading or trailing spaces
+
+mutate and filter and gsub() in regular expressions like ` +$` or `^ +`
 
 <hr>
 ```{r child="../CSS/DisqusTemplate.Rmd"}

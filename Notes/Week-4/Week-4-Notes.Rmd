@@ -162,7 +162,7 @@ WorldCities <-
 ```
 
 Merge `Population` with `WorldCities` on `ISO2`
-```{r}
+```{r eval=FALSE}
 WorldCities <-
   WorldCities %>%
   inner_join( Population )
@@ -250,7 +250,7 @@ Turn the immigration data into narrow, so that you can calculate the pairs that 
 
 Doing a transform on a grouped variable allows you, if you want, to use aggregate quantities for that group.  For instance, the groups of males and females have different mean heights.  Here's how you would calculate the difference of an individual from his or her group's mean.
 
-```{r}
+```{r eval=FALSE}
 NHANES <- group_by( NHANES, sex )
 NHANES <- mutate( NHANES, dheight=height-mean(height) )
 summarise( NHANES, sd(dheight) )
