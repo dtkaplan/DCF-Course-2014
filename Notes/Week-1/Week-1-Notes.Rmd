@@ -32,8 +32,11 @@ Data available [here](http://www.cms.gov/Research-Statistics-Data-and-Systems/St
 
 A very large part of the use and presentation of data draws on a small set of concepts and techniques.  These are not difficult individually and can be taught individually as simple manoeuvres.  In this way, they are simple, like Legos©. The complexity of data use and presentation comes from combining these concepts and techniques in various ways to achieve our specific purposes just as an elaborate model can be built out of simple blocks.
 
-Picture of Legos  | Picture of lego model
------------------ | ----------------------
+The individual lego bricks are simple.^[Source : "Lego Color Bricks" by Alan Chia - Lego Color Bricks. Licensed under CC BY-SA 2.0 via [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg)]  | A city made by arranging lego bricks ^[Source: *Trafalgar Legoland 2003* by Kaihsu Tai - Kaihsu Tai. Licensed under CC BY-SA 3.0 via [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Trafalgar_Legoland_2003.jpg#mediaviewer/File:Trafalgar_Legoland_2003.jpg)]|
+----------------- | --------------------  |
+![Bricks](Lego_Color_Bricks.jpg)| ![Trafalgar Legoland](Trafalgar_Legoland_2003.jpg) |
+
+
 
 We're going to start today with the infrastructure for these techniques:
 
@@ -100,7 +103,7 @@ registeredVoters         A sample of the voter registration list for Wake County
 1. RStudio
     a. Server <macalester.edu/rstudio> with your Mac email id and the last 4 digits of your student ID number.  (If there are leading zeros, try dropping them.)
     #. Desktop: install R from <www.r-project.org> and the RStudio preview edition from <rstudio.com>
-#. Check for packages: devtools, ggplot2, dplyr, DCF (from Github), mosaicData, NHANES, DCFinteractive, mosaic, knitr, rmarkdown, rpart, shiny, manipulate ... PUT THESE IN A COMMAND DOCUMENT
+#. Check for packages: devtools, ggplot2, dplyr, DCF (from Github), mosaicData, NHANES, DCFinteractive, mosaic, knitr, rmarkdown, rpart, shiny, manipulate.  [Here's a script](install_packages.R) that you can run to install these packages manually.
 
 
 ### RStudio
@@ -136,13 +139,16 @@ Basics: Cases, Variables, rows, columns, quantitative, categorical
 
 Divide into groups and put your answer to the following in these spreadsheets:[Group-1](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&usp=sharing), [Group-2](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&usp=sharing), [Group-3](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dElIQkh0SWtyaW9aRkdMZVBERHdJNXc#gid=0), [Group-4](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dEYxdEhWZUI1S3NxN2ZaaThXSEtMVWc&usp=sharing), [Group-5](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dDVsLWJaUHV5emFVQlVfSjFrdmFkYXc&usp=sharing), [Group-6](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dFdvNGpFZkNuUHZqd2g2UEVDc0VEZEE&usp=sharing)
 
-Make a separate tab for each table.
+Make a separate tab for each table.  Hand in your work (here on Moodle)[https://moodle.macalester.edu/mod/assign/view.php?id=19097].  Work on the spreadsheets together with your group, but each student should individually create and hand in an Rmd->html document containing links to those spreadsheets (or the spreadsheets themselves.)
+
+
+
 
 #### Height measurements
 
 In the 1880s, Francis Galton started to make a mathematical theory of evolution.  
 
-Here's part of a page from his lab notebook.  Translate it into tidy form.
+Here's part of a page from his lab notebook.  
 
 ![A page from Francis Galton's notebook.](galton-notebook.jpg)
 
@@ -151,12 +157,14 @@ Here's part of a page from his lab notebook.  Translate it into tidy form.
 
 Here's the original, [untidy spreadsheet](https://docs.google.com/spreadsheets/d/1Ow6Cm4z-Z1Yybk3i352msulYCEDOUaOghmo9ALajyHo/edit#gid=1811988794).
 
+
+
 ## Back to your Week-1 Document
 
 1. Add in answers to the above two questions, along with links to your group's spreadsheet.
 #. Add in answers to the [Week-1 drill problems](http://dtkaplan.github.io/DCF-2014/Drill/Week-1.html)
 
-When done, upload it to Moodle, under [In-class, Week 1](Moodle link here).
+When done, upload it to Moodle, under [In-class activity: RMD -> HTML](https://moodle.macalester.edu/mod/assign/view.php?id=19097).
 
 
 ## The assignment document for next week
@@ -167,6 +175,8 @@ Start on [Assignment 1](http://dtkaplan.github.io/DCF-2014/Assignments/Assignmen
 * Eventually, by class next week, you'll hand it in on Moodle, [Week-1 Assignment hand in site](https://moodle.macalester.edu/mod/assign/view.php?id=19069).
 
 We'll be done when you've uploaded at least the first part of your assignment to Moodle.  You can refine it later.
+
+
 
 ```{r child="../../CSS/DisqusTemplate.Rmd"}
 ```
