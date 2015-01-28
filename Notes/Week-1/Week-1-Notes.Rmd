@@ -44,6 +44,7 @@ We're going to start today with the infrastructure for these techniques:
 * commanding the computer to handle data and present the story we want to tell, usually a combination of narration and graphic summary.  (There's also modeling, but that's more complicated and won't play a big role in this course.)
 
 In coming weeks, we will study
+
 * the relationship between data and graphical presentations
 * the proper form of data to make a graphic (or a model) 
 * how to wrangle the data we have into the form needed for a graphic
@@ -67,7 +68,7 @@ In coming weeks, we will study
     * `yaml` & `devtools` through regular installation in RStudio
     * `devtools::install_github("rstudio/rmarkdown")`
     * `devtools::install_github("dtkaplan/DCF")`
-    * `devtools::install_github("dtkaplan/DCFinteractive")
+    * `devtools::install_github("dtkaplan/DCFinteractive")`
 
 * DCF Homepage is on Moodle.  
 
@@ -121,7 +122,7 @@ registeredVoters         A sample of the voter registration list for Wake County
 
 Using the DCF template file for Rmd.
 
-Create an Rmd file named `Class-1.Rmd`.  Eventually, you will upload your HTML file to Moodle, under [In-class, Week 1](Moodle link here.)
+Create an Rmd file named `Class-1.Rmd`.  Eventually, you will upload your HTML file to Moodle, under [In-class, Week 1](https://moodle.macalester.edu/mod/assign/view.php?id=19097)
 
 Markdown for ...
 
@@ -139,7 +140,7 @@ Basics: Cases, Variables, rows, columns, quantitative, categorical
 
 Divide into groups and put your answer to the following in these spreadsheets:[Group-1](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHNpejZtd3dQTXlPM245R0ZQbG0yYkE&usp=sharing), [Group-2](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dHk1enZoVnhrV09ad2x4dXR1MlpWNFE&usp=sharing), [Group-3](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dElIQkh0SWtyaW9aRkdMZVBERHdJNXc#gid=0), [Group-4](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dEYxdEhWZUI1S3NxN2ZaaThXSEtMVWc&usp=sharing), [Group-5](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dDVsLWJaUHV5emFVQlVfSjFrdmFkYXc&usp=sharing), [Group-6](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dFdvNGpFZkNuUHZqd2g2UEVDc0VEZEE&usp=sharing)
 
-Make a separate tab for each table.  Hand in your work (here on Moodle)[https://moodle.macalester.edu/mod/assign/view.php?id=19097].  Work on the spreadsheets together with your group, but each student should individually create and hand in an Rmd->html document containing links to those spreadsheets (or the spreadsheets themselves.)
+Make a separate tab for each table.  Hand in your work [here on Moodle](https://moodle.macalester.edu/mod/assign/view.php?id=19097).  Work on the spreadsheets together with your group, but each student should individually create and hand in an Rmd->html document containing links to those spreadsheets (or the spreadsheets themselves.)    
 
 
 
