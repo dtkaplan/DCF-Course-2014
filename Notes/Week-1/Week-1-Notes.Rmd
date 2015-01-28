@@ -61,22 +61,27 @@ In coming weeks, we will study
     * Macalester RStudio Server: <www.macalester.edu/rstudio>.  Login with your Macalester email name (e.g. `brosenberg`).  The initial password is the last 4 digits of your student ID number.  This can be changed.  [Instructions here](../FAQ.html#changing-your-password)
     * Installing on your own computer.  You need both of these:
         * [R software](http://cran.rstudio.com/)
-        * [RStudio desktop software](http://www.rstudio.com/products/RStudio/#Desk) CHANGE THIS TO THE preview edition.
+        * [RStudio desktop software](http://www.rstudio.com/products/rstudio/download/preview/).
 
-* Packages you will need:
+Packages: Run the script in [install_packages.R](install_packages.R)
 
-    * `yaml` & `devtools` through regular installation in RStudio
-    * `devtools::install_github("rstudio/rmarkdown")`
-    * `devtools::install_github("dtkaplan/DCF")`
+```{r eval=FALSE}
+source("http://dtkaplan.github.io/DCF-Course-2014/Notes/Week-1/install_packages.R")
+```
+
+* This includes the DCF-specific packages:
+    * `devtools::install_github("dtkaplan/DCFdevel")`
     * `devtools::install_github("dtkaplan/DCFinteractive")`
 
 * DCF Homepage is on Moodle.  
 
 * An FAQ for the course: <http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html>. For questions of a general methodological nature, e.g. "How do I rename a variable?" please post the question on the Disqus discussion site.
 
-Data sets we will access regularly for examples.
+
 
 ### Examples from many fields
+
+Data sets we will access regularly for examples.
 
 <pre>
 BabyNames                Names of children as recorded by the US Social

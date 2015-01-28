@@ -126,22 +126,24 @@ img {
 <li>Installing on your own computer. You need both of these:
 <ul>
 <li><a href="http://cran.rstudio.com/">R software</a></li>
-<li><a href="http://www.rstudio.com/products/RStudio/#Desk">RStudio desktop software</a> CHANGE THIS TO THE preview edition.</li>
+<li><a href="http://www.rstudio.com/products/rstudio/download/preview/">RStudio desktop software</a>.</li>
 </ul></li>
 </ul></li>
-<li><p>Packages you will need:</p>
+</ul>
+<p>Packages: Run the script in <a href="install_packages.R" class="uri">install_packages.R</a></p>
+<pre class="r"><code>source(&quot;http://dtkaplan.github.io/DCF-Course-2014/Notes/Week-1/install_packages.R&quot;)</code></pre>
 <ul>
-<li><code>yaml</code> &amp; <code>devtools</code> through regular installation in RStudio</li>
-<li><code>devtools::install_github(&quot;rstudio/rmarkdown&quot;)</code></li>
-<li><code>devtools::install_github(&quot;dtkaplan/DCF&quot;)</code></li>
+<li>This includes the DCF-specific packages:
+<ul>
+<li><code>devtools::install_github(&quot;dtkaplan/DCFdevel&quot;)</code></li>
 <li><code>devtools::install_github(&quot;dtkaplan/DCFinteractive&quot;)</code></li>
 </ul></li>
 <li><p>DCF Homepage is on Moodle.</p></li>
 <li><p>An FAQ for the course: <a href="http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html" class="uri">http://dtkaplan.github.io/DCF-Course-2014/Notes/FAQ.html</a>. For questions of a general methodological nature, e.g. “How do I rename a variable?” please post the question on the Disqus discussion site.</p></li>
 </ul>
-<p>Data sets we will access regularly for examples.</p>
 <div id="examples-from-many-fields" class="section level3">
 <h3>Examples from many fields</h3>
+<p>Data sets we will access regularly for examples.</p>
 <pre>
 BabyNames                Names of children as recorded by the US Social
                          Security Administration.
